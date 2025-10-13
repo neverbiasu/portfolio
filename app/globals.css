@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --mocha-base: #1e1e2e;
+  --mocha-surface: #313244;
+  --mocha-text: #cdd6f4;
+  --mocha-primary: #89b4fa;
+  --mocha-subtle: #585b70;
+  --font-inter: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-jetbrains: "JetBrains Mono", "Fira Code", monospace;
+  --shadow-surface: 0 16px 40px rgba(10, 10, 28, 0.35);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--mocha-base);
+  color: var(--mocha-text);
+  font-family: var(--font-inter);
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background-color: rgba(137, 180, 250, 0.35);
+  color: #ffffff;
+}
+
+.glassless-panel {
+  background: var(--mocha-surface);
+  border: 1px solid rgba(205, 214, 244, 0.08);
+  box-shadow: var(--shadow-surface, 0 16px 40px rgba(10, 10, 28, 0.35));
+  backdrop-filter: none;
+}
