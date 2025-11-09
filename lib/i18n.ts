@@ -18,6 +18,17 @@ export type SectionCopy = {
   assistantSend: string;
   assistantTitle: string;
   languageToggle: string;
+  // --- Terminal ---
+  welcomeHint: string;
+  helpIntro: string;
+  commandNotFound: (cmd: string) => string;
+  commands: {
+    help: string;
+    whoami: string;
+    skills: string;
+    projects: string;
+    clear: string;
+  };
 };
 
 type CopyMap = Record<Locale, SectionCopy>;
@@ -45,6 +56,17 @@ export const copy: CopyMap = {
     assistantSend: "Send",
     assistantTitle: "AI Assistant",
     languageToggle: "中文",
+    // --- Terminal ---
+    welcomeHint: "Type 'help' to see a list of available commands.",
+    helpIntro: "Here are the available commands:",
+    commandNotFound: (cmd) => `command not found: ${cmd}`,
+    commands: {
+      help: "Show this help message",
+      whoami: "Display my profile information",
+      skills: "List my core technical skills",
+      projects: "Show my selected projects",
+      clear: "Clear the terminal screen",
+    },
   },
   zh: {
     aboutTitle: "关于我",
@@ -65,6 +87,17 @@ export const copy: CopyMap = {
     assistantSend: "发送",
     assistantTitle: "AI 助理",
     languageToggle: "EN",
+    // --- Terminal ---
+    welcomeHint: "输入 'help' 查看可用命令列表.",
+    helpIntro: "可用的命令如下:",
+    commandNotFound: (cmd) => `找不到命令: ${cmd}`,
+    commands: {
+      help: "显示此帮助信息",
+      whoami: "显示我的个人简介",
+      skills: "列出我的核心技术栈",
+      projects: "展示我的精选项目",
+      clear: "清空终端屏幕",
+    },
   },
 };
 

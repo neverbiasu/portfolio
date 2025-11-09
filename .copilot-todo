@@ -1,0 +1,11 @@
+- [x] Scaffold Next.js app router project structure
+- [x] Configure Tailwind with Catppuccin theme and fonts
+- [x] Implement layout with AI sidebar/button behavior
+- [x] Add content sections (about, projects, stats, socials)
+- [x] Implement language toggle with persistence
+- [x] Add Edge Function proxy at /api/ai
+- [x] Provide README with setup instructions
+- [x] Run initial tests/build if applicable
+- [x] Update project list with latest ComfyUI and LLM work
+- [x] Refresh social links based on new profiles
+- [x] Add GitHub API helper for periodic repo sync

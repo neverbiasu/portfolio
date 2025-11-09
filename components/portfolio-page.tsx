@@ -1,162 +1,209 @@
-"use client";
+'use client';
 
-import { useEffect, useMemo, useState } from "react";
-import Image from "next/image";
-import { AssistantLauncher } from "@/components/assistant-launcher";
-import { AssistantPanel } from "@/components/assistant-panel";
-import { LanguageToggle } from "@/components/language-toggle";
-import { ProjectCard } from "@/components/project-card";
-import { SocialIcons } from "@/components/social-icons";
-import { profile, projects } from "@/lib/content";
-import { getCopy, type Locale, type SectionCopy } from "@/lib/i18n";
-import { LANGUAGE_STORAGE_KEY } from "@/lib/constants";
+import React, { useEffect, useMemo, useState, useRef } from 'react';
+import { TerminalBlock } from '@/components/TerminalBlock';
+import { ProjectCard } from '@/components/project-card';
+import { SocialIcons } from '@/components/social-icons';
+import { LanguageToggle } from '@/components/language-toggle';
+import { profile, projects } from '@/lib/content';
+import { getCopy, type Locale } from '@/lib/i18n';
 
-const DEFAULT_LOCALE: Locale = "en";
+const DEFAULT_LOCALE: Locale = 'en';
+
+// --- Terminal Components ---
+
+const CommandOutput: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+  <div className="whitespace-pre-wrap text-left text-mocha-text/80">{children}</div>
+);
+
+const CommandInputLine: React.FC<{ command: string }> = ({ command }) => (
+  <div className="text-mocha-green">
+    <span className="text-mocha-blue">faych@portfolio:~$</span>
+    <span className="ml-2">{command}</span>
+  </div>
+);
+
+const HelpOutput: React.FC<{ copy: ReturnType<typeof getCopy> }> = ({ copy }) => (
+  <div>
+    <p>{copy.helpIntro}</p>
+    <ul className="mt-2">
+      {Object.entries(copy.commands).map(([cmd, desc]) => (
+        <li key={cmd} className="flex">
+          <span className="w-24 font-bold text-mocha-mauve">{cmd}</span>
+          <span>{desc}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+);
+
+// --- Main Page Component ---
 
 export function PortfolioPage() {
   const [locale, setLocale] = useState<Locale>(DEFAULT_LOCALE);
-  const [assistantOpen, setAssistantOpen] = useState(false);
+  const copy = useMemo(() => getCopy(locale), [locale]);
 
+  const [history, setHistory] = useState<React.ReactNode[]>([]);
+  const [input, setInput] = useState('');
+  const terminalRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  const whoamiNode = useMemo(
+    () => (
+      <div className="text-left">
+        <p>
+          <span className="font-bold text-mocha-blue">Name:</span>
+          <span className="opacity-80">    {profile.name}</span>
+        </p>
+        <p>
+          <span className="font-bold text-mocha-blue">Role:</span>
+          <span className="opacity-80">    {profile.role[locale]}</span>
+        </p>
+        <p>
+          <span className="font-bold text-mocha-blue">Bio:</span>
+          <span className="opacity-80">     {profile.description[locale]}</span>
+        </p>
+        <div className="mt-4">
+          <SocialIcons />
+        </div>
+      </div>
+    ),
+    [locale],
+  );
+
+  const commands = useMemo(
+    () => ({
+      help: () => <HelpOutput copy={copy} />,
+      whoami: () => whoamiNode,
+      skills: () => profile.skills.join(', '),
+      projects: () =>
+        projects
+          .map(p => `${p.title[locale]}: ${p.summary[locale]}`)
+          .join('\n\n'),
+      clear: () => {
+        setHistory([]);
+        return null;
+      },
+    }),
+    [copy, locale, whoamiNode],
+  );
+
+  // Effect for initial load
   useEffect(() => {
-    if (typeof window === "undefined") {
-      return;
-    }
-    const storedLocale = window.localStorage.getItem(
-      LANGUAGE_STORAGE_KEY,
-    ) as Locale | null;
-    if (storedLocale === "en" || storedLocale === "zh") {
-      setLocale(storedLocale);
-    }
-  }, []);
+    setHistory([
+      <CommandInputLine key="init-cmd" command="whoami" />,
+      <CommandOutput key="init-output">{whoamiNode}</CommandOutput>,
+      <CommandOutput key="init-hint">{copy.welcomeHint}</CommandOutput>,
+    ]);
+  }, [whoamiNode, copy.welcomeHint]);
 
-  const copy = useMemo<SectionCopy>(() => getCopy(locale), [locale]);
-  const mainSpacing = assistantOpen
-    ? "md:pl-[calc(320px+3rem)]"
-    : "md:pl-[calc(60px+3rem)]";
-
-  const handleLocaleToggle = (nextLocale: Locale) => {
-    setLocale(nextLocale);
-    if (typeof window !== "undefined") {
-      window.localStorage.setItem(LANGUAGE_STORAGE_KEY, nextLocale);
+  // Effect for auto-scrolling
+  useEffect(() => {
+    if (terminalRef.current) {
+      terminalRef.current.scrollTop = terminalRef.current.scrollHeight;
     }
+  }, [history]);
+
+  const handleCommandSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const command = input.trim();
+    if (!command) return;
+
+    const newHistory: React.ReactNode[] = [
+      ...history,
+      <CommandInputLine key={history.length} command={command} />,
+    ];
+
+    const handler = commands[command as keyof typeof commands];
+    if (handler) {
+      const output = handler();
+      if (output) {
+        newHistory.push(
+          <CommandOutput key={history.length + 1}>{output}</CommandOutput>,
+        );
+      }
+    } else {
+      newHistory.push(
+        <CommandOutput key={history.length + 1}>
+          {copy.commandNotFound(command)}
+        </CommandOutput>,
+      );
+    }
+
+    setHistory(newHistory);
+    setInput('');
   };
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-mocha-base text-mocha-text">
-      {!assistantOpen && <AssistantLauncher onOpen={() => setAssistantOpen(true)} />}
-      <AssistantPanel
-        open={assistantOpen}
-        onClose={() => setAssistantOpen(false)}
-        locale={locale}
-        dictionary={copy}
-      />
+    <main
+      className="relative min-h-screen bg-mocha-crust p-4 md:p-8 lg:p-12"
+      onClick={() => inputRef.current?.focus()} // Focus input on any click
+    >
+      <div className="absolute top-4 right-4 md:top-8 md:right-8 z-10">
+        <LanguageToggle locale={locale} onToggle={setLocale} />
+      </div>
 
-      <main
-        className={`relative mx-auto flex w-full max-w-content flex-col gap-16 px-6 pb-24 pt-12 md:px-12 lg:px-16 ${mainSpacing}`}
-      >
-        <header className="flex flex-col gap-8">
-          <div className="flex flex-col items-start gap-6 md:flex-row md:items-center md:justify-between">
-            <div>
-              <p className="font-mono text-xs uppercase tracking-[0.4em] text-mocha-primary">
-                {profile.role[locale]}
-              </p>
-              <h1 className="mt-4 text-4xl font-semibold text-mocha-text sm:text-5xl md:text-6xl">
-                {profile.name}
-              </h1>
-              <p className="mt-6 max-w-2xl text-base text-mocha-text/70">
-                {profile.description[locale]}
-              </p>
-            </div>
-            <div className="flex items-center gap-4 self-end">
-              <LanguageToggle locale={locale} onToggle={handleLocaleToggle} />
-              <Image
-                src={profile.avatar}
-                alt={profile.name}
-                width={80}
-                height={80}
-                className="rounded-full border border-mocha-primary/30"
-              />
-            </div>
-          </div>
-          <SocialIcons />
-        </header>
-
-        <section className="grid gap-10 rounded-surface bg-mocha-surface/80 p-8 backdrop-blur-sm md:grid-cols-[1.3fr_1fr]">
-          <div>
-            <h2 className="text-2xl font-semibold text-mocha-primary">
-              {copy.aboutTitle}
-            </h2>
-            <p className="mt-4 text-sm text-mocha-text/80">{copy.aboutDescription}</p>
-            <div className="mt-8 flex flex-wrap gap-6">
-              <div>
-                <p className="text-xs font-mono uppercase tracking-[0.3em] text-mocha-subtle">
-                  {copy.skillsLabel}
-                </p>
-                <ul className="mt-3 flex flex-wrap gap-2">
-                  {profile.skills.map((skill) => (
-                    <li
-                      key={skill}
-                      className="rounded-full border border-mocha-primary/20 px-3 py-1 text-xs font-mono uppercase tracking-[0.2em] text-mocha-text/80"
-                    >
-                      {skill}
-                    </li>
-                  ))}
-                </ul>
+      <div className="mx-auto flex max-w-5xl flex-col gap-8">
+        {/* --- Terminal Block --- */}
+        <TerminalBlock
+          title={`faysh`}
+          className="h-[60vh] min-h-[300px]"
+        >
+          <div
+            ref={terminalRef}
+            className="h-full overflow-y-auto overflow-x-hidden pr-2"
+          >
+            {history}
+            <form
+              onSubmit={handleCommandSubmit}
+              className="font-mono"
+              onClick={() => inputRef.current?.focus()}
+            >
+              <div className="flex items-center">
+                <label
+                  htmlFor="terminal-input"
+                  className="text-mocha-blue shrink-0"
+                >
+                  faych@portfolio:~$
+                </label>
+                <div className="relative flex-1 pl-2">
+                  {/* This div is the visual representation of the input */}
+                  <div className="flex items-center">
+                    <span className="text-mocha-text">{input}</span>
+                    <span className="blinking-cursor text-mocha-text">█</span>
+                  </div>
+                  <input
+                    ref={inputRef}
+                    id="terminal-input"
+                    type="text"
+                    value={input}
+                    onChange={e => setInput(e.target.value)}
+                    className="absolute top-0 left-0 w-full h-full bg-transparent border-none text-transparent caret-transparent focus:outline-none pl-2"
+                    autoFocus
+                    spellCheck="false"
+                  />
+                </div>
               </div>
-              <div>
-                <p className="text-xs font-mono uppercase tracking-[0.3em] text-mocha-subtle">
-                  {copy.passionLabel}
-                </p>
-                <p className="mt-3 max-w-sm text-sm text-mocha-text/80">
-                  {profile.passion[locale]}
-                </p>
-                {profile.openToCollab ? (
-                  <span className="mt-4 inline-flex items-center gap-2 rounded-full bg-mocha-primary/10 px-3 py-1 text-xs font-mono uppercase tracking-[0.2em] text-mocha-primary">
-                    {copy.collabLabel}
-                  </span>
-                ) : null}
-              </div>
-            </div>
+            </form>
           </div>
-          <div className="rounded-surface border border-white/5 bg-mocha-base/40 p-6 shadow-surface">
-            <p className="text-sm text-mocha-text/70">
-              &ldquo;{profile.passion[locale]}&rdquo;
-            </p>
-            <p className="mt-6 text-xs font-mono uppercase tracking-[0.3em] text-mocha-subtle">
-              {profile.name}
-            </p>
-          </div>
-        </section>
+        </TerminalBlock>
 
-        <section id="projects" className="flex flex-col gap-4">
-          <div className="flex flex-col gap-2">
-            <h2 className="text-2xl font-semibold text-mocha-primary">
-              {copy.projectsTitle}
-            </h2>
-            <p className="text-sm text-mocha-text/70">{copy.projectsSubtitle}</p>
-          </div>
+        {/* --- Projects Block --- */}
+        <TerminalBlock title="~/projects">
+          <h2 className="text-lg font-bold text-mocha-mauve mb-4">
+            {copy.projectsTitle}
+          </h2>
           <div className="grid gap-6 md:grid-cols-2">
-            {projects.map((project) => (
-              <ProjectCard key={project.title.en} project={project} locale={locale} />
+            {projects.map(project => (
+              <ProjectCard
+                key={project.title.en}
+                project={project}
+                locale={locale}
+              />
             ))}
           </div>
-        </section>
-
-        <section className="flex flex-col gap-6 rounded-surface bg-mocha-surface/80 p-8">
-          <h2 className="text-2xl font-semibold text-mocha-primary">
-            {copy.statsTitle}
-          </h2>
-          <div className="overflow-hidden rounded-surface border border-white/5 bg-mocha-base/50 p-4">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="https://github-readme-stats.vercel.app/api?username=neverbiasu&show_icons=true&theme=catppuccin_mocha&hide_title=false"
-              alt="GitHub stats for neverbiasu"
-              loading="lazy"
-              className="mx-auto w-full max-w-3xl"
-            />
-          </div>
-        </section>
-      </main>
-    </div>
+        </TerminalBlock>
+      </div>
+    </main>
   );
 }

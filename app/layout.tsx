@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { HeroUIProvider } from "@heroui/react";
 
 const inter = Inter({
   weight: ["400", "500", "600"],
@@ -58,7 +59,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${jetbrains.variable} antialiased bg-mocha-base text-mocha-text`}
       >
-        {children}
+        <HeroUIProvider>{children}</HeroUIProvider>
       </body>
     </html>
   );
