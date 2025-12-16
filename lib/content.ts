@@ -1,4 +1,7 @@
+
 import type { Locale } from "./i18n";
+// @ts-ignore
+import generatedData from '../src/data/generated.json';
 
 export type Localized<T = string> = Record<Locale, T>;
 
@@ -12,6 +15,11 @@ export type Project = {
   summary: Localized;
   tech: string[];
   links: ProjectLink[];
+  // Dynamic fields
+  stars?: number;
+  forks?: number;
+  lastUpdate?: string;
+  language?: string;
 };
 
 export const profile = {
@@ -33,7 +41,7 @@ export const profile = {
   skills: ["Vue.js", "Next.js", "TypeScript", "Node.js", "Python", "PyTorch", "ComfyUI"],
 };
 
-export const projects: Project[] = [
+const staticProjects: Project[] = [
   {
     title: {
       en: "ComfyUI-SAM2",
@@ -137,6 +145,26 @@ export const projects: Project[] = [
     ],
   },
 ];
+
+// Augment projects with dynamic data
+export const projects = staticProjects.map(project => {
+  const githubLink = project.links.find(l => l.href.includes('github.com'));
+  if (githubLink) {
+    const repoName = githubLink.href.split('/').pop();
+    const dynamicRepo = (generatedData as any).github.find((r: any) => r.name === repoName);
+    
+    if (dynamicRepo) {
+      return {
+        ...project,
+        stars: dynamicRepo.stargazers_count,
+        forks: dynamicRepo.forks_count,
+        lastUpdate: dynamicRepo.updated_at,
+        language: dynamicRepo.language,
+      };
+    }
+  }
+  return project;
+});
 
 export const socialLinks = [
   {

@@ -1,0 +1,650 @@
+{
+  "github": [
+    {
+      "name": "ComfyUI-SAM2",
+      "description": "A ComfyUI extension for Segment-Anything 2",
+      "html_url": "https://github.com/neverbiasu/ComfyUI-SAM2",
+      "stargazers_count": 238,
+      "forks_count": 41,
+      "language": "Python",
+      "topics": [
+        "comfyui",
+        "comfyui-nodes",
+        "custom-nodes"
+      ],
+      "updated_at": "2025-12-13T16:52:56Z",
+      "homepage": ""
+    },
+    {
+      "name": "ComfyUI-BAGEL",
+      "description": "A ComfyUI extention for BAGEL(Unified Model for Multimodal Understanding and Generation)",
+      "html_url": "https://github.com/neverbiasu/ComfyUI-BAGEL",
+      "stargazers_count": 187,
+      "forks_count": 16,
+      "language": "Python",
+      "topics": [
+        "comfyui",
+        "comfyui-custom-node",
+        "comfyui-nodes",
+        "custom-nodes"
+      ],
+      "updated_at": "2025-11-25T03:18:14Z",
+      "homepage": ""
+    },
+    {
+      "name": "ComfyUI-OmniGen2",
+      "description": "A ComfyUI extension for OmniGen2",
+      "html_url": "https://github.com/neverbiasu/ComfyUI-OmniGen2",
+      "stargazers_count": 48,
+      "forks_count": 6,
+      "language": "Python",
+      "topics": [],
+      "updated_at": "2025-11-15T17:19:05Z",
+      "homepage": null
+    },
+    {
+      "name": "IELTSDuck",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/IELTSDuck",
+      "stargazers_count": 29,
+      "forks_count": 3,
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "updated_at": "2025-12-03T11:08:52Z",
+      "homepage": null
+    },
+    {
+      "name": "Awesome-Portraits-Style-Transfer",
+      "description": "A curated collection of papers on portrait style transfer",
+      "html_url": "https://github.com/neverbiasu/Awesome-Portraits-Style-Transfer",
+      "stargazers_count": 27,
+      "forks_count": 3,
+      "language": null,
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "face-editing",
+        "face-stylization",
+        "stable-diffusion",
+        "style",
+        "style-transfer",
+        "stylegan",
+        "styletransfer",
+        "stylization"
+      ],
+      "updated_at": "2025-11-19T07:34:05Z",
+      "homepage": ""
+    },
+    {
+      "name": "ComfyUI-Image-Captioner",
+      "description": "A ComfyUI extension for generating captions of images.",
+      "html_url": "https://github.com/neverbiasu/ComfyUI-Image-Captioner",
+      "stargazers_count": 21,
+      "forks_count": 6,
+      "language": "Python",
+      "topics": [
+        "comfyui",
+        "comfyui-nodes",
+        "comfyui-workflow"
+      ],
+      "updated_at": "2025-12-15T15:03:41Z",
+      "homepage": ""
+    },
+    {
+      "name": "Awesome-ComfyUI-Video",
+      "description": "A curated list of ComfyUI Video nodes and workflows",
+      "html_url": "https://github.com/neverbiasu/Awesome-ComfyUI-Video",
+      "stargazers_count": 15,
+      "forks_count": 5,
+      "language": "Python",
+      "topics": [
+        "comfyui-custom-node",
+        "comfyui-manager",
+        "comfyui-nodes",
+        "comfyui-workflow"
+      ],
+      "updated_at": "2025-12-16T01:54:20Z",
+      "homepage": ""
+    },
+    {
+      "name": "ComfyUI-StyleShot",
+      "description": "A ComfyUI extension for StyleShot.",
+      "html_url": "https://github.com/neverbiasu/ComfyUI-StyleShot",
+      "stargazers_count": 15,
+      "forks_count": 3,
+      "language": "Python",
+      "topics": [
+        "comfyui",
+        "comfyui-nodes",
+        "comfyui-workflow",
+        "custom-nodes"
+      ],
+      "updated_at": "2025-11-11T15:55:35Z",
+      "homepage": ""
+    },
+    {
+      "name": "ComfyUI-KittenTTS",
+      "description": "A ComfyUI extension for KittenTTS",
+      "html_url": "https://github.com/neverbiasu/ComfyUI-KittenTTS",
+      "stargazers_count": 7,
+      "forks_count": 3,
+      "language": "Python",
+      "topics": [],
+      "updated_at": "2025-11-07T21:43:55Z",
+      "homepage": null
+    },
+    {
+      "name": "hf-mirror-hub",
+      "description": "一个从 Hugging Face 镜像站点快速下载模型和数据集的命令行工具。",
+      "html_url": "https://github.com/neverbiasu/hf-mirror-hub",
+      "stargazers_count": 6,
+      "forks_count": 0,
+      "language": "Python",
+      "topics": [
+        "cli",
+        "huggingface",
+        "huggingface-datasets",
+        "huggingface-hub",
+        "huggingface-models",
+        "huggingface-repository",
+        "mirror",
+        "pypi"
+      ],
+      "updated_at": "2025-12-16T16:55:13Z",
+      "homepage": "https://pypi.org/project/hf-mirror-hub/"
+    },
+    {
+      "name": "ComfyUI-Dashscope",
+      "description": "A ComfyUI extension for DashScope(Qwen Series API)",
+      "html_url": "https://github.com/neverbiasu/ComfyUI-Dashscope",
+      "stargazers_count": 4,
+      "forks_count": 3,
+      "language": "Python",
+      "topics": [
+        "aliyun",
+        "audio-driven-talking-face",
+        "comfyui",
+        "comfyui-nodes",
+        "custom-nodes",
+        "dashscope",
+        "llm",
+        "vlm"
+      ],
+      "updated_at": "2025-12-12T10:23:43Z",
+      "homepage": ""
+    },
+    {
+      "name": "ComfyUI-Ovis-U1",
+      "description": "A ComfyUI extension for Ovis-U1",
+      "html_url": "https://github.com/neverbiasu/ComfyUI-Ovis-U1",
+      "stargazers_count": 4,
+      "forks_count": 1,
+      "language": "Python",
+      "topics": [],
+      "updated_at": "2025-12-04T05:47:57Z",
+      "homepage": null
+    },
+    {
+      "name": "Awesome-Video-Downloader",
+      "description": "Embark on an effortless video downloading journey with Awesome-Video-Downloader.  This useful tool facilitates seamless downloads of watermark-free videos from an array of online platforms and apps directly via in-app or web links.   But that's not all!   It also empowers users to fetch captivating thumbnails from various videos. ",
+      "html_url": "https://github.com/neverbiasu/Awesome-Video-Downloader",
+      "stargazers_count": 4,
+      "forks_count": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "updated_at": "2025-06-20T15:02:22Z",
+      "homepage": null
+    },
+    {
+      "name": "ComfyUI-StereoCrafter",
+      "description": "A ComfyUI extension for StereoCrafter",
+      "html_url": "https://github.com/neverbiasu/ComfyUI-StereoCrafter",
+      "stargazers_count": 4,
+      "forks_count": 1,
+      "language": "Python",
+      "topics": [],
+      "updated_at": "2025-03-31T22:38:44Z",
+      "homepage": null
+    },
+    {
+      "name": "ComfyUI-Midware",
+      "description": "A midware for ComfyUI",
+      "html_url": "https://github.com/neverbiasu/ComfyUI-Midware",
+      "stargazers_count": 3,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [
+        "comfyui",
+        "comfyui-api"
+      ],
+      "updated_at": "2025-06-13T03:38:56Z",
+      "homepage": ""
+    },
+    {
+      "name": "ComfyUI-ChatTTS",
+      "description": "A ComfyUI extension for ChatTTS",
+      "html_url": "https://github.com/neverbiasu/ComfyUI-ChatTTS",
+      "stargazers_count": 3,
+      "forks_count": 2,
+      "language": "Python",
+      "topics": [
+        "comfyui",
+        "comfyui-custom-node",
+        "comfyui-nodes"
+      ],
+      "updated_at": "2025-05-29T03:57:05Z",
+      "homepage": ""
+    },
+    {
+      "name": "ComfyUI-ControlNeXt",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/ComfyUI-ControlNeXt",
+      "stargazers_count": 3,
+      "forks_count": 1,
+      "language": "Python",
+      "topics": [],
+      "updated_at": "2025-04-16T14:36:44Z",
+      "homepage": null
+    },
+    {
+      "name": "zotero-addon-template",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/zotero-addon-template",
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [
+        "zotero",
+        "zotero-addon",
+        "zotero-plugin"
+      ],
+      "updated_at": "2025-11-29T17:20:46Z",
+      "homepage": ""
+    },
+    {
+      "name": "purelkman",
+      "description": "A game which shows the path of AI monster and player, based on Phaser3.",
+      "html_url": "https://github.com/neverbiasu/purelkman",
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "updated_at": "2024-03-13T14:16:17Z",
+      "homepage": null
+    },
+    {
+      "name": "heytea-diy-uploader",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/heytea-diy-uploader",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2025-11-17T06:23:10Z",
+      "homepage": "https://heytea-diy-uploader.vercel.app"
+    },
+    {
+      "name": "ComfyUI-ModelScope",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/ComfyUI-ModelScope",
+      "stargazers_count": 1,
+      "forks_count": 1,
+      "language": "Python",
+      "topics": [],
+      "updated_at": "2025-11-08T21:10:40Z",
+      "homepage": null
+    },
+    {
+      "name": "ComfyUI-Show-o",
+      "description": "A ComfyUI extension for Show-o Series",
+      "html_url": "https://github.com/neverbiasu/ComfyUI-Show-o",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "language": "Python",
+      "topics": [],
+      "updated_at": "2025-06-30T18:36:51Z",
+      "homepage": null
+    },
+    {
+      "name": "civitai-dl",
+      "description": "download models, images, and metadata from Civitai",
+      "html_url": "https://github.com/neverbiasu/civitai-dl",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "language": "Python",
+      "topics": [
+        "civitai",
+        "civitai-api",
+        "downloader",
+        "pypi-package"
+      ],
+      "updated_at": "2025-05-18T11:13:25Z",
+      "homepage": "https://pypi.org/project/civitai-dl/"
+    },
+    {
+      "name": "acdemicpage",
+      "description": "https://neverbiasu.github.io/",
+      "html_url": "https://github.com/neverbiasu/acdemicpage",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "updated_at": "2024-10-03T07:07:36Z",
+      "homepage": null
+    },
+    {
+      "name": "SAM2-WebUI",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/SAM2-WebUI",
+      "stargazers_count": 1,
+      "forks_count": 1,
+      "language": "Python",
+      "topics": [],
+      "updated_at": "2024-09-29T08:31:22Z",
+      "homepage": null
+    },
+    {
+      "name": "ChineseStyle",
+      "description": "An app introducing the traditional culture of Chinese in Chinese style.",
+      "html_url": "https://github.com/neverbiasu/ChineseStyle",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "language": "Java",
+      "topics": [
+        "android",
+        "android-app",
+        "android-application",
+        "android-development",
+        "android-studio",
+        "androidstudio"
+      ],
+      "updated_at": "2024-07-03T04:52:40Z",
+      "homepage": ""
+    },
+    {
+      "name": "dataset-cat",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/dataset-cat",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Python",
+      "topics": [],
+      "updated_at": "2025-12-16T15:26:13Z",
+      "homepage": null
+    },
+    {
+      "name": "ModelScope-Top-LoRAs",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/ModelScope-Top-LoRAs",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Python",
+      "topics": [],
+      "updated_at": "2025-12-16T03:19:33Z",
+      "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs"
+    },
+    {
+      "name": "awesome-gemini-prompts",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/awesome-gemini-prompts",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2025-12-16T02:36:46Z",
+      "homepage": "https://awesome-gemini-prompts.vercel.app"
+    },
+    {
+      "name": "calabiyau-data-vis",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/calabiyau-data-vis",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Vue",
+      "topics": [],
+      "updated_at": "2025-12-16T00:12:47Z",
+      "homepage": "https://calabiyau-data-vis.vercel.app"
+    },
+    {
+      "name": "neverbiasu",
+      "description": "README",
+      "html_url": "https://github.com/neverbiasu/neverbiasu",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": null,
+      "topics": [],
+      "updated_at": "2025-12-15T18:28:20Z",
+      "homepage": null
+    },
+    {
+      "name": "uofg-msc-cs-lab-exercise",
+      "description": "personal code repo of lab exercise in UofG MSc's CS",
+      "html_url": "https://github.com/neverbiasu/uofg-msc-cs-lab-exercise",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "updated_at": "2025-12-09T11:47:11Z",
+      "homepage": null
+    },
+    {
+      "name": "awesome-uofg-msc-cs",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/awesome-uofg-msc-cs",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "HTML",
+      "topics": [],
+      "updated_at": "2025-12-05T03:17:21Z",
+      "homepage": "https://awesome-uofg-msc-cs.vercel.app"
+    },
+    {
+      "name": "portfolio",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/portfolio",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2025-11-09T02:08:49Z",
+      "homepage": "https://portfolio-six-beta-56.vercel.app"
+    },
+    {
+      "name": "ComfyUI-QuickStart",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/ComfyUI-QuickStart",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": null,
+      "topics": [],
+      "updated_at": "2025-09-29T22:44:56Z",
+      "homepage": null
+    },
+    {
+      "name": "neverbiasu.github.io",
+      "description": "https://neverbiasu.github.io",
+      "html_url": "https://github.com/neverbiasu/neverbiasu.github.io",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2025-09-07T14:26:09Z",
+      "homepage": null
+    },
+    {
+      "name": "folo-daily",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/folo-daily",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2025-08-19T17:58:03Z",
+      "homepage": null
+    },
+    {
+      "name": "chat-ai-nav",
+      "description": "A Navigation station of Chat AI(Large Language Models).",
+      "html_url": "https://github.com/neverbiasu/chat-ai-nav",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2025-06-18T15:52:01Z",
+      "homepage": null
+    },
+    {
+      "name": "image-evaluator",
+      "description": "An automatic image evaluation script",
+      "html_url": "https://github.com/neverbiasu/image-evaluator",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Python",
+      "topics": [],
+      "updated_at": "2025-05-08T13:43:34Z",
+      "homepage": null
+    },
+    {
+      "name": "wechat-scrapper",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/wechat-scrapper",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Python",
+      "topics": [],
+      "updated_at": "2025-03-20T16:35:08Z",
+      "homepage": null
+    },
+    {
+      "name": "ComfyUI-Daily-Workflows",
+      "description": "A personal collections for ComfyUI Workflows",
+      "html_url": "https://github.com/neverbiasu/ComfyUI-Daily-Workflows",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": null,
+      "topics": [],
+      "updated_at": "2025-03-08T06:41:31Z",
+      "homepage": null
+    },
+    {
+      "name": "ComfyUI-DeepSeek",
+      "description": "A ComfyUI extension for DeepSeek(API)",
+      "html_url": "https://github.com/neverbiasu/ComfyUI-DeepSeek",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Python",
+      "topics": [
+        "comfyui",
+        "custom-nodes",
+        "deepseek",
+        "deepseek-r1",
+        "deepseek-v3"
+      ],
+      "updated_at": "2025-02-13T02:36:39Z",
+      "homepage": ""
+    },
+    {
+      "name": "ComfyUI_QuickStart",
+      "description": "Scripts to quick start ComfyUI with essential nodes and models.",
+      "html_url": "https://github.com/neverbiasu/ComfyUI_QuickStart",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Shell",
+      "topics": [],
+      "updated_at": "2025-02-10T19:30:32Z",
+      "homepage": null
+    },
+    {
+      "name": "next_front",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/next_front",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2025-02-10T06:41:53Z",
+      "homepage": "https://neverbiasu.one"
+    },
+    {
+      "name": "Awesome-Image-and-Video-Identity-Preserving-Generation",
+      "description": "A collection of papers on Image and Video Identity-Preserving Generation",
+      "html_url": "https://github.com/neverbiasu/Awesome-Image-and-Video-Identity-Preserving-Generation",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": null,
+      "topics": [],
+      "updated_at": "2025-02-05T15:17:12Z",
+      "homepage": null
+    },
+    {
+      "name": "stylization_frontend",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/stylization_frontend",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2025-01-02T10:15:44Z",
+      "homepage": "https://stylization-frontend.vercel.app/"
+    },
+    {
+      "name": "xiaoyan",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/xiaoyan",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2024-12-13T02:22:58Z",
+      "homepage": "https://leyao.vercel.app"
+    },
+    {
+      "name": "genie",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/genie",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Python",
+      "topics": [],
+      "updated_at": "2024-09-26T12:06:20Z",
+      "homepage": null
+    },
+    {
+      "name": "t2vtuber",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/t2vtuber",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Python",
+      "topics": [],
+      "updated_at": "2024-09-13T05:20:38Z",
+      "homepage": null
+    },
+    {
+      "name": "layerdivider",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/layerdivider",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Python",
+      "topics": [],
+      "updated_at": "2024-08-19T18:09:08Z",
+      "homepage": null
+    },
+    {
+      "name": "jsar-widget",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/jsar-widget",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2024-03-13T14:15:54Z",
+      "homepage": null
+    }
+  ],
+  "wakatime": {
+    "languages": []
+  },
+  "last_updated": "2025-12-16T18:02:55.193Z"
+}
