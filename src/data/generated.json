@@ -362,14 +362,36 @@
       "homepage": ""
     },
     {
-      "name": "dataset-cat",
+      "name": "portfolio",
       "description": null,
+      "html_url": "https://github.com/neverbiasu/portfolio",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2025-12-16T21:38:11Z",
+      "homepage": "https://portfolio-six-beta-56.vercel.app"
+    },
+    {
+      "name": "dataset-cat",
+      "description": "A web UI for scraping anime data, driven by waifuc",
       "html_url": "https://github.com/neverbiasu/dataset-cat",
       "stargazers_count": 0,
       "forks_count": 0,
       "language": "Python",
       "topics": [],
-      "updated_at": "2025-12-16T15:26:13Z",
+      "updated_at": "2025-12-16T19:31:27Z",
+      "homepage": null
+    },
+    {
+      "name": "neverbiasu",
+      "description": "README",
+      "html_url": "https://github.com/neverbiasu/neverbiasu",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": null,
+      "topics": [],
+      "updated_at": "2025-12-16T18:28:06Z",
       "homepage": null
     },
     {
@@ -406,17 +428,6 @@
       "homepage": "https://calabiyau-data-vis.vercel.app"
     },
     {
-      "name": "neverbiasu",
-      "description": "README",
-      "html_url": "https://github.com/neverbiasu/neverbiasu",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": null,
-      "topics": [],
-      "updated_at": "2025-12-15T18:28:20Z",
-      "homepage": null
-    },
-    {
       "name": "uofg-msc-cs-lab-exercise",
       "description": "personal code repo of lab exercise in UofG MSc's CS",
       "html_url": "https://github.com/neverbiasu/uofg-msc-cs-lab-exercise",
@@ -437,17 +448,6 @@
       "topics": [],
       "updated_at": "2025-12-05T03:17:21Z",
       "homepage": "https://awesome-uofg-msc-cs.vercel.app"
-    },
-    {
-      "name": "portfolio",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/portfolio",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "updated_at": "2025-11-09T02:08:49Z",
-      "homepage": "https://portfolio-six-beta-56.vercel.app"
     },
     {
       "name": "ComfyUI-QuickStart",
@@ -646,5 +646,5 @@
   "wakatime": {
     "languages": []
   },
-  "last_updated": "2025-12-16T18:02:55.193Z"
+  "last_updated": "2025-12-17T00:41:30.287Z"
 }
