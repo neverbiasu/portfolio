@@ -103,7 +103,7 @@
         "comfyui-nodes",
         "comfyui-workflow"
       ],
-      "updated_at": "2025-12-16T01:54:20Z",
+      "updated_at": "2025-12-17T01:49:41Z",
       "homepage": ""
     },
     {
@@ -236,17 +236,6 @@
       "homepage": ""
     },
     {
-      "name": "ComfyUI-ControlNeXt",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/ComfyUI-ControlNeXt",
-      "stargazers_count": 3,
-      "forks_count": 1,
-      "language": "Python",
-      "topics": [],
-      "updated_at": "2025-04-16T14:36:44Z",
-      "homepage": null
-    },
-    {
       "name": "zotero-addon-template",
       "description": null,
       "html_url": "https://github.com/neverbiasu/zotero-addon-template",
@@ -322,17 +311,6 @@
       "homepage": "https://pypi.org/project/civitai-dl/"
     },
     {
-      "name": "acdemicpage",
-      "description": "https://neverbiasu.github.io/",
-      "html_url": "https://github.com/neverbiasu/acdemicpage",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "language": "JavaScript",
-      "topics": [],
-      "updated_at": "2024-10-03T07:07:36Z",
-      "homepage": null
-    },
-    {
       "name": "SAM2-WebUI",
       "description": null,
       "html_url": "https://github.com/neverbiasu/SAM2-WebUI",
@@ -362,6 +340,50 @@
       "homepage": ""
     },
     {
+      "name": "calabiyau-data-vis",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/calabiyau-data-vis",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Vue",
+      "topics": [],
+      "updated_at": "2025-12-17T19:16:12Z",
+      "homepage": "https://calabiyau-data-vis.vercel.app"
+    },
+    {
+      "name": "neverbiasu",
+      "description": "README",
+      "html_url": "https://github.com/neverbiasu/neverbiasu",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": null,
+      "topics": [],
+      "updated_at": "2025-12-17T18:28:36Z",
+      "homepage": null
+    },
+    {
+      "name": "ModelScope-Top-LoRAs",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/ModelScope-Top-LoRAs",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Python",
+      "topics": [],
+      "updated_at": "2025-12-17T03:15:30Z",
+      "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs"
+    },
+    {
+      "name": "awesome-gemini-prompts",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/awesome-gemini-prompts",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2025-12-17T02:25:44Z",
+      "homepage": "https://awesome-gemini-prompts.vercel.app"
+    },
+    {
       "name": "portfolio",
       "description": null,
       "html_url": "https://github.com/neverbiasu/portfolio",
@@ -369,7 +391,7 @@
       "forks_count": 0,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2025-12-16T21:38:11Z",
+      "updated_at": "2025-12-17T00:41:34Z",
       "homepage": "https://portfolio-six-beta-56.vercel.app"
     },
     {
@@ -382,50 +404,6 @@
       "topics": [],
       "updated_at": "2025-12-16T19:31:27Z",
       "homepage": null
-    },
-    {
-      "name": "neverbiasu",
-      "description": "README",
-      "html_url": "https://github.com/neverbiasu/neverbiasu",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": null,
-      "topics": [],
-      "updated_at": "2025-12-16T18:28:06Z",
-      "homepage": null
-    },
-    {
-      "name": "ModelScope-Top-LoRAs",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/ModelScope-Top-LoRAs",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "Python",
-      "topics": [],
-      "updated_at": "2025-12-16T03:19:33Z",
-      "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs"
-    },
-    {
-      "name": "awesome-gemini-prompts",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/awesome-gemini-prompts",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "updated_at": "2025-12-16T02:36:46Z",
-      "homepage": "https://awesome-gemini-prompts.vercel.app"
-    },
-    {
-      "name": "calabiyau-data-vis",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/calabiyau-data-vis",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "Vue",
-      "topics": [],
-      "updated_at": "2025-12-16T00:12:47Z",
-      "homepage": "https://calabiyau-data-vis.vercel.app"
     },
     {
       "name": "uofg-msc-cs-lab-exercise",
@@ -646,5 +624,5 @@
   "wakatime": {
     "languages": []
   },
-  "last_updated": "2025-12-17T00:41:30.287Z"
+  "last_updated": "2025-12-18T00:40:40.474Z"
 }
