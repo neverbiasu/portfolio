@@ -79,7 +79,7 @@
       "name": "ComfyUI-Image-Captioner",
       "description": "A ComfyUI extension for generating captions of images.",
       "html_url": "https://github.com/neverbiasu/ComfyUI-Image-Captioner",
-      "stargazers_count": 21,
+      "stargazers_count": 22,
       "forks_count": 6,
       "language": "Python",
       "topics": [
@@ -87,7 +87,7 @@
         "comfyui-nodes",
         "comfyui-workflow"
       ],
-      "updated_at": "2025-12-15T15:03:41Z",
+      "updated_at": "2025-12-25T05:35:32Z",
       "homepage": ""
     },
     {
@@ -103,7 +103,7 @@
         "comfyui-nodes",
         "comfyui-workflow"
       ],
-      "updated_at": "2025-12-24T01:53:06Z",
+      "updated_at": "2025-12-25T18:40:26Z",
       "homepage": ""
     },
     {
@@ -340,6 +340,17 @@
       "homepage": ""
     },
     {
+      "name": "deepmind-exercise",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/deepmind-exercise",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "updated_at": "2025-12-25T18:38:42Z",
+      "homepage": null
+    },
+    {
       "name": "neverbiasu",
       "description": "README",
       "html_url": "https://github.com/neverbiasu/neverbiasu",
@@ -347,19 +358,8 @@
       "forks_count": 0,
       "language": null,
       "topics": [],
-      "updated_at": "2025-12-24T18:26:46Z",
+      "updated_at": "2025-12-25T18:26:00Z",
       "homepage": null
-    },
-    {
-      "name": "awesome-gemini-prompts",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/awesome-gemini-prompts",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "updated_at": "2025-12-24T15:12:26Z",
-      "homepage": "https://awesome-gemini-prompts.vercel.app"
     },
     {
       "name": "ModelScope-Top-LoRAs",
@@ -369,8 +369,19 @@
       "forks_count": 0,
       "language": "Python",
       "topics": [],
-      "updated_at": "2025-12-24T03:19:03Z",
+      "updated_at": "2025-12-25T03:21:51Z",
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs"
+    },
+    {
+      "name": "awesome-gemini-prompts",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/awesome-gemini-prompts",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2025-12-25T02:37:14Z",
+      "homepage": "https://awesome-gemini-prompts.vercel.app"
     },
     {
       "name": "portfolio",
@@ -380,7 +391,7 @@
       "forks_count": 0,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2025-12-24T00:44:24Z",
+      "updated_at": "2025-12-25T00:44:09Z",
       "homepage": "https://portfolio-six-beta-56.vercel.app"
     },
     {
@@ -624,5 +635,5 @@
   "wakatime": {
     "languages": []
   },
-  "last_updated": "2025-12-25T00:44:05.125Z"
+  "last_updated": "2025-12-26T00:44:17.748Z"
 }
