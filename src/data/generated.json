@@ -103,7 +103,7 @@
         "comfyui-nodes",
         "comfyui-workflow"
       ],
-      "updated_at": "2025-12-25T18:40:26Z",
+      "updated_at": "2025-12-27T01:52:03Z",
       "homepage": ""
     },
     {
@@ -262,17 +262,6 @@
       "homepage": null
     },
     {
-      "name": "heytea-diy-uploader",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/heytea-diy-uploader",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "updated_at": "2025-11-17T06:23:10Z",
-      "homepage": "https://heytea-diy-uploader.vercel.app"
-    },
-    {
       "name": "ComfyUI-ModelScope",
       "description": null,
       "html_url": "https://github.com/neverbiasu/ComfyUI-ModelScope",
@@ -280,7 +269,7 @@
       "forks_count": 1,
       "language": "Python",
       "topics": [],
-      "updated_at": "2025-11-08T21:10:40Z",
+      "updated_at": "2025-12-27T21:26:46Z",
       "homepage": null
     },
     {
@@ -340,17 +329,6 @@
       "homepage": ""
     },
     {
-      "name": "awesome-gemini-prompts",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/awesome-gemini-prompts",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "updated_at": "2025-12-27T00:33:40Z",
-      "homepage": "https://awesome-gemini-prompts.vercel.app"
-    },
-    {
       "name": "neverbiasu",
       "description": "README",
       "html_url": "https://github.com/neverbiasu/neverbiasu",
@@ -358,7 +336,7 @@
       "forks_count": 0,
       "language": null,
       "topics": [],
-      "updated_at": "2025-12-26T18:26:28Z",
+      "updated_at": "2025-12-27T18:24:49Z",
       "homepage": null
     },
     {
@@ -369,7 +347,7 @@
       "forks_count": 0,
       "language": "Python",
       "topics": [],
-      "updated_at": "2025-12-26T03:20:02Z",
+      "updated_at": "2025-12-27T03:18:20Z",
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs"
     },
     {
@@ -380,7 +358,7 @@
       "forks_count": 0,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2025-12-26T00:44:21Z",
+      "updated_at": "2025-12-27T00:43:26Z",
       "homepage": "https://portfolio-six-beta-56.vercel.app"
     },
     {
@@ -414,17 +392,6 @@
       "language": "Python",
       "topics": [],
       "updated_at": "2025-12-16T19:31:27Z",
-      "homepage": null
-    },
-    {
-      "name": "uofg-msc-cs-lab-exercise",
-      "description": "personal code repo of lab exercise in UofG MSc's CS",
-      "html_url": "https://github.com/neverbiasu/uofg-msc-cs-lab-exercise",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "Jupyter Notebook",
-      "topics": [],
-      "updated_at": "2025-12-09T11:47:11Z",
       "homepage": null
     },
     {
@@ -635,5 +602,5 @@
   "wakatime": {
     "languages": []
   },
-  "last_updated": "2025-12-27T00:43:22.280Z"
+  "last_updated": "2025-12-28T00:51:41.485Z"
 }
