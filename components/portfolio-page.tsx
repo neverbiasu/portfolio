@@ -162,7 +162,7 @@ export function PortfolioPage() {
         >
           <div
             ref={terminalRef}
-            className="h-full overflow-y-auto overflow-x-hidden pr-2"
+            className="h-full overflow-y-auto overflow-x-hidden pr-2 terminal-scrollbar"
           >
             {history}
             <form
