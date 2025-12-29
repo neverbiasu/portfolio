@@ -46,7 +46,7 @@ export function PortfolioPage() {
 
   const [history, setHistory] = useState<React.ReactNode[]>([]);
   const [input, setInput] = useState('');
-  const terminalRef = useRef<HTMLDivElement>(null);
+  const historyRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
   // Available commands for Tab completion
@@ -108,10 +108,10 @@ export function PortfolioPage() {
     ]);
   }, [whoamiNode, copy.welcomeHint]);
 
-  // Effect for auto-scrolling
+  // Effect for auto-scrolling to bottom when history changes
   useEffect(() => {
-    if (terminalRef.current) {
-      terminalRef.current.scrollTop = terminalRef.current.scrollHeight;
+    if (historyRef.current) {
+      historyRef.current.scrollTop = historyRef.current.scrollHeight;
     }
   }, [history]);
 
@@ -160,11 +160,13 @@ export function PortfolioPage() {
           title={`faysh`}
           className="h-[60vh] min-h-[300px]"
         >
-          <div
-            ref={terminalRef}
+          {/* Terminal content - single scrollable area */}
+          <div 
+            ref={historyRef}
             className="h-full overflow-y-auto overflow-x-hidden pr-2 terminal-scrollbar"
           >
             {history}
+            {/* Input form - flows after history */}
             <form
               onSubmit={handleCommandSubmit}
               className="font-mono"

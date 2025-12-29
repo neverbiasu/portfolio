@@ -77,34 +77,41 @@ a {
   background-color: var(--mocha-primary);
 }
 
-/* Terminal-specific Scrollbar - Thinner and more subtle */
+/* Terminal-specific Scrollbar - Force visible on macOS */
+.terminal-scrollbar {
+  /* Reserve space for scrollbar to prevent content jump */
+  scrollbar-gutter: stable;
+  /* Override macOS overlay scrollbar behavior */
+  -webkit-overflow-scrolling: touch;
+}
+
 .terminal-scrollbar::-webkit-scrollbar {
-  width: 6px;
+  width: 10px;
+  -webkit-appearance: none;
 }
 
 .terminal-scrollbar::-webkit-scrollbar-track {
-  background: transparent;
-  margin: 4px 0;
+  background: rgba(49, 50, 68, 0.6);
+  border-radius: 5px;
 }
 
 .terminal-scrollbar::-webkit-scrollbar-thumb {
-  background-color: rgba(88, 91, 112, 0.4);
-  border-radius: 3px;
-  transition: background-color 0.2s ease;
+  background-color: rgba(88, 91, 112, 1);
+  border-radius: 5px;
+  border: 2px solid rgba(49, 50, 68, 0.6);
+  min-height: 40px;
 }
 
 .terminal-scrollbar::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(137, 180, 250, 0.6);
+  background-color: rgba(137, 180, 250, 1);
 }
 
 /* Firefox Scrollbar Support */
-.terminal-scrollbar {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(88, 91, 112, 0.4) transparent;
-}
-
-.terminal-scrollbar:hover {
-  scrollbar-color: rgba(137, 180, 250, 0.6) transparent;
+@supports (scrollbar-width: thin) {
+  .terminal-scrollbar {
+    scrollbar-width: auto;
+    scrollbar-color: rgba(88, 91, 112, 1) rgba(49, 50, 68, 0.6);
+  }
 }
 
 @layer utilities {
