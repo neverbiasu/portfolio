@@ -20,18 +20,29 @@ interface GithubRepo {
 }
 
 interface WakatimeStats {
-  languages: { name: string; percent: number; text: string }[];
-  total_seconds?: number;
-  daily_average?: number;
+  languages: { name: string; percent: number; text: string; total_seconds: number }[];
+  editors: { name: string; percent: number; text: string }[];
+  operating_systems: { name: string; percent: number; text: string }[];
+  total_seconds: number;
+  human_readable_total: string;
+  daily_average: number;
+  human_readable_daily_average: string;
+  best_day?: {
+    date: string;
+    text: string;
+    total_seconds: number;
+  };
+  range: string;
 }
 
 interface GeneratedData {
   github: GithubRepo[];
-  wakatime: WakatimeStats;
+  wakatime: WakatimeStats | null;
   last_updated: string;
 }
 
 const GITHUB_USERNAME = process.env.GITHUB_USERNAME || 'neverbiasu';
+const WAKATIME_API_KEY = process.env.WAKATIME_API_KEY;
 const DATA_PATH = path.join(process.cwd(), 'src/data/generated.json');
 
 async function fetchGithubData(): Promise<GithubRepo[]> {
@@ -77,14 +88,66 @@ async function fetchGithubData(): Promise<GithubRepo[]> {
   }
 }
 
-async function fetchWakatimeData(): Promise<WakatimeStats> {
-  // Placeholder for Wakatime fetch logic
-  // Needs WAKATIME_API_KEY
+async function fetchWakatimeData(): Promise<WakatimeStats | null> {
   console.log('Fetching Wakatime data...');
-  // Logic to be implemented or mocked if no key
-  return {
-    languages: [],
-  };
+  
+  if (!WAKATIME_API_KEY) {
+    console.log('WAKATIME_API_KEY not set, skipping Wakatime data fetch');
+    return null;
+  }
+
+  try {
+    // Wakatime uses HTTP Basic Auth with API key as username and empty password
+    const authString = Buffer.from(`${WAKATIME_API_KEY}:`).toString('base64');
+    
+    const response = await fetch(
+      'https://wakatime.com/api/v1/users/current/stats/last_7_days',
+      {
+        headers: {
+          'Authorization': `Basic ${authString}`,
+        },
+      }
+    );
+
+    if (!response.ok) {
+      throw new Error(`Wakatime API error: ${response.status} ${response.statusText}`);
+    }
+
+    const json = await response.json();
+    const data = json.data;
+
+    return {
+      languages: (data.languages || []).slice(0, 10).map((lang: any) => ({
+        name: lang.name,
+        percent: lang.percent,
+        text: lang.text,
+        total_seconds: lang.total_seconds,
+      })),
+      editors: (data.editors || []).slice(0, 5).map((editor: any) => ({
+        name: editor.name,
+        percent: editor.percent,
+        text: editor.text,
+      })),
+      operating_systems: (data.operating_systems || []).slice(0, 3).map((os: any) => ({
+        name: os.name,
+        percent: os.percent,
+        text: os.text,
+      })),
+      total_seconds: data.total_seconds || 0,
+      human_readable_total: data.human_readable_total || '0 hrs',
+      daily_average: data.daily_average || 0,
+      human_readable_daily_average: data.human_readable_daily_average || '0 hrs',
+      best_day: data.best_day ? {
+        date: data.best_day.date,
+        text: data.best_day.text,
+        total_seconds: data.best_day.total_seconds,
+      } : undefined,
+      range: data.human_readable_range || 'last 7 days',
+    };
+  } catch (error) {
+    console.error('Error fetching Wakatime data:', error);
+    return null;
+  }
 }
 
 async function main() {

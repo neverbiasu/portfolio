@@ -210,3 +210,7 @@ export const socialLinks = [
     href: "https://www.linkedin.com/in/feichi-chen-968907283/",
   },
 ] as const;
+
+// Wakatime stats
+export const wakatimeStats = (generatedData as any).wakatime || null;
+

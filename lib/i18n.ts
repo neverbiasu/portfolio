@@ -27,6 +27,7 @@ export type SectionCopy = {
     whoami: string;
     skills: string;
     projects: string;
+    stats: string;
     clear: string;
   };
 };
@@ -65,6 +66,7 @@ export const copy: CopyMap = {
       whoami: "Display my profile information",
       skills: "List my core technical skills",
       projects: "Show my selected projects",
+      stats: "Display my coding statistics (Wakatime)",
       clear: "Clear the terminal screen",
     },
   },
@@ -96,6 +98,7 @@ export const copy: CopyMap = {
       whoami: "显示我的个人简介",
       skills: "列出我的核心技术栈",
       projects: "展示我的精选项目",
+      stats: "显示我的编程统计 (Wakatime)",
       clear: "清空终端屏幕",
     },
   },
