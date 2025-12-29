@@ -12,7 +12,11 @@ interface GithubRepo {
   language: string;
   topics: string[];
   updated_at: string;
+  created_at: string;
   homepage?: string; // Live demo URL
+  license?: string; // SPDX license ID
+  open_issues_count: number;
+  size: number; // Repository size in KB
 }
 
 interface WakatimeStats {
@@ -60,7 +64,11 @@ async function fetchGithubData(): Promise<GithubRepo[]> {
         language: repo.language,
         topics: repo.topics,
         updated_at: repo.updated_at,
+        created_at: repo.created_at,
         homepage: repo.homepage,
+        license: repo.license?.spdx_id || null,
+        open_issues_count: repo.open_issues_count,
+        size: repo.size,
       }))
       .sort((a, b) => b.stargazers_count - a.stargazers_count); // Sort by stars
   } catch (error) {

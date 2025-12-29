@@ -3,13 +3,30 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Star, GitFork, Calendar, Code2, ExternalLink } from 'lucide-react';
+import { Star, GitFork, Calendar, Scale, AlertCircle, ExternalLink, Github, Clock } from 'lucide-react';
 import type { Project } from '@/lib/content';
 import type { Locale } from '@/lib/i18n';
+import { getLanguageColor } from '@/lib/language-colors';
 
 interface Props {
   project: Project;
   locale: Locale;
+}
+
+// Format file size from KB to readable format
+function formatSize(sizeKB: number | undefined): string {
+  if (!sizeKB) return '-';
+  if (sizeKB < 1024) return `${sizeKB} KB`;
+  return `${(sizeKB / 1024).toFixed(1)} MB`;
+}
+
+// Format date to short format
+function formatDate(dateString: string | undefined, locale: Locale): string {
+  if (!dateString) return '-';
+  return new Date(dateString).toLocaleDateString(
+    locale === 'zh' ? 'zh-CN' : 'en-US',
+    { year: 'numeric', month: 'short' }
+  );
 }
 
 export function ProjectCard({ project, locale }: Props) {
@@ -18,6 +35,7 @@ export function ProjectCard({ project, locale }: Props) {
 
   const title = project.title[locale];
   const summary = project.summary[locale];
+  const languageColor = getLanguageColor(project.language);
 
   const handleFlip = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -27,115 +45,210 @@ export function ProjectCard({ project, locale }: Props) {
     }
   };
 
-  const roundedStars = project.stars 
-    ? (project.stars > 1000 ? `${(project.stars / 1000).toFixed(1)}k` : project.stars)
-    : 0;
-  
-  const roundedForks = project.forks
-    ? (project.forks > 1000 ? `${(project.forks / 1000).toFixed(1)}k` : project.forks)
-    : 0;
-
-  const lastUpdate = project.lastUpdate 
-    ? new Date(project.lastUpdate).toLocaleDateString(locale === 'zh' ? 'zh-CN' : 'en-US', { year: 'numeric', month: 'short', day: 'numeric' })
-    : '';
+  // Display up to 3 tags, show +N for rest
+  const displayTopics = project.topics?.slice(0, 3) || [];
+  const remainingTopics = (project.topics?.length || 0) - 3;
 
   return (
     <div 
-      className="relative w-full h-64 md:h-72 cursor-pointer group perspective-1000"
+      className="relative w-full h-72 md:h-80 cursor-pointer group perspective-1000"
       onClick={handleFlip}
     >
       <motion.div
         className="w-full h-full relative preserve-3d"
         initial={false}
         animate={{ rotateY: isFlipped ? 180 : 0 }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.6, ease: "easeInOut" }}
         onAnimationComplete={() => setIsAnimating(false)}
       >
-        {/* --- FRONT SIDE --- */}
+        {/* === FRONT SIDE === */}
         <div className="absolute w-full h-full backface-hidden">
-          <article className="glassless-panel w-full h-full flex flex-col justify-between rounded-surface p-6 border-2 border-mocha-surface bg-mocha-base/80 hover:border-mocha-primary/50 transition-colors">
+          <article className="w-full h-full flex flex-col rounded-lg overflow-hidden border-2 border-mocha-surface hover:border-mocha-primary/50 transition-all duration-300 bg-gradient-to-br from-mocha-base to-mocha-surface shadow-lg hover:shadow-xl hover:shadow-mocha-primary/10">
             
-            {/* Top: Header */}
-            <div>
-              <div className="flex justify-between items-start mb-2">
-                 <h3 className="text-xl font-bold font-mono text-mocha-primary line-clamp-2">{title}</h3>
-                 <div className="flex gap-2">
-                   {project.stars !== undefined && (
-                     <div className="flex items-center gap-1 text-mocha-yellow bg-mocha-surface/50 px-2 py-1 rounded-full text-xs font-mono">
-                       <Star className="w-3 h-3 fill-current" />
-                       <span>{roundedStars}</span>
-                     </div>
-                   )}
-                   {project.forks !== undefined && project.forks > 0 && (
-                     <div className="flex items-center gap-1 text-mocha-mauve bg-mocha-surface/50 px-2 py-1 rounded-full text-xs font-mono">
-                       <GitFork className="w-3 h-3" />
-                       <span>{roundedForks}</span>
-                     </div>
-                   )}
-                 </div>
+            {/* Language Bar */}
+            <div 
+              className="h-1.5 w-full"
+              style={{ backgroundColor: languageColor }}
+            />
+            
+            {/* Header */}
+            <div className="p-5 flex-1 flex flex-col">
+              {/* Title Row */}
+              <div className="flex justify-between items-start gap-2 mb-3">
+                <div className="flex items-center gap-2 min-w-0">
+                  {project.language && (
+                    <span 
+                      className="w-3 h-3 rounded-full shrink-0"
+                      style={{ backgroundColor: languageColor }}
+                      title={project.language}
+                    />
+                  )}
+                  <h3 className="text-lg font-bold font-mono text-mocha-text truncate">
+                    {title}
+                  </h3>
+                </div>
+                
+                {/* Stats Badges */}
+                <div className="flex gap-1.5 shrink-0">
+                  {project.stars !== undefined && project.stars > 0 && (
+                    <div className="flex items-center gap-1 text-mocha-yellow bg-mocha-yellow/10 px-2 py-0.5 rounded-full text-xs font-mono">
+                      <Star className="w-3 h-3 fill-current" />
+                      <span>{project.stars}</span>
+                    </div>
+                  )}
+                  {project.forks !== undefined && project.forks > 0 && (
+                    <div className="flex items-center gap-1 text-mocha-mauve bg-mocha-mauve/10 px-2 py-0.5 rounded-full text-xs font-mono">
+                      <GitFork className="w-3 h-3" />
+                      <span>{project.forks}</span>
+                    </div>
+                  )}
+                </div>
               </div>
-              <p className="mt-2 text-sm text-mocha-text/80 leading-relaxed font-sans">{summary}</p>
+
+              {/* Description */}
+              <p className="text-sm text-mocha-text/70 leading-relaxed line-clamp-3 mb-4">
+                {summary}
+              </p>
+
+              {/* Topics */}
+              {displayTopics.length > 0 && (
+                <div className="flex flex-wrap gap-1.5 mt-auto">
+                  {displayTopics.map((topic) => (
+                    <span
+                      key={topic}
+                      className="px-2 py-0.5 text-xs font-mono rounded bg-mocha-surface text-mocha-subtext border border-mocha-surface hover:border-mocha-primary/30 transition-colors"
+                    >
+                      {topic}
+                    </span>
+                  ))}
+                  {remainingTopics > 0 && (
+                    <span className="px-2 py-0.5 text-xs font-mono rounded bg-mocha-overlay text-mocha-subtext">
+                      +{remainingTopics}
+                    </span>
+                  )}
+                </div>
+              )}
             </div>
 
-            {/* Bottom: Hint */}
-            <div className="mt-4 flex items-center justify-center opacity-0 group-hover:opacity-60 transition-opacity">
-               <span className="text-xs font-mono text-mocha-subtle">[ Click to flip ]</span>
+            {/* Footer Hint */}
+            <div className="px-5 py-3 border-t border-mocha-surface/50 flex items-center justify-center opacity-0 group-hover:opacity-60 transition-opacity">
+              <span className="text-xs font-mono text-mocha-subtext">
+                {locale === 'zh' ? '[ 点击查看详情 ]' : '[ Click for details ]'}
+              </span>
             </div>
           </article>
         </div>
 
-        {/* --- BACK SIDE --- */}
+        {/* === BACK SIDE (Game Card Style) === */}
         <div 
           className="absolute w-full h-full backface-hidden"
           style={{ transform: 'rotateY(180deg)' }}
         >
-          <article className="glassless-panel w-full h-full flex flex-col justify-between rounded-surface p-6 border-2 border-mocha-primary bg-mocha-surface/90">
-             
-             {/* Tech Stack */}
-             <div>
-               <h4 className="text-sm font-bold text-mocha-subtle uppercase tracking-wider mb-3 font-mono">Tech Stack</h4>
-               <ul className="flex flex-wrap gap-2">
-                {project.tech.map((tech) => (
-                  <li
-                    key={tech}
-                    className="flex items-center gap-1 rounded px-2 py-1 bg-mocha-base text-xs font-mono text-mocha-blue"
-                  >
-                    <Code2 className="w-3 h-3" />
-                    {tech}
-                  </li>
-                ))}
-              </ul>
-             </div>
-
-             {/* Meta Info */}
-             <div className="space-y-4">
-                {lastUpdate && (
-                  <div className="flex items-center gap-2 text-xs font-mono text-mocha-text/60">
-                    <Calendar className="w-3 h-3" />
-                    <span>Updated: {lastUpdate}</span>
-                  </div>
-                )}
-                
-                <div className="flex flex-wrap gap-3 pt-4 border-t border-mocha-text/10">
-                  {project.links.map((link) => (
-                    <a
-                      key={`${project.title.en}-${link.label}`}
-                      href={link.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-1.5 text-sm font-bold font-mono text-mocha-base bg-mocha-primary hover:bg-mocha-blue hover:text-white px-3 py-1.5 rounded transition-colors"
-                      onClick={(e) => e.stopPropagation()} // Prevent flip when clicking link
-                    >
-                      <span>{link.label}</span>
-                      <ExternalLink className="w-3 h-3" />
-                    </a>
-                  ))}
+          <article className="w-full h-full flex flex-col rounded-lg overflow-hidden border-2 border-mocha-primary bg-gradient-to-br from-mocha-surface to-mocha-base shadow-lg">
+            
+            {/* Section: STATS */}
+            <div className="px-4 py-3 border-b border-mocha-overlay/50">
+              <h4 className="text-[10px] font-bold text-mocha-subtext uppercase tracking-widest mb-2 font-mono">
+                {locale === 'zh' ? '数据' : 'STATS'}
+              </h4>
+              <div className="grid grid-cols-2 gap-x-4 gap-y-2">
+                <div className="flex items-center gap-2">
+                  <Star className="w-3.5 h-3.5 text-mocha-yellow" />
+                  <span className="text-xs text-mocha-subtext">Stars</span>
+                  <span className="text-xs font-mono text-mocha-text ml-auto">{project.stars || 0}</span>
                 </div>
-             </div>
+                <div className="flex items-center gap-2">
+                  <GitFork className="w-3.5 h-3.5 text-mocha-mauve" />
+                  <span className="text-xs text-mocha-subtext">Forks</span>
+                  <span className="text-xs font-mono text-mocha-text ml-auto">{project.forks || 0}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <AlertCircle className="w-3.5 h-3.5 text-mocha-peach" />
+                  <span className="text-xs text-mocha-subtext">Issues</span>
+                  <span className="text-xs font-mono text-mocha-text ml-auto">{project.openIssues || 0}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Scale className="w-3.5 h-3.5 text-mocha-teal" />
+                  <span className="text-xs text-mocha-subtext">Size</span>
+                  <span className="text-xs font-mono text-mocha-text ml-auto">{formatSize(project.size)}</span>
+                </div>
+              </div>
+            </div>
 
+            {/* Section: INFO */}
+            <div className="px-4 py-3 border-b border-mocha-overlay/50 flex-1">
+              <h4 className="text-[10px] font-bold text-mocha-subtext uppercase tracking-widest mb-2 font-mono">
+                {locale === 'zh' ? '信息' : 'INFO'}
+              </h4>
+              <div className="space-y-2">
+                {/* Language */}
+                <div className="flex items-center gap-2">
+                  <span 
+                    className="w-3 h-3 rounded-full shrink-0"
+                    style={{ backgroundColor: languageColor }}
+                  />
+                  <span className="text-xs text-mocha-subtext">{locale === 'zh' ? '语言' : 'Language'}</span>
+                  <span className="text-xs font-mono text-mocha-text ml-auto">{project.language || '-'}</span>
+                </div>
+                {/* License */}
+                <div className="flex items-center gap-2">
+                  <Scale className="w-3 h-3 text-mocha-green" />
+                  <span className="text-xs text-mocha-subtext">{locale === 'zh' ? '许可证' : 'License'}</span>
+                  <span className="text-xs font-mono text-mocha-text ml-auto">{project.license || '-'}</span>
+                </div>
+                {/* Created */}
+                <div className="flex items-center gap-2">
+                  <Calendar className="w-3 h-3 text-mocha-blue" />
+                  <span className="text-xs text-mocha-subtext">{locale === 'zh' ? '创建' : 'Created'}</span>
+                  <span className="text-xs font-mono text-mocha-text ml-auto">{formatDate(project.createdAt, locale)}</span>
+                </div>
+                {/* Updated */}
+                <div className="flex items-center gap-2">
+                  <Clock className="w-3 h-3 text-mocha-lavender" />
+                  <span className="text-xs text-mocha-subtext">{locale === 'zh' ? '更新' : 'Updated'}</span>
+                  <span className="text-xs font-mono text-mocha-text ml-auto">{formatDate(project.lastUpdate, locale)}</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Section: LINKS */}
+            <div className="px-4 py-3">
+              <h4 className="text-[10px] font-bold text-mocha-subtext uppercase tracking-widest mb-2 font-mono">
+                {locale === 'zh' ? '链接' : 'LINKS'}
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                {/* GitHub Link */}
+                {project.links.find(l => l.href.includes('github.com')) && (
+                  <a
+                    href={project.links.find(l => l.href.includes('github.com'))?.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 text-xs font-mono font-bold text-mocha-base bg-mocha-text hover:bg-mocha-blue px-3 py-1.5 rounded transition-colors"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <Github className="w-3.5 h-3.5" />
+                    <span>GitHub</span>
+                  </a>
+                )}
+                {/* Demo Link (homepage) */}
+                {project.homepage && (
+                  <a
+                    href={project.homepage}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 text-xs font-mono font-bold text-mocha-base bg-mocha-green hover:bg-mocha-teal px-3 py-1.5 rounded transition-colors"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <ExternalLink className="w-3.5 h-3.5" />
+                    <span>Demo</span>
+                  </a>
+                )}
+              </div>
+            </div>
           </article>
         </div>
       </motion.div>
     </div>
   );
 }
+

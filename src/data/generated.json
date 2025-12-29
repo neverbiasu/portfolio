@@ -13,7 +13,11 @@
         "custom-nodes"
       ],
       "updated_at": "2025-12-13T16:52:56Z",
-      "homepage": ""
+      "created_at": "2024-08-01T13:58:47Z",
+      "homepage": "",
+      "license": null,
+      "open_issues_count": 2,
+      "size": 1549
     },
     {
       "name": "ComfyUI-BAGEL",
@@ -29,7 +33,11 @@
         "custom-nodes"
       ],
       "updated_at": "2025-11-25T03:18:14Z",
-      "homepage": ""
+      "created_at": "2025-05-25T14:05:45Z",
+      "homepage": "",
+      "license": "Apache-2.0",
+      "open_issues_count": 24,
+      "size": 15291
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -40,7 +48,11 @@
       "language": "Python",
       "topics": [],
       "updated_at": "2025-11-15T17:19:05Z",
-      "homepage": null
+      "created_at": "2025-06-24T15:42:53Z",
+      "homepage": null,
+      "license": null,
+      "open_issues_count": 9,
+      "size": 46030
     },
     {
       "name": "IELTSDuck",
@@ -51,7 +63,11 @@
       "language": "Jupyter Notebook",
       "topics": [],
       "updated_at": "2025-12-03T11:08:52Z",
-      "homepage": null
+      "created_at": "2024-03-25T13:25:55Z",
+      "homepage": null,
+      "license": "Apache-2.0",
+      "open_issues_count": 1,
+      "size": 26167
     },
     {
       "name": "Awesome-Portraits-Style-Transfer",
@@ -73,7 +89,15 @@
         "stylization"
       ],
       "updated_at": "2025-12-28T22:23:56Z",
+<<<<<<< HEAD
       "homepage": ""
+=======
+      "created_at": "2024-01-31T15:47:36Z",
+      "homepage": "",
+      "license": "Apache-2.0",
+      "open_issues_count": 0,
+      "size": 1577
+>>>>>>> 85c67f2 (feat: enhance project cards with game-card style design)
     },
     {
       "name": "ComfyUI-Image-Captioner",
@@ -88,7 +112,15 @@
         "comfyui-workflow"
       ],
       "updated_at": "2025-12-25T05:35:32Z",
+<<<<<<< HEAD
       "homepage": ""
+=======
+      "created_at": "2024-07-26T08:18:09Z",
+      "homepage": "",
+      "license": "MIT",
+      "open_issues_count": 1,
+      "size": 420
+>>>>>>> 85c67f2 (feat: enhance project cards with game-card style design)
     },
     {
       "name": "Awesome-ComfyUI-Video",
@@ -104,7 +136,15 @@
         "comfyui-workflow"
       ],
       "updated_at": "2025-12-28T02:05:22Z",
+<<<<<<< HEAD
       "homepage": ""
+=======
+      "created_at": "2025-04-25T15:41:44Z",
+      "homepage": "",
+      "license": "MIT",
+      "open_issues_count": 1,
+      "size": 6864
+>>>>>>> 85c67f2 (feat: enhance project cards with game-card style design)
     },
     {
       "name": "ComfyUI-StyleShot",
@@ -120,7 +160,11 @@
         "custom-nodes"
       ],
       "updated_at": "2025-11-11T15:55:35Z",
-      "homepage": ""
+      "created_at": "2024-08-20T16:57:35Z",
+      "homepage": "",
+      "license": "MIT",
+      "open_issues_count": 2,
+      "size": 422
     },
     {
       "name": "ComfyUI-KittenTTS",
@@ -131,7 +175,11 @@
       "language": "Python",
       "topics": [],
       "updated_at": "2025-11-07T21:43:55Z",
-      "homepage": null
+      "created_at": "2025-08-09T18:40:21Z",
+      "homepage": null,
+      "license": "Apache-2.0",
+      "open_issues_count": 0,
+      "size": 540
     },
     {
       "name": "hf-mirror-hub",
@@ -151,7 +199,11 @@
         "pypi"
       ],
       "updated_at": "2025-12-16T16:55:13Z",
-      "homepage": "https://pypi.org/project/hf-mirror-hub/"
+      "created_at": "2025-02-24T09:10:49Z",
+      "homepage": "https://pypi.org/project/hf-mirror-hub/",
+      "license": "MIT",
+      "open_issues_count": 3,
+      "size": 22
     },
     {
       "name": "ComfyUI-Dashscope",
@@ -171,7 +223,15 @@
         "vlm"
       ],
       "updated_at": "2025-12-28T11:03:01Z",
+<<<<<<< HEAD
       "homepage": ""
+=======
+      "created_at": "2024-12-16T03:10:47Z",
+      "homepage": "",
+      "license": "MIT",
+      "open_issues_count": 2,
+      "size": 892
+>>>>>>> 85c67f2 (feat: enhance project cards with game-card style design)
     },
     {
       "name": "ComfyUI-Ovis-U1",
@@ -182,7 +242,11 @@
       "language": "Python",
       "topics": [],
       "updated_at": "2025-12-04T05:47:57Z",
-      "homepage": null
+      "created_at": "2025-07-01T11:03:09Z",
+      "homepage": null,
+      "license": "Apache-2.0",
+      "open_issues_count": 4,
+      "size": 7534
     },
     {
       "name": "Awesome-Video-Downloader",
@@ -193,7 +257,11 @@
       "language": "JavaScript",
       "topics": [],
       "updated_at": "2025-06-20T15:02:22Z",
-      "homepage": null
+      "created_at": "2023-10-29T15:36:43Z",
+      "homepage": null,
+      "license": "MIT",
+      "open_issues_count": 0,
+      "size": 994
     },
     {
       "name": "ComfyUI-StereoCrafter",
@@ -204,6 +272,7 @@
       "language": "Python",
       "topics": [],
       "updated_at": "2025-03-31T22:38:44Z",
+<<<<<<< HEAD
       "homepage": null
     },
     {
@@ -236,6 +305,52 @@
       "homepage": ""
     },
     {
+=======
+      "created_at": "2024-12-30T13:15:24Z",
+      "homepage": null,
+      "license": null,
+      "open_issues_count": 1,
+      "size": 1
+    },
+    {
+      "name": "ComfyUI-ChatTTS",
+      "description": "A ComfyUI extension for ChatTTS",
+      "html_url": "https://github.com/neverbiasu/ComfyUI-ChatTTS",
+      "stargazers_count": 3,
+      "forks_count": 2,
+      "language": "Python",
+      "topics": [
+        "comfyui",
+        "comfyui-custom-node",
+        "comfyui-nodes"
+      ],
+      "updated_at": "2025-12-22T03:16:48Z",
+      "created_at": "2025-04-24T17:27:28Z",
+      "homepage": "",
+      "license": "MIT",
+      "open_issues_count": 0,
+      "size": 323
+    },
+    {
+      "name": "ComfyUI-Midware",
+      "description": "A midware for ComfyUI",
+      "html_url": "https://github.com/neverbiasu/ComfyUI-Midware",
+      "stargazers_count": 3,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [
+        "comfyui",
+        "comfyui-api"
+      ],
+      "updated_at": "2025-06-13T03:38:56Z",
+      "created_at": "2024-10-17T15:48:35Z",
+      "homepage": "",
+      "license": "MIT",
+      "open_issues_count": 0,
+      "size": 51902
+    },
+    {
+>>>>>>> 85c67f2 (feat: enhance project cards with game-card style design)
       "name": "zotero-addon-template",
       "description": null,
       "html_url": "https://github.com/neverbiasu/zotero-addon-template",
@@ -248,7 +363,11 @@
         "zotero-plugin"
       ],
       "updated_at": "2025-11-29T17:20:46Z",
-      "homepage": ""
+      "created_at": "2024-07-22T14:55:21Z",
+      "homepage": "",
+      "license": "AGPL-3.0",
+      "open_issues_count": 5,
+      "size": 548
     },
     {
       "name": "purelkman",
@@ -259,7 +378,15 @@
       "language": "JavaScript",
       "topics": [],
       "updated_at": "2024-03-13T14:16:17Z",
+<<<<<<< HEAD
       "homepage": null
+=======
+      "created_at": "2023-12-28T07:59:47Z",
+      "homepage": null,
+      "license": null,
+      "open_issues_count": 0,
+      "size": 965
+>>>>>>> 85c67f2 (feat: enhance project cards with game-card style design)
     },
     {
       "name": "ComfyUI-Show-o",
@@ -270,7 +397,15 @@
       "language": "Python",
       "topics": [],
       "updated_at": "2025-12-28T10:37:47Z",
+<<<<<<< HEAD
       "homepage": null
+=======
+      "created_at": "2025-06-19T18:25:52Z",
+      "homepage": null,
+      "license": null,
+      "open_issues_count": 0,
+      "size": 780
+>>>>>>> 85c67f2 (feat: enhance project cards with game-card style design)
     },
     {
       "name": "ComfyUI-ModelScope",
@@ -281,7 +416,15 @@
       "language": "Python",
       "topics": [],
       "updated_at": "2025-12-27T21:26:46Z",
+<<<<<<< HEAD
       "homepage": null
+=======
+      "created_at": "2025-09-05T16:19:57Z",
+      "homepage": null,
+      "license": null,
+      "open_issues_count": 1,
+      "size": 1175
+>>>>>>> 85c67f2 (feat: enhance project cards with game-card style design)
     },
     {
       "name": "civitai-dl",
@@ -297,7 +440,15 @@
         "pypi-package"
       ],
       "updated_at": "2025-05-18T11:13:25Z",
+<<<<<<< HEAD
       "homepage": "https://pypi.org/project/civitai-dl/"
+=======
+      "created_at": "2025-04-09T11:44:28Z",
+      "homepage": "https://pypi.org/project/civitai-dl/",
+      "license": "MIT",
+      "open_issues_count": 1,
+      "size": 502
+>>>>>>> 85c67f2 (feat: enhance project cards with game-card style design)
     },
     {
       "name": "SAM2-WebUI",
@@ -308,7 +459,11 @@
       "language": "Python",
       "topics": [],
       "updated_at": "2024-09-29T08:31:22Z",
-      "homepage": null
+      "created_at": "2024-08-07T06:14:25Z",
+      "homepage": null,
+      "license": null,
+      "open_issues_count": 0,
+      "size": 5
     },
     {
       "name": "ChineseStyle",
@@ -326,6 +481,7 @@
         "androidstudio"
       ],
       "updated_at": "2024-07-03T04:52:40Z",
+<<<<<<< HEAD
       "homepage": ""
     },
     {
@@ -371,6 +527,13 @@
       "topics": [],
       "updated_at": "2025-12-28T03:42:27Z",
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs"
+=======
+      "created_at": "2024-06-09T05:08:10Z",
+      "homepage": "",
+      "license": "MIT",
+      "open_issues_count": 0,
+      "size": 65742
+>>>>>>> 85c67f2 (feat: enhance project cards with game-card style design)
     },
     {
       "name": "portfolio",
@@ -380,6 +543,7 @@
       "forks_count": 0,
       "language": "TypeScript",
       "topics": [],
+<<<<<<< HEAD
       "updated_at": "2025-12-28T00:51:45Z",
       "homepage": "https://portfolio-six-beta-56.vercel.app"
     },
@@ -393,6 +557,93 @@
       "topics": [],
       "updated_at": "2025-12-17T19:16:12Z",
       "homepage": "https://calabiyau-data-vis.vercel.app"
+=======
+      "updated_at": "2025-12-28T22:14:39Z",
+      "created_at": "2025-11-25T16:49:51Z",
+      "homepage": "https://awesome-gemini-prompts.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 3766
+>>>>>>> 85c67f2 (feat: enhance project cards with game-card style design)
+    },
+    {
+      "name": "dataset-cat",
+      "description": "A web UI for scraping anime data, driven by waifuc",
+      "html_url": "https://github.com/neverbiasu/dataset-cat",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Python",
+      "topics": [],
+<<<<<<< HEAD
+      "updated_at": "2025-12-16T19:31:27Z",
+      "homepage": null
+=======
+      "updated_at": "2025-12-28T18:25:51Z",
+      "created_at": "2025-02-14T09:17:41Z",
+      "homepage": null,
+      "license": null,
+      "open_issues_count": 0,
+      "size": 146
+    },
+    {
+      "name": "ModelScope-Top-LoRAs",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/ModelScope-Top-LoRAs",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Python",
+      "topics": [],
+      "updated_at": "2025-12-28T03:42:27Z",
+      "created_at": "2025-11-05T00:52:35Z",
+      "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 107708
+    },
+    {
+      "name": "portfolio",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/portfolio",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2025-12-28T00:51:45Z",
+      "created_at": "2025-10-12T22:14:47Z",
+      "homepage": "https://portfolio-six-beta-56.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 206
+    },
+    {
+      "name": "deepmind-exercise",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/deepmind-exercise",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "updated_at": "2025-12-25T18:38:42Z",
+      "created_at": "2025-12-25T18:08:02Z",
+      "homepage": null,
+      "license": null,
+      "open_issues_count": 0,
+      "size": 47
+    },
+    {
+      "name": "calabiyau-data-vis",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/calabiyau-data-vis",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Vue",
+      "topics": [],
+      "updated_at": "2025-12-17T19:16:12Z",
+      "created_at": "2025-12-12T00:10:08Z",
+      "homepage": "https://calabiyau-data-vis.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 980
     },
     {
       "name": "dataset-cat",
@@ -403,7 +654,12 @@
       "language": "Python",
       "topics": [],
       "updated_at": "2025-12-16T19:31:27Z",
-      "homepage": null
+      "created_at": "2025-05-18T13:37:01Z",
+      "homepage": null,
+      "license": null,
+      "open_issues_count": 0,
+      "size": 626
+>>>>>>> 85c67f2 (feat: enhance project cards with game-card style design)
     },
     {
       "name": "awesome-uofg-msc-cs",
@@ -414,7 +670,15 @@
       "language": "HTML",
       "topics": [],
       "updated_at": "2025-12-05T03:17:21Z",
+<<<<<<< HEAD
       "homepage": "https://awesome-uofg-msc-cs.vercel.app"
+=======
+      "created_at": "2025-09-19T19:14:08Z",
+      "homepage": "https://awesome-uofg-msc-cs.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 706618
+>>>>>>> 85c67f2 (feat: enhance project cards with game-card style design)
     },
     {
       "name": "ComfyUI-QuickStart",
@@ -425,7 +689,11 @@
       "language": null,
       "topics": [],
       "updated_at": "2025-09-29T22:44:56Z",
-      "homepage": null
+      "created_at": "2025-09-29T22:44:56Z",
+      "homepage": null,
+      "license": null,
+      "open_issues_count": 0,
+      "size": 0
     },
     {
       "name": "neverbiasu.github.io",
@@ -436,7 +704,11 @@
       "language": "TypeScript",
       "topics": [],
       "updated_at": "2025-09-07T14:26:09Z",
-      "homepage": null
+      "created_at": "2024-09-04T14:55:01Z",
+      "homepage": null,
+      "license": null,
+      "open_issues_count": 0,
+      "size": 475091
     },
     {
       "name": "folo-daily",
@@ -447,7 +719,11 @@
       "language": "TypeScript",
       "topics": [],
       "updated_at": "2025-08-19T17:58:03Z",
-      "homepage": null
+      "created_at": "2025-06-02T19:31:36Z",
+      "homepage": null,
+      "license": "MIT",
+      "open_issues_count": 0,
+      "size": 74
     },
     {
       "name": "chat-ai-nav",
@@ -458,7 +734,11 @@
       "language": "TypeScript",
       "topics": [],
       "updated_at": "2025-06-18T15:52:01Z",
-      "homepage": null
+      "created_at": "2025-02-27T15:12:09Z",
+      "homepage": null,
+      "license": "MIT",
+      "open_issues_count": 0,
+      "size": 390
     },
     {
       "name": "image-evaluator",
@@ -469,7 +749,11 @@
       "language": "Python",
       "topics": [],
       "updated_at": "2025-05-08T13:43:34Z",
-      "homepage": null
+      "created_at": "2025-04-24T06:13:57Z",
+      "homepage": null,
+      "license": "MIT",
+      "open_issues_count": 0,
+      "size": 20
     },
     {
       "name": "wechat-scrapper",
@@ -480,7 +764,11 @@
       "language": "Python",
       "topics": [],
       "updated_at": "2025-03-20T16:35:08Z",
-      "homepage": null
+      "created_at": "2025-03-15T17:50:46Z",
+      "homepage": null,
+      "license": null,
+      "open_issues_count": 0,
+      "size": 88
     },
     {
       "name": "ComfyUI-Daily-Workflows",
@@ -491,7 +779,11 @@
       "language": null,
       "topics": [],
       "updated_at": "2025-03-08T06:41:31Z",
-      "homepage": null
+      "created_at": "2025-03-03T08:22:25Z",
+      "homepage": null,
+      "license": "MIT",
+      "open_issues_count": 0,
+      "size": 8118
     },
     {
       "name": "ComfyUI-DeepSeek",
@@ -508,7 +800,11 @@
         "deepseek-v3"
       ],
       "updated_at": "2025-02-13T02:36:39Z",
-      "homepage": ""
+      "created_at": "2025-01-27T17:04:22Z",
+      "homepage": "",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 7
     },
     {
       "name": "ComfyUI_QuickStart",
@@ -519,7 +815,11 @@
       "language": "Shell",
       "topics": [],
       "updated_at": "2025-02-10T19:30:32Z",
-      "homepage": null
+      "created_at": "2025-01-07T14:21:04Z",
+      "homepage": null,
+      "license": null,
+      "open_issues_count": 0,
+      "size": 30
     },
     {
       "name": "next_front",
@@ -530,7 +830,11 @@
       "language": "TypeScript",
       "topics": [],
       "updated_at": "2025-02-10T06:41:53Z",
-      "homepage": "https://neverbiasu.one"
+      "created_at": "2024-11-24T12:42:13Z",
+      "homepage": "https://neverbiasu.one",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 343
     },
     {
       "name": "Awesome-Image-and-Video-Identity-Preserving-Generation",
@@ -541,7 +845,11 @@
       "language": null,
       "topics": [],
       "updated_at": "2025-02-05T15:17:12Z",
-      "homepage": null
+      "created_at": "2025-01-22T06:40:34Z",
+      "homepage": null,
+      "license": null,
+      "open_issues_count": 0,
+      "size": 3
     },
     {
       "name": "stylization_frontend",
@@ -552,7 +860,11 @@
       "language": "TypeScript",
       "topics": [],
       "updated_at": "2025-01-02T10:15:44Z",
-      "homepage": "https://stylization-frontend.vercel.app/"
+      "created_at": "2024-12-29T08:43:15Z",
+      "homepage": "https://stylization-frontend.vercel.app/",
+      "license": null,
+      "open_issues_count": 1,
+      "size": 6153
     },
     {
       "name": "xiaoyan",
@@ -563,7 +875,11 @@
       "language": "TypeScript",
       "topics": [],
       "updated_at": "2024-12-13T02:22:58Z",
-      "homepage": "https://leyao.vercel.app"
+      "created_at": "2024-12-06T09:50:09Z",
+      "homepage": "https://leyao.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 218
     },
     {
       "name": "genie",
@@ -574,7 +890,11 @@
       "language": "Python",
       "topics": [],
       "updated_at": "2024-09-26T12:06:20Z",
-      "homepage": null
+      "created_at": "2024-09-26T11:41:26Z",
+      "homepage": null,
+      "license": null,
+      "open_issues_count": 0,
+      "size": 107
     },
     {
       "name": "t2vtuber",
@@ -585,7 +905,11 @@
       "language": "Python",
       "topics": [],
       "updated_at": "2024-09-13T05:20:38Z",
-      "homepage": null
+      "created_at": "2024-09-12T12:44:30Z",
+      "homepage": null,
+      "license": null,
+      "open_issues_count": 0,
+      "size": 1
     },
     {
       "name": "layerdivider",
@@ -596,7 +920,11 @@
       "language": "Python",
       "topics": [],
       "updated_at": "2024-08-19T18:09:08Z",
-      "homepage": null
+      "created_at": "2024-08-19T13:13:20Z",
+      "homepage": null,
+      "license": "MIT",
+      "open_issues_count": 0,
+      "size": 33
     },
     {
       "name": "jsar-widget",
@@ -607,11 +935,19 @@
       "language": "TypeScript",
       "topics": [],
       "updated_at": "2024-03-13T14:15:54Z",
-      "homepage": null
+      "created_at": "2024-03-12T02:45:39Z",
+      "homepage": null,
+      "license": "Apache-2.0",
+      "open_issues_count": 0,
+      "size": 1222
     }
   ],
   "wakatime": {
     "languages": []
   },
+<<<<<<< HEAD
   "last_updated": "2025-12-29T00:50:05.112Z"
+=======
+  "last_updated": "2025-12-28T22:57:16.530Z"
+>>>>>>> 85c67f2 (feat: enhance project cards with game-card style design)
 }

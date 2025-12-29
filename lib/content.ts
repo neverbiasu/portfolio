@@ -15,11 +15,17 @@ export type Project = {
   summary: Localized;
   tech: string[];
   links: ProjectLink[];
-  // Dynamic fields
+  // Dynamic fields from GitHub
   stars?: number;
   forks?: number;
   lastUpdate?: string;
+  createdAt?: string;
   language?: string;
+  license?: string;
+  openIssues?: number;
+  size?: number; // in KB
+  topics?: string[];
+  homepage?: string; // Demo URL
 };
 
 export const profile = {
@@ -159,7 +165,13 @@ export const projects = staticProjects.map(project => {
         stars: dynamicRepo.stargazers_count,
         forks: dynamicRepo.forks_count,
         lastUpdate: dynamicRepo.updated_at,
+        createdAt: dynamicRepo.created_at,
         language: dynamicRepo.language,
+        license: dynamicRepo.license,
+        openIssues: dynamicRepo.open_issues_count,
+        size: dynamicRepo.size,
+        topics: dynamicRepo.topics,
+        homepage: dynamicRepo.homepage,
       };
     }
   }
