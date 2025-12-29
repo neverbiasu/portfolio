@@ -72,7 +72,7 @@
         "styletransfer",
         "stylization"
       ],
-      "updated_at": "2025-12-26T08:05:37Z",
+      "updated_at": "2025-12-28T22:23:56Z",
       "homepage": ""
     },
     {
@@ -103,7 +103,7 @@
         "comfyui-nodes",
         "comfyui-workflow"
       ],
-      "updated_at": "2025-12-27T01:52:03Z",
+      "updated_at": "2025-12-28T02:05:22Z",
       "homepage": ""
     },
     {
@@ -170,7 +170,7 @@
         "llm",
         "vlm"
       ],
-      "updated_at": "2025-12-12T10:23:43Z",
+      "updated_at": "2025-12-28T11:03:01Z",
       "homepage": ""
     },
     {
@@ -262,6 +262,17 @@
       "homepage": null
     },
     {
+      "name": "ComfyUI-Show-o",
+      "description": "A ComfyUI extension for Show-o Series",
+      "html_url": "https://github.com/neverbiasu/ComfyUI-Show-o",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "language": "Python",
+      "topics": [],
+      "updated_at": "2025-12-28T10:37:47Z",
+      "homepage": null
+    },
+    {
       "name": "ComfyUI-ModelScope",
       "description": null,
       "html_url": "https://github.com/neverbiasu/ComfyUI-ModelScope",
@@ -270,17 +281,6 @@
       "language": "Python",
       "topics": [],
       "updated_at": "2025-12-27T21:26:46Z",
-      "homepage": null
-    },
-    {
-      "name": "ComfyUI-Show-o",
-      "description": "A ComfyUI extension for Show-o Series",
-      "html_url": "https://github.com/neverbiasu/ComfyUI-Show-o",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "language": "Python",
-      "topics": [],
-      "updated_at": "2025-06-30T18:36:51Z",
       "homepage": null
     },
     {
@@ -329,6 +329,28 @@
       "homepage": ""
     },
     {
+      "name": "deepmind-exercise",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/deepmind-exercise",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "updated_at": "2025-12-28T23:35:07Z",
+      "homepage": null
+    },
+    {
+      "name": "awesome-gemini-prompts",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/awesome-gemini-prompts",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2025-12-28T22:14:39Z",
+      "homepage": "https://awesome-gemini-prompts.vercel.app"
+    },
+    {
       "name": "neverbiasu",
       "description": "README",
       "html_url": "https://github.com/neverbiasu/neverbiasu",
@@ -336,7 +358,7 @@
       "forks_count": 0,
       "language": null,
       "topics": [],
-      "updated_at": "2025-12-27T18:24:49Z",
+      "updated_at": "2025-12-28T18:25:51Z",
       "homepage": null
     },
     {
@@ -347,7 +369,7 @@
       "forks_count": 0,
       "language": "Python",
       "topics": [],
-      "updated_at": "2025-12-27T03:18:20Z",
+      "updated_at": "2025-12-28T03:42:27Z",
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs"
     },
     {
@@ -358,19 +380,8 @@
       "forks_count": 0,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2025-12-27T00:43:26Z",
+      "updated_at": "2025-12-28T00:51:45Z",
       "homepage": "https://portfolio-six-beta-56.vercel.app"
-    },
-    {
-      "name": "deepmind-exercise",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/deepmind-exercise",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "Jupyter Notebook",
-      "topics": [],
-      "updated_at": "2025-12-25T18:38:42Z",
-      "homepage": null
     },
     {
       "name": "calabiyau-data-vis",
@@ -602,5 +613,5 @@
   "wakatime": {
     "languages": []
   },
-  "last_updated": "2025-12-28T00:51:41.485Z"
+  "last_updated": "2025-12-29T00:50:05.112Z"
 }
