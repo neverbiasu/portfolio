@@ -7,6 +7,7 @@ import { SocialIcons } from '@/components/social-icons';
 import { LanguageToggle } from '@/components/language-toggle';
 import { profile, projects } from '@/lib/content';
 import { getCopy, type Locale } from '@/lib/i18n';
+import { useTabCompletion } from '@/hooks/useTabCompletion';
 
 const DEFAULT_LOCALE: Locale = 'en';
 
@@ -47,6 +48,16 @@ export function PortfolioPage() {
   const [input, setInput] = useState('');
   const terminalRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  // Available commands for Tab completion
+  const commandNames = useMemo(() => ['help', 'whoami', 'skills', 'projects', 'clear'], []);
+
+  // Tab completion hook
+  const { handleKeyDown: handleTabKeyDown, suggestion } = useTabCompletion({
+    commands: commandNames,
+    input,
+    onComplete: setInput,
+  });
 
   const whoamiNode = useMemo(
     () => (
@@ -170,6 +181,12 @@ export function PortfolioPage() {
                   {/* This div is the visual representation of the input */}
                   <div className="flex items-center">
                     <span className="text-mocha-text">{input}</span>
+                    {/* Ghost text suggestion */}
+                    {suggestion && input && (
+                      <span className="text-mocha-subtle/50">
+                        {suggestion.slice(input.length)}
+                      </span>
+                    )}
                     <span className="blinking-cursor text-mocha-text">█</span>
                   </div>
                   <input
@@ -178,6 +195,7 @@ export function PortfolioPage() {
                     type="text"
                     value={input}
                     onChange={e => setInput(e.target.value)}
+                    onKeyDown={handleTabKeyDown}
                     className="absolute top-0 left-0 w-full h-full bg-transparent border-none text-transparent caret-transparent focus:outline-none pl-2"
                     autoFocus
                     spellCheck="false"
