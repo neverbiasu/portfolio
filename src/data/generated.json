@@ -4,7 +4,7 @@
       "name": "ComfyUI-SAM2",
       "description": "A ComfyUI extension for Segment-Anything 2",
       "html_url": "https://github.com/neverbiasu/ComfyUI-SAM2",
-      "stargazers_count": 238,
+      "stargazers_count": 237,
       "forks_count": 41,
       "language": "Python",
       "topics": [
@@ -12,7 +12,7 @@
         "comfyui-nodes",
         "custom-nodes"
       ],
-      "updated_at": "2025-12-13T16:52:56Z",
+      "updated_at": "2025-12-29T19:17:40Z",
       "created_at": "2024-08-01T13:58:47Z",
       "homepage": "",
       "license": null,
@@ -62,18 +62,18 @@
       "forks_count": 3,
       "language": "Jupyter Notebook",
       "topics": [],
-      "updated_at": "2025-12-03T11:08:52Z",
+      "updated_at": "2025-12-30T00:04:51Z",
       "created_at": "2024-03-25T13:25:55Z",
       "homepage": null,
       "license": "Apache-2.0",
-      "open_issues_count": 1,
-      "size": 26167
+      "open_issues_count": 0,
+      "size": 26172
     },
     {
       "name": "Awesome-Portraits-Style-Transfer",
       "description": "A curated collection of papers on portrait style transfer",
       "html_url": "https://github.com/neverbiasu/Awesome-Portraits-Style-Transfer",
-      "stargazers_count": 27,
+      "stargazers_count": 28,
       "forks_count": 3,
       "language": null,
       "topics": [
@@ -88,16 +88,12 @@
         "styletransfer",
         "stylization"
       ],
-      "updated_at": "2025-12-28T22:23:56Z",
-<<<<<<< HEAD
-      "homepage": ""
-=======
+      "updated_at": "2025-12-29T11:15:50Z",
       "created_at": "2024-01-31T15:47:36Z",
       "homepage": "",
       "license": "Apache-2.0",
       "open_issues_count": 0,
-      "size": 1577
->>>>>>> 85c67f2 (feat: enhance project cards with game-card style design)
+      "size": 1580
     },
     {
       "name": "ComfyUI-Image-Captioner",
@@ -112,15 +108,31 @@
         "comfyui-workflow"
       ],
       "updated_at": "2025-12-25T05:35:32Z",
-<<<<<<< HEAD
-      "homepage": ""
-=======
       "created_at": "2024-07-26T08:18:09Z",
       "homepage": "",
       "license": "MIT",
       "open_issues_count": 1,
       "size": 420
->>>>>>> 85c67f2 (feat: enhance project cards with game-card style design)
+    },
+    {
+      "name": "ComfyUI-StyleShot",
+      "description": "A ComfyUI extension for StyleShot.",
+      "html_url": "https://github.com/neverbiasu/ComfyUI-StyleShot",
+      "stargazers_count": 16,
+      "forks_count": 3,
+      "language": "Python",
+      "topics": [
+        "comfyui",
+        "comfyui-nodes",
+        "comfyui-workflow",
+        "custom-nodes"
+      ],
+      "updated_at": "2025-12-29T06:02:59Z",
+      "created_at": "2024-08-20T16:57:35Z",
+      "homepage": "",
+      "license": "MIT",
+      "open_issues_count": 2,
+      "size": 422
     },
     {
       "name": "Awesome-ComfyUI-Video",
@@ -135,36 +147,12 @@
         "comfyui-nodes",
         "comfyui-workflow"
       ],
-      "updated_at": "2025-12-28T02:05:22Z",
-<<<<<<< HEAD
-      "homepage": ""
-=======
+      "updated_at": "2025-12-29T02:03:47Z",
       "created_at": "2025-04-25T15:41:44Z",
       "homepage": "",
       "license": "MIT",
       "open_issues_count": 1,
-      "size": 6864
->>>>>>> 85c67f2 (feat: enhance project cards with game-card style design)
-    },
-    {
-      "name": "ComfyUI-StyleShot",
-      "description": "A ComfyUI extension for StyleShot.",
-      "html_url": "https://github.com/neverbiasu/ComfyUI-StyleShot",
-      "stargazers_count": 15,
-      "forks_count": 3,
-      "language": "Python",
-      "topics": [
-        "comfyui",
-        "comfyui-nodes",
-        "comfyui-workflow",
-        "custom-nodes"
-      ],
-      "updated_at": "2025-11-11T15:55:35Z",
-      "created_at": "2024-08-20T16:57:35Z",
-      "homepage": "",
-      "license": "MIT",
-      "open_issues_count": 2,
-      "size": 422
+      "size": 6883
     },
     {
       "name": "ComfyUI-KittenTTS",
@@ -206,6 +194,36 @@
       "size": 22
     },
     {
+      "name": "ComfyUI-Ovis-U1",
+      "description": "A ComfyUI extension for Ovis-U1",
+      "html_url": "https://github.com/neverbiasu/ComfyUI-Ovis-U1",
+      "stargazers_count": 4,
+      "forks_count": 1,
+      "language": "Python",
+      "topics": [],
+      "updated_at": "2025-12-29T22:40:09Z",
+      "created_at": "2025-07-01T11:03:09Z",
+      "homepage": null,
+      "license": "Apache-2.0",
+      "open_issues_count": 3,
+      "size": 7545
+    },
+    {
+      "name": "Awesome-Video-Downloader",
+      "description": "Embark on an effortless video downloading journey with Awesome-Video-Downloader.  This useful tool facilitates seamless downloads of watermark-free videos from an array of online platforms and apps directly via in-app or web links.   But that's not all!   It also empowers users to fetch captivating thumbnails from various videos. ",
+      "html_url": "https://github.com/neverbiasu/Awesome-Video-Downloader",
+      "stargazers_count": 4,
+      "forks_count": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "updated_at": "2025-12-29T22:37:42Z",
+      "created_at": "2023-10-29T15:36:43Z",
+      "homepage": null,
+      "license": "MIT",
+      "open_issues_count": 0,
+      "size": 1005
+    },
+    {
       "name": "ComfyUI-Dashscope",
       "description": "A ComfyUI extension for DashScope(Qwen Series API)",
       "html_url": "https://github.com/neverbiasu/ComfyUI-Dashscope",
@@ -223,45 +241,11 @@
         "vlm"
       ],
       "updated_at": "2025-12-28T11:03:01Z",
-<<<<<<< HEAD
-      "homepage": ""
-=======
       "created_at": "2024-12-16T03:10:47Z",
       "homepage": "",
       "license": "MIT",
       "open_issues_count": 2,
       "size": 892
->>>>>>> 85c67f2 (feat: enhance project cards with game-card style design)
-    },
-    {
-      "name": "ComfyUI-Ovis-U1",
-      "description": "A ComfyUI extension for Ovis-U1",
-      "html_url": "https://github.com/neverbiasu/ComfyUI-Ovis-U1",
-      "stargazers_count": 4,
-      "forks_count": 1,
-      "language": "Python",
-      "topics": [],
-      "updated_at": "2025-12-04T05:47:57Z",
-      "created_at": "2025-07-01T11:03:09Z",
-      "homepage": null,
-      "license": "Apache-2.0",
-      "open_issues_count": 4,
-      "size": 7534
-    },
-    {
-      "name": "Awesome-Video-Downloader",
-      "description": "Embark on an effortless video downloading journey with Awesome-Video-Downloader.  This useful tool facilitates seamless downloads of watermark-free videos from an array of online platforms and apps directly via in-app or web links.   But that's not all!   It also empowers users to fetch captivating thumbnails from various videos. ",
-      "html_url": "https://github.com/neverbiasu/Awesome-Video-Downloader",
-      "stargazers_count": 4,
-      "forks_count": 0,
-      "language": "JavaScript",
-      "topics": [],
-      "updated_at": "2025-06-20T15:02:22Z",
-      "created_at": "2023-10-29T15:36:43Z",
-      "homepage": null,
-      "license": "MIT",
-      "open_issues_count": 0,
-      "size": 994
     },
     {
       "name": "ComfyUI-StereoCrafter",
@@ -272,40 +256,6 @@
       "language": "Python",
       "topics": [],
       "updated_at": "2025-03-31T22:38:44Z",
-<<<<<<< HEAD
-      "homepage": null
-    },
-    {
-      "name": "ComfyUI-ChatTTS",
-      "description": "A ComfyUI extension for ChatTTS",
-      "html_url": "https://github.com/neverbiasu/ComfyUI-ChatTTS",
-      "stargazers_count": 3,
-      "forks_count": 2,
-      "language": "Python",
-      "topics": [
-        "comfyui",
-        "comfyui-custom-node",
-        "comfyui-nodes"
-      ],
-      "updated_at": "2025-12-22T03:16:48Z",
-      "homepage": ""
-    },
-    {
-      "name": "ComfyUI-Midware",
-      "description": "A midware for ComfyUI",
-      "html_url": "https://github.com/neverbiasu/ComfyUI-Midware",
-      "stargazers_count": 3,
-      "forks_count": 0,
-      "language": "TypeScript",
-      "topics": [
-        "comfyui",
-        "comfyui-api"
-      ],
-      "updated_at": "2025-06-13T03:38:56Z",
-      "homepage": ""
-    },
-    {
-=======
       "created_at": "2024-12-30T13:15:24Z",
       "homepage": null,
       "license": null,
@@ -350,7 +300,21 @@
       "size": 51902
     },
     {
->>>>>>> 85c67f2 (feat: enhance project cards with game-card style design)
+      "name": "ComfyUI-ModelScope",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/ComfyUI-ModelScope",
+      "stargazers_count": 2,
+      "forks_count": 1,
+      "language": "Python",
+      "topics": [],
+      "updated_at": "2025-12-29T01:18:01Z",
+      "created_at": "2025-09-05T16:19:57Z",
+      "homepage": null,
+      "license": null,
+      "open_issues_count": 1,
+      "size": 1175
+    },
+    {
       "name": "zotero-addon-template",
       "description": null,
       "html_url": "https://github.com/neverbiasu/zotero-addon-template",
@@ -378,15 +342,11 @@
       "language": "JavaScript",
       "topics": [],
       "updated_at": "2024-03-13T14:16:17Z",
-<<<<<<< HEAD
-      "homepage": null
-=======
       "created_at": "2023-12-28T07:59:47Z",
       "homepage": null,
       "license": null,
       "open_issues_count": 0,
       "size": 965
->>>>>>> 85c67f2 (feat: enhance project cards with game-card style design)
     },
     {
       "name": "ComfyUI-Show-o",
@@ -397,34 +357,11 @@
       "language": "Python",
       "topics": [],
       "updated_at": "2025-12-28T10:37:47Z",
-<<<<<<< HEAD
-      "homepage": null
-=======
       "created_at": "2025-06-19T18:25:52Z",
       "homepage": null,
       "license": null,
       "open_issues_count": 0,
       "size": 780
->>>>>>> 85c67f2 (feat: enhance project cards with game-card style design)
-    },
-    {
-      "name": "ComfyUI-ModelScope",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/ComfyUI-ModelScope",
-      "stargazers_count": 1,
-      "forks_count": 1,
-      "language": "Python",
-      "topics": [],
-      "updated_at": "2025-12-27T21:26:46Z",
-<<<<<<< HEAD
-      "homepage": null
-=======
-      "created_at": "2025-09-05T16:19:57Z",
-      "homepage": null,
-      "license": null,
-      "open_issues_count": 1,
-      "size": 1175
->>>>>>> 85c67f2 (feat: enhance project cards with game-card style design)
     },
     {
       "name": "civitai-dl",
@@ -440,15 +377,11 @@
         "pypi-package"
       ],
       "updated_at": "2025-05-18T11:13:25Z",
-<<<<<<< HEAD
-      "homepage": "https://pypi.org/project/civitai-dl/"
-=======
       "created_at": "2025-04-09T11:44:28Z",
       "homepage": "https://pypi.org/project/civitai-dl/",
       "license": "MIT",
       "open_issues_count": 1,
       "size": 502
->>>>>>> 85c67f2 (feat: enhance project cards with game-card style design)
     },
     {
       "name": "SAM2-WebUI",
@@ -481,59 +414,11 @@
         "androidstudio"
       ],
       "updated_at": "2024-07-03T04:52:40Z",
-<<<<<<< HEAD
-      "homepage": ""
-    },
-    {
-      "name": "deepmind-exercise",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/deepmind-exercise",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "Jupyter Notebook",
-      "topics": [],
-      "updated_at": "2025-12-28T23:35:07Z",
-      "homepage": null
-    },
-    {
-      "name": "awesome-gemini-prompts",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/awesome-gemini-prompts",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "updated_at": "2025-12-28T22:14:39Z",
-      "homepage": "https://awesome-gemini-prompts.vercel.app"
-    },
-    {
-      "name": "neverbiasu",
-      "description": "README",
-      "html_url": "https://github.com/neverbiasu/neverbiasu",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": null,
-      "topics": [],
-      "updated_at": "2025-12-28T18:25:51Z",
-      "homepage": null
-    },
-    {
-      "name": "ModelScope-Top-LoRAs",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/ModelScope-Top-LoRAs",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "Python",
-      "topics": [],
-      "updated_at": "2025-12-28T03:42:27Z",
-      "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs"
-=======
       "created_at": "2024-06-09T05:08:10Z",
       "homepage": "",
       "license": "MIT",
       "open_issues_count": 0,
       "size": 65742
->>>>>>> 85c67f2 (feat: enhance project cards with game-card style design)
     },
     {
       "name": "portfolio",
@@ -543,42 +428,37 @@
       "forks_count": 0,
       "language": "TypeScript",
       "topics": [],
-<<<<<<< HEAD
-      "updated_at": "2025-12-28T00:51:45Z",
-      "homepage": "https://portfolio-six-beta-56.vercel.app"
+      "updated_at": "2025-12-30T00:18:48Z",
+      "created_at": "2025-10-12T22:14:47Z",
+      "homepage": "https://portfolio-six-beta-56.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 207
     },
     {
-      "name": "calabiyau-data-vis",
+      "name": "awesome-gemini-prompts",
       "description": null,
-      "html_url": "https://github.com/neverbiasu/calabiyau-data-vis",
+      "html_url": "https://github.com/neverbiasu/awesome-gemini-prompts",
       "stargazers_count": 0,
       "forks_count": 0,
-      "language": "Vue",
+      "language": "TypeScript",
       "topics": [],
-      "updated_at": "2025-12-17T19:16:12Z",
-      "homepage": "https://calabiyau-data-vis.vercel.app"
-=======
-      "updated_at": "2025-12-28T22:14:39Z",
+      "updated_at": "2025-12-29T19:56:02Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesome-gemini-prompts.vercel.app",
       "license": null,
       "open_issues_count": 0,
-      "size": 3766
->>>>>>> 85c67f2 (feat: enhance project cards with game-card style design)
+      "size": 3880
     },
     {
-      "name": "dataset-cat",
-      "description": "A web UI for scraping anime data, driven by waifuc",
-      "html_url": "https://github.com/neverbiasu/dataset-cat",
+      "name": "neverbiasu",
+      "description": "README",
+      "html_url": "https://github.com/neverbiasu/neverbiasu",
       "stargazers_count": 0,
       "forks_count": 0,
-      "language": "Python",
+      "language": null,
       "topics": [],
-<<<<<<< HEAD
-      "updated_at": "2025-12-16T19:31:27Z",
-      "homepage": null
-=======
-      "updated_at": "2025-12-28T18:25:51Z",
+      "updated_at": "2025-12-29T18:27:17Z",
       "created_at": "2025-02-14T09:17:41Z",
       "homepage": null,
       "license": null,
@@ -593,27 +473,12 @@
       "forks_count": 0,
       "language": "Python",
       "topics": [],
-      "updated_at": "2025-12-28T03:42:27Z",
+      "updated_at": "2025-12-29T03:43:30Z",
       "created_at": "2025-11-05T00:52:35Z",
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
       "license": null,
       "open_issues_count": 0,
-      "size": 107708
-    },
-    {
-      "name": "portfolio",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/portfolio",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "updated_at": "2025-12-28T00:51:45Z",
-      "created_at": "2025-10-12T22:14:47Z",
-      "homepage": "https://portfolio-six-beta-56.vercel.app",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 206
+      "size": 109347
     },
     {
       "name": "deepmind-exercise",
@@ -623,12 +488,12 @@
       "forks_count": 0,
       "language": "Jupyter Notebook",
       "topics": [],
-      "updated_at": "2025-12-25T18:38:42Z",
+      "updated_at": "2025-12-28T23:35:07Z",
       "created_at": "2025-12-25T18:08:02Z",
       "homepage": null,
       "license": null,
       "open_issues_count": 0,
-      "size": 47
+      "size": 65
     },
     {
       "name": "calabiyau-data-vis",
@@ -659,7 +524,6 @@
       "license": null,
       "open_issues_count": 0,
       "size": 626
->>>>>>> 85c67f2 (feat: enhance project cards with game-card style design)
     },
     {
       "name": "awesome-uofg-msc-cs",
@@ -670,15 +534,11 @@
       "language": "HTML",
       "topics": [],
       "updated_at": "2025-12-05T03:17:21Z",
-<<<<<<< HEAD
-      "homepage": "https://awesome-uofg-msc-cs.vercel.app"
-=======
       "created_at": "2025-09-19T19:14:08Z",
       "homepage": "https://awesome-uofg-msc-cs.vercel.app",
       "license": null,
       "open_issues_count": 0,
       "size": 706618
->>>>>>> 85c67f2 (feat: enhance project cards with game-card style design)
     },
     {
       "name": "ComfyUI-QuickStart",
@@ -864,7 +724,7 @@
       "homepage": "https://stylization-frontend.vercel.app/",
       "license": null,
       "open_issues_count": 1,
-      "size": 6153
+      "size": 6166
     },
     {
       "name": "xiaoyan",
@@ -942,12 +802,6 @@
       "size": 1222
     }
   ],
-  "wakatime": {
-    "languages": []
-  },
-<<<<<<< HEAD
-  "last_updated": "2025-12-29T00:50:05.112Z"
-=======
-  "last_updated": "2025-12-28T22:57:16.530Z"
->>>>>>> 85c67f2 (feat: enhance project cards with game-card style design)
+  "wakatime": null,
+  "last_updated": "2025-12-30T00:44:48.710Z"
 }
