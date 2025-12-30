@@ -8,6 +8,7 @@ import { LanguageToggle } from '@/components/language-toggle';
 import { profile, projects, wakatimeStats } from '@/lib/content';
 import { getCopy, type Locale } from '@/lib/i18n';
 import { useTabCompletion } from '@/hooks/useTabCompletion';
+import { useCommandHistory } from '@/hooks/useCommandHistory';
 import { getLanguageColor } from '@/lib/language-colors';
 
 const DEFAULT_LOCALE: Locale = 'en';
@@ -133,6 +134,17 @@ export function PortfolioPage() {
     onComplete: setInput,
   });
 
+  // Command history hook (up/down arrow navigation)
+  const { addCommand, handleKeyDown: handleHistoryKeyDown } = useCommandHistory({
+    onRestore: setInput,
+  });
+
+  // Combined key handler for input
+  const handleInputKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    handleTabKeyDown(e);
+    handleHistoryKeyDown(e);
+  };
+
   const whoamiNode = useMemo(
     () => (
       <div className="text-left">
@@ -217,6 +229,7 @@ export function PortfolioPage() {
     }
 
     setHistory(newHistory);
+    addCommand(command); // Add to command history for arrow navigation
     setInput('');
   };
 
@@ -272,7 +285,7 @@ export function PortfolioPage() {
                     type="text"
                     value={input}
                     onChange={e => setInput(e.target.value)}
-                    onKeyDown={handleTabKeyDown}
+                    onKeyDown={handleInputKeyDown}
                     className="absolute top-0 left-0 w-full h-full bg-transparent border-none text-transparent caret-transparent focus:outline-none pl-2"
                     autoFocus
                     spellCheck="false"
