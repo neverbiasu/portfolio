@@ -15,8 +15,8 @@ const DEFAULT_LOCALE: Locale = 'en';
 
 // --- Terminal Components ---
 
-const CommandOutput: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <div className="whitespace-pre-wrap text-left text-mocha-text/80">{children}</div>
+const CommandOutput: React.FC<{ children: React.ReactNode; className?: string }> = ({ children, className }) => (
+  <div className={`whitespace-pre-wrap text-left text-mocha-text/80 ${className || ''}`}>{children}</div>
 );
 
 const CommandInputLine: React.FC<{ command: string }> = ({ command }) => (
@@ -121,11 +121,13 @@ export function PortfolioPage() {
 
   const [history, setHistory] = useState<React.ReactNode[]>([]);
   const [input, setInput] = useState('');
+  const [isStreaming, setIsStreaming] = useState(false);
+  const [streamingOutput, setStreamingOutput] = useState('');
   const historyRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
   // Available commands for Tab completion
-  const commandNames = useMemo(() => ['help', 'whoami', 'skills', 'projects', 'stats', 'clear'], []);
+  const commandNames = useMemo(() => ['help', 'whoami', 'skills', 'projects', 'stats', 'clear', 'faych'], []);
 
   // Tab completion hook
   const { handleKeyDown: handleTabKeyDown, suggestion } = useTabCompletion({
@@ -200,37 +202,87 @@ export function PortfolioPage() {
     if (historyRef.current) {
       historyRef.current.scrollTop = historyRef.current.scrollHeight;
     }
-  }, [history]);
+  }, [history, streamingOutput]);
 
-  const handleCommandSubmit = (e: React.FormEvent) => {
+  const handleCommandSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const command = input.trim();
     if (!command) return;
 
-    const newHistory: React.ReactNode[] = [
-      ...history,
-      <CommandInputLine key={history.length} command={command} />,
-    ];
+    // Add command to history UI instantly
+    setHistory(prev => [
+      ...prev,
+      <CommandInputLine key={prev.length} command={command} />,
+    ]);
+    addCommand(command);
+    setInput('');
 
+    // Handle 'faych' AI command
+    const [cmdName, ...args] = command.split(/\s+/);
+    if (cmdName === 'faych') {
+      const query = args.join(' ');
+      if (!query) {
+        setHistory(prev => [...prev, <CommandOutput key={prev.length}>Usage: faych &lt;question&gt;</CommandOutput>]);
+        return;
+      }
+
+      setIsStreaming(true);
+      setStreamingOutput('Thinking...'); 
+
+      try {
+        const res = await fetch('/api/ai', {
+          method: 'POST',
+          body: JSON.stringify({ messages: [{ role: 'user', content: query }], locale }),
+        });
+
+        if (!res.ok) throw new Error(res.statusText);
+        
+        const reader = res.body?.getReader();
+        if (!reader) throw new Error('No body');
+        
+        setStreamingOutput(''); // Clear loading text
+        let fullText = '';
+        const decoder = new TextDecoder();
+
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          const chunk = decoder.decode(value, { stream: true });
+          fullText += chunk;
+          setStreamingOutput(prev => prev + chunk);
+        }
+        
+        // Finalize
+        setHistory(prev => [...prev, <CommandOutput key={prev.length}>{fullText}</CommandOutput>]);
+        setStreamingOutput('');
+        
+      } catch (e) {
+        setHistory(prev => [...prev, <CommandOutput key={prev.length} className="text-red-400">Error: Failed to contact Faych.</CommandOutput>]);
+        setStreamingOutput('');
+      } finally {
+        setIsStreaming(false);
+      }
+      return;
+    }
+
+    // Handle standard commands
     const handler = commands[command as keyof typeof commands];
     if (handler) {
       const output = handler();
       if (output) {
-        newHistory.push(
-          <CommandOutput key={history.length + 1}>{output}</CommandOutput>,
-        );
+        setHistory(prev => [
+          ...prev,
+          <CommandOutput key={prev.length}>{output}</CommandOutput>,
+        ]);
       }
     } else {
-      newHistory.push(
-        <CommandOutput key={history.length + 1}>
+      setHistory(prev => [
+        ...prev,
+        <CommandOutput key={prev.length}>
           {copy.commandNotFound(command)}
         </CommandOutput>,
-      );
+      ]);
     }
-
-    setHistory(newHistory);
-    addCommand(command); // Add to command history for arrow navigation
-    setInput('');
   };
 
   return (
@@ -254,45 +306,61 @@ export function PortfolioPage() {
             className="h-full overflow-y-auto overflow-x-hidden pr-2 terminal-scrollbar"
           >
             {history}
-            {/* Input form - flows after history */}
-            <form
-              onSubmit={handleCommandSubmit}
-              className="font-mono"
-              onClick={() => inputRef.current?.focus()}
-            >
-              <div className="flex items-center">
-                <label
-                  htmlFor="terminal-input"
-                  className="text-mocha-blue shrink-0"
-                >
-                  faych@portfolio:~$
-                </label>
-                <div className="relative flex-1 pl-2">
-                  {/* This div is the visual representation of the input */}
-                  <div className="flex items-center">
-                    <span className="text-mocha-text">{input}</span>
-                    {/* Ghost text suggestion */}
-                    {suggestion && input && (
-                      <span className="text-mocha-subtle/50">
-                        {suggestion.slice(input.length)}
-                      </span>
-                    )}
-                    <span className="blinking-cursor text-mocha-text">█</span>
+            {/* Streaming Output */}
+            {streamingOutput && (
+              <CommandOutput>
+                {streamingOutput}
+                <span className="animate-pulse">_</span>
+              </CommandOutput>
+            )}
+
+            {/* Input form - Hidden while streaming to prevent new input */}
+            {!isStreaming && (
+              <form
+                onSubmit={handleCommandSubmit}
+                className="font-mono"
+                onClick={() => inputRef.current?.focus()}
+              >
+                <div className="flex items-center">
+                  <label
+                    htmlFor="terminal-input"
+                    className="text-mocha-blue shrink-0"
+                  >
+                    faych@portfolio:~$
+                  </label>
+                  <div className="relative flex-1 ml-2 min-h-[1.5em]">
+                    {/* Spacer for height */}
+                    <span className="invisible whitespace-pre-wrap break-all">{input || ' '}</span>
+                    
+                    {/* Visible Content Layer */}
+                    <div className="absolute top-0 left-0 w-full h-full flex flex-wrap">
+                      <span className="text-mocha-text whitespace-pre-wrap break-all">{input}</span>
+                      {/* Ghost text suggestion */}
+                      {suggestion && input && (
+                        <span className="text-mocha-subtle/50 whitespace-pre-wrap break-all">
+                          {suggestion.slice(input.length)}
+                        </span>
+                      )}
+                      <span className="blinking-cursor text-mocha-text">█</span>
+                    </div>
+
+                    {/* Input Layer */}
+                    <input
+                      ref={inputRef}
+                      id="terminal-input"
+                      type="text"
+                      value={input}
+                      onChange={e => setInput(e.target.value)}
+                      onKeyDown={handleInputKeyDown}
+                      className="absolute top-0 left-0 w-full h-full bg-transparent border-none text-transparent caret-transparent focus:outline-none px-0"
+                      autoFocus
+                      spellCheck="false"
+                      autoComplete="off"
+                    />
                   </div>
-                  <input
-                    ref={inputRef}
-                    id="terminal-input"
-                    type="text"
-                    value={input}
-                    onChange={e => setInput(e.target.value)}
-                    onKeyDown={handleInputKeyDown}
-                    className="absolute top-0 left-0 w-full h-full bg-transparent border-none text-transparent caret-transparent focus:outline-none pl-2"
-                    autoFocus
-                    spellCheck="false"
-                  />
                 </div>
-              </div>
-            </form>
+              </form>
+            )}
           </div>
         </TerminalBlock>
 
