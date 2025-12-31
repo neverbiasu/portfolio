@@ -1,12 +1,16 @@
+import { createPreset } from "fumadocs-ui/tailwind-plugin";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
+    "./createPreset()", // Trick to make tailwind watch this file? No.
     "./app/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
     "./lib/**/*.{ts,tsx}",
     "./docs/**/*.{md,mdx}",
+    "./node_modules/fumadocs-ui/dist/**/*.js",
   ],
+  presets: [createPreset()],
   theme: {
     extend: {
       colors: {

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import "fumadocs-ui/style.css";
 import { HeroUIProvider } from "@heroui/react";
 
 const inter = Inter({
