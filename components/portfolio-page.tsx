@@ -127,7 +127,7 @@ export function PortfolioPage() {
   const inputRef = useRef<HTMLInputElement>(null);
 
   // Available commands for Tab completion
-  const commandNames = useMemo(() => ['help', 'whoami', 'skills', 'projects', 'stats', 'clear', 'faych'], []);
+  const commandNames = useMemo(() => ['help', 'whoami', 'skills', 'projects', 'stats', 'blog', 'clear', 'faych'], []);
 
   // Tab completion hook
   const { handleKeyDown: handleTabKeyDown, suggestion } = useTabCompletion({
@@ -180,6 +180,10 @@ export function PortfolioPage() {
           .map(p => `${p.title[locale]}: ${p.summary[locale]}`)
           .join('\n\n'),
       stats: () => <StatsOutput locale={locale} />,
+      blog: () => {
+        window.open('/blog', '_blank');
+        return <span className="text-mocha-green">Opening blog in new tab...</span>;
+      },
       clear: () => {
         setHistory([]);
         return null;

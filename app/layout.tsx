@@ -3,6 +3,7 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import "fumadocs-ui/style.css";
 import { HeroUIProvider } from "@heroui/react";
+import { RootProvider } from 'fumadocs-ui/provider';
 
 const inter = Inter({
   weight: ["400", "500", "600"],
@@ -60,7 +61,11 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${jetbrains.variable} antialiased bg-mocha-base text-mocha-text`}
       >
-        <HeroUIProvider>{children}</HeroUIProvider>
+        <HeroUIProvider>
+          <RootProvider>
+            {children}
+          </RootProvider>
+        </HeroUIProvider>
       </body>
     </html>
   );

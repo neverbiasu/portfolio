@@ -28,6 +28,7 @@ export type SectionCopy = {
     skills: string;
     projects: string;
     stats: string;
+    blog: string;
     clear: string;
   };
 };
@@ -67,6 +68,7 @@ export const copy: CopyMap = {
       skills: "List my core technical skills",
       projects: "Show my selected projects",
       stats: "Display my coding statistics (Wakatime)",
+      blog: "Read my technical blog",
       clear: "Clear the terminal screen",
     },
   },
@@ -99,6 +101,7 @@ export const copy: CopyMap = {
       skills: "列出我的核心技术栈",
       projects: "展示我的精选项目",
       stats: "显示我的编程统计 (Wakatime)",
+      blog: "阅读我的技术博客",
       clear: "清空终端屏幕",
     },
   },

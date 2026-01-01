@@ -1,0 +1,138 @@
+
+import fs from 'fs';
+import path from 'path';
+import 'dotenv/config';
+import OpenAI from 'openai';
+
+// Define the structure of the data we're embedding
+interface GithubRepo {
+  name: string;
+  description: string;
+  html_url: string;
+  stargazers_count: number;
+  language: string;
+  topics: string[];
+}
+
+interface VectorItem {
+  id: string;
+  text: string;
+  embedding: number[];
+  metadata: Record<string, any>;
+}
+
+const DATA_PATH = path.join(process.cwd(), 'src/data/generated.json');
+const OUTPUT_PATH = path.join(process.cwd(), 'src/data/vectors.json');
+
+// Helper for delay
+const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+
+async function getEmbedding(text: string): Promise<number[]> {
+  const url = "https://api-inference.modelscope.cn/v1/embeddings";
+  
+  // Try wrapping input as expected by OpenAI-compatible endpoint first
+  // If this fails, we might need to look at specific model inputs
+  const payload = {
+    model: "iic/nlp_gte_sentence-embedding_chinese-base",
+    input: [text],
+    encoding_format: "float"
+  };
+
+  const response = await fetch(url, {
+    method: "POST",
+    headers: {
+      "Authorization": `Bearer ${process.env.MODELSCOPE_API_TOKEN}`,
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(payload)
+  });
+
+  if (!response.ok) {
+    const errorText = await response.text();
+    throw new Error(`API Error ${response.status}: ${errorText}`);
+  }
+
+  const json = await response.json();
+  return json.data[0].embedding;
+}
+
+async function main() {
+  if (!process.env.MODELSCOPE_API_TOKEN) {
+    console.error('Error: MODELSCOPE_API_TOKEN not found in environment variables.');
+    process.exit(1);
+  }
+
+  console.log('Loading data...');
+  const rawData = fs.readFileSync(DATA_PATH, 'utf-8');
+  const data = JSON.parse(rawData);
+  const repos: GithubRepo[] = data.github;
+
+  const vectorStore: VectorItem[] = [];
+
+  // Process Repositories
+  console.log(`Processing ${repos.length} repositories...`);
+  for (const repo of repos) {
+    // Create a meaningful text representation for the repo
+    const text = `Project Name: ${repo.name}. 
+Description: ${repo.description || 'No description'}. 
+Tech Stack: ${repo.language || 'Unknown'} ${repo.topics.join(', ')}. 
+Stats: ${repo.stargazers_count} stars.`;
+
+    try {
+      const embedding = await getEmbedding(text);
+      vectorStore.push({
+        id: `repo-${repo.name}`,
+        text,
+        embedding,
+        metadata: {
+          type: 'project',
+          name: repo.name,
+          url: repo.html_url
+        }
+      });
+      console.log(`✓ Embedded ${repo.name}`);
+      await delay(1000); // Prevent rate limit
+    } catch (error) {
+      console.error(`Status: Failed to embed ${repo.name}`, error);
+    }
+  }
+
+  // Add static profile info (mocked for now, can be read from content.ts if parsed)
+  const profileChunks = [
+    {
+      text: "Faych Chen (neverbiasu) is a student and AI Engineer specializing in Frontend and AI Application development.",
+      id: "profile-bio"
+    },
+    {
+      text: "Core Skills: Vue, Next.js, TypeScript, Python, PyTorch, ComfyUI, Large Language Models (LLM).",
+      id: "profile-skills"
+    },
+    {
+      text: "Experience: Developing custom nodes for ComfyUI, building AI-native web applications, and experimenting with multimodal models.",
+      id: "profile-exp"
+    }
+  ];
+
+  console.log('Processing profile info...');
+  for (const chunk of profileChunks) {
+    try {
+      const embedding = await getEmbedding(chunk.text);
+      vectorStore.push({
+        id: chunk.id,
+        text: chunk.text,
+        embedding,
+        metadata: { type: 'profile' }
+      });
+      console.log(`✓ Embedded ${chunk.id}`);
+      await delay(1000); // Prevent rate limit
+    } catch (error) {
+      console.error(`Status: Failed to embed ${chunk.id}`, error);
+    }
+  }
+
+  // Save to file
+  fs.writeFileSync(OUTPUT_PATH, JSON.stringify(vectorStore, null, 2));
+  console.log(`\nSuccess! Saved ${vectorStore.length} vectors to ${OUTPUT_PATH}`);
+}
+
+main();
