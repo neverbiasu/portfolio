@@ -5,4 +5,8 @@ import { loader } from 'fumadocs-core/source';
 export const source = loader({
   baseUrl: '/blog',
   source: createMDXSource(docs, meta),
+  i18n: {
+    defaultLanguage: 'en',
+    languages: ['en', 'zh'],
+  },
 });
