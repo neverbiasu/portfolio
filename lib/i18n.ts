@@ -18,6 +18,11 @@ export type SectionCopy = {
   assistantSend: string;
   assistantTitle: string;
   languageToggle: string;
+  nav: {
+    home: string;
+    blog: string;
+    about: string;
+  };
   // --- Terminal ---
   welcomeHint: string;
   helpIntro: string;
@@ -58,6 +63,11 @@ export const copy: CopyMap = {
     assistantSend: "Send",
     assistantTitle: "AI Assistant",
     languageToggle: "中文",
+    nav: {
+      home: "Home",
+      blog: "Blog",
+      about: "About",
+    },
     // --- Terminal ---
     welcomeHint: "Type 'help' to see a list of available commands.",
     helpIntro: "Here are the available commands:",
@@ -91,6 +101,11 @@ export const copy: CopyMap = {
     assistantSend: "发送",
     assistantTitle: "AI 助理",
     languageToggle: "EN",
+    nav: {
+      home: "首页",
+      blog: "博客",
+      about: "关于",
+    },
     // --- Terminal ---
     welcomeHint: "输入 'help' 查看可用命令列表.",
     helpIntro: "可用的命令如下:",

@@ -4,7 +4,7 @@ import React, { useEffect, useMemo, useState, useRef } from 'react';
 import { TerminalBlock } from '@/components/TerminalBlock';
 import { ProjectCard } from '@/components/project-card';
 import { SocialIcons } from '@/components/social-icons';
-import { LanguageToggle } from '@/components/language-toggle';
+import { SiteHeader } from '@/components/site-header';
 import { profile, projects, wakatimeStats } from '@/lib/content';
 import { getCopy, type Locale } from '@/lib/i18n';
 import { useTabCompletion } from '@/hooks/useTabCompletion';
@@ -219,15 +219,13 @@ export function PortfolioPage() {
   };
 
   return (
-    <main
-      className="relative min-h-[100dvh] bg-mocha-crust p-3 md:p-8 lg:p-12"
-      onClick={() => inputRef.current?.focus()} // Focus input on any click
-    >
-      <div className="absolute top-4 right-4 md:top-8 md:right-8 z-10">
-        <LanguageToggle locale={locale} onToggle={setLocale} />
-      </div>
-
-      <div className="mx-auto flex max-w-5xl flex-col gap-4 md:gap-8">
+    <>
+      <SiteHeader locale={locale} onToggle={setLocale} />
+      <main
+        className="relative min-h-[100dvh] bg-mocha-crust p-3 pt-14 md:p-8 md:pt-20 lg:p-12 lg:pt-24"
+        onClick={() => inputRef.current?.focus()} // Focus input on any click
+      >
+        <div className="mx-auto flex max-w-5xl flex-col gap-4 md:gap-8">
         {/* --- Terminal Block --- */}
         <TerminalBlock
           title={`faysh`}
@@ -314,5 +312,6 @@ export function PortfolioPage() {
         </TerminalBlock>
       </div>
     </main>
+    </>
   );
 }
