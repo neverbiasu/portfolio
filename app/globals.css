@@ -21,7 +21,7 @@ body {
   background-color: var(--mocha-base);
   color: var(--mocha-text);
   font-family: var(--font-inter);
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 a {

@@ -1,9 +1,9 @@
 # 项目看板 (Project Kanban Board)
 
-> **最后更新**: 2025-12-30
-> **状态**: Phase 3 进行中
+> **最后更新**: 2026-01-03
+> **状态**: Phase 4 进行中
 
-## ✅ 已完成 (Phase 1 & Phase 2)
+## ✅ 已完成 (Phase 1 - Phase 3)
 
 ### 1. 项目初始化与样式配置
 - [x] **项目初始化**: Next.js 14 + TypeScript
@@ -32,19 +32,19 @@
 - [x] **背面**: STATS/INFO/LINKS 分区
 - [x] **语言颜色**: GitHub Linguist 官方配色
 
+### 6. 终端增强 (Phase 3)
+- [x] **AI 助手 (faych)**: 终端集成 ModelScope LLM (已实现 /api/ai 路由与流式响应)
+
+### 7. 移动端适配 (Phase 4)
+- [x] **视口修复**: 使用 dvh 单位处理移动端虚拟键盘
+- [x] **响应式布局**: 移动端紧凑间距和内边距
+- [x] **触摸优化**: Project Card 点击反馈和高度调整
+
 ---
 
-## 📅 进行中 (Phase 3)
-
-### 6. 终端增强
-- [ ] **AI 助手 (faych)**: 终端集成 ModelScope LLM (当前使用关键词检索 RAG)
-
----
-
-## 🎨 待开发 (Phase 4: Design & Polish)
+## 📅 进行中 (Phase 4: Design & Polish)
 
 - [ ] **导航栏**: 为未来多页面准备
-- [ ] **移动端适配**: 处理虚拟键盘等问题
 - [ ] **SEO**: 添加 Metadata 和 OpenGraph 标签
 - [ ] **性能优化**: 懒加载重组件
 

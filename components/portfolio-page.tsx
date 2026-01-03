@@ -40,78 +40,7 @@ const HelpOutput: React.FC<{ copy: ReturnType<typeof getCopy> }> = ({ copy }) =>
   </div>
 );
 
-const StatsOutput: React.FC<{ locale: Locale }> = ({ locale }) => {
-  if (!wakatimeStats) {
-    return (
-      <div className="text-mocha-subtext">
-        {locale === 'zh' ? 'Wakatime 数据不可用' : 'Wakatime data not available'}
-      </div>
-    );
-  }
-
-  return (
-    <div className="space-y-4">
-      {/* Summary */}
-      <div>
-        <p className="text-mocha-blue font-bold">
-          {locale === 'zh' ? '编程统计' : 'Coding Stats'} ({wakatimeStats.range})
-        </p>
-        <p className="mt-1">
-          <span className="text-mocha-subtext">{locale === 'zh' ? '总计: ' : 'Total: '}</span>
-          <span className="text-mocha-green font-bold">{wakatimeStats.human_readable_total}</span>
-          <span className="text-mocha-subtext mx-2">|</span>
-          <span className="text-mocha-subtext">{locale === 'zh' ? '日均: ' : 'Daily Avg: '}</span>
-          <span className="text-mocha-yellow">{wakatimeStats.human_readable_daily_average}</span>
-        </p>
-      </div>
-
-      {/* Languages with progress bars */}
-      <div>
-        <p className="text-mocha-mauve font-bold mb-2">
-          {locale === 'zh' ? '编程语言' : 'Languages'}
-        </p>
-        <div className="space-y-1">
-          {wakatimeStats.languages.slice(0, 6).map((lang: any) => (
-            <div key={lang.name} className="flex items-center gap-2">
-              <span className="w-20 text-sm truncate">{lang.name}</span>
-              <div className="flex-1 h-2 bg-mocha-surface rounded-full overflow-hidden">
-                <div
-                  className="h-full rounded-full transition-all"
-                  style={{
-                    width: `${Math.min(lang.percent, 100)}%`,
-                    backgroundColor: getLanguageColor(lang.name),
-                  }}
-                />
-              </div>
-              <span className="w-12 text-xs text-mocha-subtext text-right">{lang.percent.toFixed(1)}%</span>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Editors */}
-      {wakatimeStats.editors && wakatimeStats.editors.length > 0 && (
-        <div>
-          <p className="text-mocha-lavender font-bold mb-1">
-            {locale === 'zh' ? '编辑器' : 'Editors'}
-          </p>
-          <p className="text-sm">
-            {wakatimeStats.editors.map((e: any) => `${e.name} (${e.percent.toFixed(1)}%)`).join(', ')}
-          </p>
-        </div>
-      )}
-
-      {/* Best day */}
-      {wakatimeStats.best_day && (
-        <div className="text-sm">
-          <span className="text-mocha-peach">★ </span>
-          <span className="text-mocha-subtext">{locale === 'zh' ? '最佳日: ' : 'Best Day: '}</span>
-          <span>{wakatimeStats.best_day.date} - {wakatimeStats.best_day.text}</span>
-        </div>
-      )}
-    </div>
-  );
-};
+import { StatsOutput } from '@/components/stats-output';
 
 // --- Main Page Component ---
 
@@ -291,18 +220,18 @@ export function PortfolioPage() {
 
   return (
     <main
-      className="relative min-h-screen bg-mocha-crust p-4 md:p-8 lg:p-12"
+      className="relative min-h-[100dvh] bg-mocha-crust p-3 md:p-8 lg:p-12"
       onClick={() => inputRef.current?.focus()} // Focus input on any click
     >
       <div className="absolute top-4 right-4 md:top-8 md:right-8 z-10">
         <LanguageToggle locale={locale} onToggle={setLocale} />
       </div>
 
-      <div className="mx-auto flex max-w-5xl flex-col gap-8">
+      <div className="mx-auto flex max-w-5xl flex-col gap-4 md:gap-8">
         {/* --- Terminal Block --- */}
         <TerminalBlock
           title={`faysh`}
-          className="h-[60vh] min-h-[300px]"
+          className="h-[50dvh] md:h-[60vh] min-h-[300px]"
         >
           {/* Terminal content - single scrollable area */}
           <div 

@@ -51,7 +51,7 @@ export function ProjectCard({ project, locale }: Props) {
 
   return (
     <div 
-      className="relative w-full h-72 md:h-80 cursor-pointer group perspective-1000"
+      className="relative w-full h-64 md:h-80 cursor-pointer group perspective-1000"
       onClick={handleFlip}
     >
       <motion.div
@@ -63,7 +63,7 @@ export function ProjectCard({ project, locale }: Props) {
       >
         {/* === FRONT SIDE === */}
         <div className="absolute w-full h-full backface-hidden">
-          <article className="w-full h-full flex flex-col rounded-lg overflow-hidden border-2 border-mocha-surface hover:border-mocha-primary/50 transition-all duration-300 bg-gradient-to-br from-mocha-base to-mocha-surface shadow-lg hover:shadow-xl hover:shadow-mocha-primary/10">
+          <article className="w-full h-full flex flex-col rounded-lg overflow-hidden border-2 border-mocha-surface active:border-mocha-primary/50 md:hover:border-mocha-primary/50 transition-all duration-300 bg-gradient-to-br from-mocha-base to-mocha-surface shadow-lg active:shadow-xl md:hover:shadow-xl hover:shadow-mocha-primary/10">
             
             {/* Language Bar */}
             <div 
