@@ -4,7 +4,7 @@
       "name": "ComfyUI-SAM2",
       "description": "A ComfyUI extension for Segment-Anything 2",
       "html_url": "https://github.com/neverbiasu/ComfyUI-SAM2",
-      "stargazers_count": 237,
+      "stargazers_count": 239,
       "forks_count": 41,
       "language": "Python",
       "topics": [
@@ -12,11 +12,11 @@
         "comfyui-nodes",
         "custom-nodes"
       ],
-      "updated_at": "2025-12-29T19:17:40Z",
+      "updated_at": "2026-01-08T16:50:41Z",
       "created_at": "2024-08-01T13:58:47Z",
       "homepage": "",
       "license": null,
-      "open_issues_count": 2,
+      "open_issues_count": 0,
       "size": 1549
     },
     {
@@ -88,18 +88,18 @@
         "styletransfer",
         "stylization"
       ],
-      "updated_at": "2025-12-29T11:15:50Z",
+      "updated_at": "2025-12-31T17:14:52Z",
       "created_at": "2024-01-31T15:47:36Z",
       "homepage": "",
       "license": "Apache-2.0",
       "open_issues_count": 0,
-      "size": 1580
+      "size": 1582
     },
     {
       "name": "ComfyUI-Image-Captioner",
       "description": "A ComfyUI extension for generating captions of images.",
       "html_url": "https://github.com/neverbiasu/ComfyUI-Image-Captioner",
-      "stargazers_count": 22,
+      "stargazers_count": 23,
       "forks_count": 6,
       "language": "Python",
       "topics": [
@@ -107,7 +107,7 @@
         "comfyui-nodes",
         "comfyui-workflow"
       ],
-      "updated_at": "2025-12-25T05:35:32Z",
+      "updated_at": "2026-01-04T02:27:08Z",
       "created_at": "2024-07-26T08:18:09Z",
       "homepage": "",
       "license": "MIT",
@@ -147,22 +147,37 @@
         "comfyui-nodes",
         "comfyui-workflow"
       ],
-      "updated_at": "2025-12-30T01:55:22Z",
+      "updated_at": "2026-01-08T01:57:06Z",
       "created_at": "2025-04-25T15:41:44Z",
       "homepage": "",
       "license": "MIT",
       "open_issues_count": 1,
-      "size": 6910
+      "size": 6453
+    },
+    {
+      "name": "awesome-gemini-prompts",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/awesome-gemini-prompts",
+      "stargazers_count": 12,
+      "forks_count": 4,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2026-01-08T23:23:13Z",
+      "created_at": "2025-11-25T16:49:51Z",
+      "homepage": "https://awesomegeminiprompts.tech",
+      "license": "NOASSERTION",
+      "open_issues_count": 1,
+      "size": 8920
     },
     {
       "name": "ComfyUI-KittenTTS",
       "description": "A ComfyUI extension for KittenTTS",
       "html_url": "https://github.com/neverbiasu/ComfyUI-KittenTTS",
-      "stargazers_count": 7,
+      "stargazers_count": 8,
       "forks_count": 3,
       "language": "Python",
       "topics": [],
-      "updated_at": "2025-11-07T21:43:55Z",
+      "updated_at": "2026-01-08T07:08:31Z",
       "created_at": "2025-08-09T18:40:21Z",
       "homepage": null,
       "license": "Apache-2.0",
@@ -194,6 +209,21 @@
       "size": 22
     },
     {
+      "name": "Awesome-Video-Downloader",
+      "description": "Embark on an effortless video downloading journey with Awesome-Video-Downloader. This useful tool facilitates seamless downloads of watermark-free videos from an array of online platforms and apps directly via in-app or web links. But that's not all! It also empowers users to fetch captivating thumbnails from various videos.",
+      "html_url": "https://github.com/neverbiasu/Awesome-Video-Downloader",
+      "stargazers_count": 4,
+      "forks_count": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "updated_at": "2025-12-31T01:21:11Z",
+      "created_at": "2023-10-29T15:36:43Z",
+      "homepage": null,
+      "license": "MIT",
+      "open_issues_count": 1,
+      "size": 1009
+    },
+    {
       "name": "ComfyUI-Ovis-U1",
       "description": "A ComfyUI extension for Ovis-U1",
       "html_url": "https://github.com/neverbiasu/ComfyUI-Ovis-U1",
@@ -205,23 +235,8 @@
       "created_at": "2025-07-01T11:03:09Z",
       "homepage": null,
       "license": "Apache-2.0",
-      "open_issues_count": 3,
+      "open_issues_count": 4,
       "size": 7545
-    },
-    {
-      "name": "Awesome-Video-Downloader",
-      "description": "Embark on an effortless video downloading journey with Awesome-Video-Downloader.  This useful tool facilitates seamless downloads of watermark-free videos from an array of online platforms and apps directly via in-app or web links.   But that's not all!   It also empowers users to fetch captivating thumbnails from various videos. ",
-      "html_url": "https://github.com/neverbiasu/Awesome-Video-Downloader",
-      "stargazers_count": 4,
-      "forks_count": 0,
-      "language": "JavaScript",
-      "topics": [],
-      "updated_at": "2025-12-29T22:37:42Z",
-      "created_at": "2023-10-29T15:36:43Z",
-      "homepage": null,
-      "license": "MIT",
-      "open_issues_count": 0,
-      "size": 1005
     },
     {
       "name": "ComfyUI-Dashscope",
@@ -300,21 +315,6 @@
       "size": 51902
     },
     {
-      "name": "purelkman",
-      "description": "A game which shows the path of AI monster and player, based on Phaser3.",
-      "html_url": "https://github.com/neverbiasu/purelkman",
-      "stargazers_count": 2,
-      "forks_count": 0,
-      "language": "JavaScript",
-      "topics": [],
-      "updated_at": "2025-12-30T22:49:09Z",
-      "created_at": "2023-12-28T07:59:47Z",
-      "homepage": null,
-      "license": null,
-      "open_issues_count": 0,
-      "size": 979
-    },
-    {
       "name": "ComfyUI-ModelScope",
       "description": null,
       "html_url": "https://github.com/neverbiasu/ComfyUI-ModelScope",
@@ -322,12 +322,27 @@
       "forks_count": 1,
       "language": "Python",
       "topics": [],
-      "updated_at": "2025-12-29T01:18:01Z",
+      "updated_at": "2026-01-05T02:26:27Z",
       "created_at": "2025-09-05T16:19:57Z",
       "homepage": null,
       "license": null,
       "open_issues_count": 1,
-      "size": 1175
+      "size": 1222
+    },
+    {
+      "name": "purelkman",
+      "description": "A game which shows the path of AI monster and player, based on Phaser3.",
+      "html_url": "https://github.com/neverbiasu/purelkman",
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "updated_at": "2026-01-02T17:25:54Z",
+      "created_at": "2023-12-28T07:59:47Z",
+      "homepage": "https://purelkman.vercel.app",
+      "license": null,
+      "open_issues_count": 2,
+      "size": 25649
     },
     {
       "name": "zotero-addon-template",
@@ -349,6 +364,26 @@
       "size": 548
     },
     {
+      "name": "civitai-dl",
+      "description": "download models, images, and metadata from Civitai",
+      "html_url": "https://github.com/neverbiasu/civitai-dl",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "language": "Python",
+      "topics": [
+        "civitai",
+        "civitai-api",
+        "downloader",
+        "pypi-package"
+      ],
+      "updated_at": "2026-01-05T19:02:18Z",
+      "created_at": "2025-04-09T11:44:28Z",
+      "homepage": "https://pypi.org/project/civitai-dl/",
+      "license": "MIT",
+      "open_issues_count": 2,
+      "size": 485
+    },
+    {
       "name": "ComfyUI-Show-o",
       "description": "A ComfyUI extension for Show-o Series",
       "html_url": "https://github.com/neverbiasu/ComfyUI-Show-o",
@@ -362,26 +397,6 @@
       "license": null,
       "open_issues_count": 0,
       "size": 780
-    },
-    {
-      "name": "civitai-dl",
-      "description": "download models, images, and metadata from Civitai",
-      "html_url": "https://github.com/neverbiasu/civitai-dl",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "language": "Python",
-      "topics": [
-        "civitai",
-        "civitai-api",
-        "downloader",
-        "pypi-package"
-      ],
-      "updated_at": "2025-05-18T11:13:25Z",
-      "created_at": "2025-04-09T11:44:28Z",
-      "homepage": "https://pypi.org/project/civitai-dl/",
-      "license": "MIT",
-      "open_issues_count": 1,
-      "size": 502
     },
     {
       "name": "SAM2-WebUI",
@@ -421,6 +436,81 @@
       "size": 65742
     },
     {
+      "name": "portfolio",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/portfolio",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2026-01-09T00:20:45Z",
+      "created_at": "2025-10-12T22:14:47Z",
+      "homepage": "https://portfolio-six-beta-56.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 617
+    },
+    {
+      "name": "neverbiasu",
+      "description": "README",
+      "html_url": "https://github.com/neverbiasu/neverbiasu",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": null,
+      "topics": [],
+      "updated_at": "2026-01-08T18:25:29Z",
+      "created_at": "2025-02-14T09:17:41Z",
+      "homepage": null,
+      "license": null,
+      "open_issues_count": 0,
+      "size": 155
+    },
+    {
+      "name": "ModelScope-Top-LoRAs",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/ModelScope-Top-LoRAs",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Python",
+      "topics": [],
+      "updated_at": "2026-01-08T03:24:51Z",
+      "created_at": "2025-11-05T00:52:35Z",
+      "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 114351
+    },
+    {
+      "name": "calabiyau-data-vis",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/calabiyau-data-vis",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Vue",
+      "topics": [],
+      "updated_at": "2026-01-07T01:48:57Z",
+      "created_at": "2025-12-12T00:10:08Z",
+      "homepage": "https://calabiyau-data-vis.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 991
+    },
+    {
+      "name": "deepmind-exercise",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/deepmind-exercise",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "updated_at": "2026-01-01T16:33:20Z",
+      "created_at": "2025-12-25T18:08:02Z",
+      "homepage": null,
+      "license": null,
+      "open_issues_count": 0,
+      "size": 106
+    },
+    {
       "name": "stylization_frontend",
       "description": null,
       "html_url": "https://github.com/neverbiasu/stylization_frontend",
@@ -433,97 +523,7 @@
       "homepage": "https://stylization-frontend.vercel.app/",
       "license": null,
       "open_issues_count": 0,
-      "size": 6166
-    },
-    {
-      "name": "deepmind-exercise",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/deepmind-exercise",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "Jupyter Notebook",
-      "topics": [],
-      "updated_at": "2025-12-30T23:15:35Z",
-      "created_at": "2025-12-25T18:08:02Z",
-      "homepage": null,
-      "license": null,
-      "open_issues_count": 0,
-      "size": 78
-    },
-    {
-      "name": "awesome-gemini-prompts",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/awesome-gemini-prompts",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "updated_at": "2025-12-30T18:28:24Z",
-      "created_at": "2025-11-25T16:49:51Z",
-      "homepage": "https://awesome-gemini-prompts.vercel.app",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 4487
-    },
-    {
-      "name": "neverbiasu",
-      "description": "README",
-      "html_url": "https://github.com/neverbiasu/neverbiasu",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": null,
-      "topics": [],
-      "updated_at": "2025-12-30T18:27:51Z",
-      "created_at": "2025-02-14T09:17:41Z",
-      "homepage": null,
-      "license": null,
-      "open_issues_count": 0,
-      "size": 147
-    },
-    {
-      "name": "ModelScope-Top-LoRAs",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/ModelScope-Top-LoRAs",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "Python",
-      "topics": [],
-      "updated_at": "2025-12-30T03:22:48Z",
-      "created_at": "2025-11-05T00:52:35Z",
-      "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 109365
-    },
-    {
-      "name": "portfolio",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/portfolio",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "updated_at": "2025-12-30T00:44:53Z",
-      "created_at": "2025-10-12T22:14:47Z",
-      "homepage": "https://portfolio-six-beta-56.vercel.app",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 243
-    },
-    {
-      "name": "calabiyau-data-vis",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/calabiyau-data-vis",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "Vue",
-      "topics": [],
-      "updated_at": "2025-12-17T19:16:12Z",
-      "created_at": "2025-12-12T00:10:08Z",
-      "homepage": "https://calabiyau-data-vis.vercel.app",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 980
+      "size": 6167
     },
     {
       "name": "dataset-cat",
@@ -803,5 +803,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2025-12-31T00:45:34.432Z"
+  "last_updated": "2026-01-09T00:45:42.670Z"
 }
