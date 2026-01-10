@@ -55,6 +55,21 @@
       "size": 46030
     },
     {
+      "name": "awesome-gemini-prompts",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/awesome-gemini-prompts",
+      "stargazers_count": 42,
+      "forks_count": 9,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2026-01-10T00:26:45Z",
+      "created_at": "2025-11-25T16:49:51Z",
+      "homepage": "https://awesomegeminiprompts.tech",
+      "license": "NOASSERTION",
+      "open_issues_count": 2,
+      "size": 8940
+    },
+    {
       "name": "IELTSDuck",
       "description": null,
       "html_url": "https://github.com/neverbiasu/IELTSDuck",
@@ -153,21 +168,6 @@
       "license": "MIT",
       "open_issues_count": 1,
       "size": 6453
-    },
-    {
-      "name": "awesome-gemini-prompts",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/awesome-gemini-prompts",
-      "stargazers_count": 12,
-      "forks_count": 4,
-      "language": "TypeScript",
-      "topics": [],
-      "updated_at": "2026-01-08T23:23:13Z",
-      "created_at": "2025-11-25T16:49:51Z",
-      "homepage": "https://awesomegeminiprompts.tech",
-      "license": "NOASSERTION",
-      "open_issues_count": 1,
-      "size": 8920
     },
     {
       "name": "ComfyUI-KittenTTS",
@@ -436,19 +436,19 @@
       "size": 65742
     },
     {
-      "name": "portfolio",
+      "name": "standards",
       "description": null,
-      "html_url": "https://github.com/neverbiasu/portfolio",
+      "html_url": "https://github.com/neverbiasu/standards",
       "stargazers_count": 0,
       "forks_count": 0,
-      "language": "TypeScript",
+      "language": "JavaScript",
       "topics": [],
-      "updated_at": "2026-01-09T00:20:45Z",
-      "created_at": "2025-10-12T22:14:47Z",
-      "homepage": "https://portfolio-six-beta-56.vercel.app",
-      "license": null,
+      "updated_at": "2026-01-09T21:19:35Z",
+      "created_at": "2026-01-09T21:19:28Z",
+      "homepage": null,
+      "license": "MIT",
       "open_issues_count": 0,
-      "size": 617
+      "size": 9
     },
     {
       "name": "neverbiasu",
@@ -458,7 +458,7 @@
       "forks_count": 0,
       "language": null,
       "topics": [],
-      "updated_at": "2026-01-08T18:25:29Z",
+      "updated_at": "2026-01-09T18:28:30Z",
       "created_at": "2025-02-14T09:17:41Z",
       "homepage": null,
       "license": null,
@@ -473,12 +473,27 @@
       "forks_count": 0,
       "language": "Python",
       "topics": [],
-      "updated_at": "2026-01-08T03:24:51Z",
+      "updated_at": "2026-01-09T03:25:30Z",
       "created_at": "2025-11-05T00:52:35Z",
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
       "license": null,
       "open_issues_count": 0,
-      "size": 114351
+      "size": 114368
+    },
+    {
+      "name": "portfolio",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/portfolio",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2026-01-09T00:45:47Z",
+      "created_at": "2025-10-12T22:14:47Z",
+      "homepage": "https://portfolio-six-beta-56.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 619
     },
     {
       "name": "calabiyau-data-vis",
@@ -803,5 +818,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-01-09T00:45:42.670Z"
+  "last_updated": "2026-01-10T00:44:37.135Z"
 }
