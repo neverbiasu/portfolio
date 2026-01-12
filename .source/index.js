@@ -1,0 +1,10 @@
+import { toRuntime, toRuntimeAsync } from "fumadocs-mdx"
+import * as docs_0 from "../content/blog/en/hello-world.mdx?collection=docs&hash=198548b51ddcbf33d6488512e6d6f63ba7af7ec9e4b6c464d067c75f44a010fb"
+import * as docs_1 from "../content/blog/en/index.mdx?collection=docs&hash=198548b51ddcbf33d6488512e6d6f63ba7af7ec9e4b6c464d067c75f44a010fb"
+import * as docs_2 from "../content/blog/en/ldm.mdx?collection=docs&hash=198548b51ddcbf33d6488512e6d6f63ba7af7ec9e4b6c464d067c75f44a010fb"
+import * as docs_3 from "../content/blog/zh/2025-summary.mdx?collection=docs&hash=198548b51ddcbf33d6488512e6d6f63ba7af7ec9e4b6c464d067c75f44a010fb"
+import * as docs_4 from "../content/blog/zh/hello-world.mdx?collection=docs&hash=198548b51ddcbf33d6488512e6d6f63ba7af7ec9e4b6c464d067c75f44a010fb"
+import * as docs_5 from "../content/blog/zh/index.mdx?collection=docs&hash=198548b51ddcbf33d6488512e6d6f63ba7af7ec9e4b6c464d067c75f44a010fb"
+import * as docs_6 from "../content/blog/zh/ldm.mdx?collection=docs&hash=198548b51ddcbf33d6488512e6d6f63ba7af7ec9e4b6c464d067c75f44a010fb"
+export const docs = [toRuntime("doc", docs_0, {"path":"en/hello-world.mdx","absolutePath":"/Users/nev4rb14su/workspace/portfolio/content/blog/en/hello-world.mdx"}), toRuntime("doc", docs_1, {"path":"en/index.mdx","absolutePath":"/Users/nev4rb14su/workspace/portfolio/content/blog/en/index.mdx"}), toRuntime("doc", docs_2, {"path":"en/ldm.mdx","absolutePath":"/Users/nev4rb14su/workspace/portfolio/content/blog/en/ldm.mdx"}), toRuntime("doc", docs_3, {"path":"zh/2025-summary.mdx","absolutePath":"/Users/nev4rb14su/workspace/portfolio/content/blog/zh/2025-summary.mdx"}), toRuntime("doc", docs_4, {"path":"zh/hello-world.mdx","absolutePath":"/Users/nev4rb14su/workspace/portfolio/content/blog/zh/hello-world.mdx"}), toRuntime("doc", docs_5, {"path":"zh/index.mdx","absolutePath":"/Users/nev4rb14su/workspace/portfolio/content/blog/zh/index.mdx"}), toRuntime("doc", docs_6, {"path":"zh/ldm.mdx","absolutePath":"/Users/nev4rb14su/workspace/portfolio/content/blog/zh/ldm.mdx"})];
+export const meta = [];

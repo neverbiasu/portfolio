@@ -211,6 +211,22 @@ export const socialLinks = [
   },
 ] as const;
 
+export interface WakatimeStats {
+  languages: { name: string; percent: number; text: string; total_seconds: number }[];
+  editors: { name: string; percent: number; text: string }[];
+  operating_systems: { name: string; percent: number; text: string }[];
+  total_seconds: number;
+  human_readable_total: string;
+  daily_average: number;
+  human_readable_daily_average: string;
+  best_day?: {
+    date: string;
+    text: string;
+    total_seconds: number;
+  };
+  range: string;
+}
+
 // Wakatime stats
-export const wakatimeStats = (generatedData as any).wakatime || null;
+export const wakatimeStats: WakatimeStats | null = (generatedData as any).wakatime || null;
 
