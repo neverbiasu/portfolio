@@ -1,0 +1,67 @@
+---
+title: LDM (Latent Diffusion Models) 简要笔记
+description: 介绍 LDM 的基本定义和理论。
+---
+
+扩散模型 (DM) 的核心目标是构建一条概率路径，将噪声去噪为图像。
+用数学公式描述图像分布是很困难的。
+因此，DM 提出了一个解决方案：研究随时间 $$t$$ 变化的概率路径 ($$p_t$$)，将噪声平滑地转换为数据。
+
+## 正向过程 (Forward Process)
+
+1. 为了研究图像生成，首先必须学习如何破坏图像。DM 定义了一个马尔可夫链来逐渐向图像添加噪声。
+2. 
+```math
+q(x_t|x_{t-1}) = \mathcal{N}(x_t; \sqrt{1 - \beta_t}x_{t-1}, \beta_t\mathbf{I})
+```
+3. 在每个时间步 $$t$$，$$x_t$$ 仅取决于 $$x_{t-1}$$。$$q(x_t|x_{t-1})$$ 表示给定 $$x_{t-1}$$ 时 $$x_t$$ 的概率。$$\mathcal{N}$$ 是正态（高斯）分布。$$\sqrt{1 - \beta_t}$$ 是均值的系数（$$x_{t-1}$$ 的缩放因子）。$$\beta_t \mathbf{I}$$ 是分布的协方差矩阵。
+
+## 逆向去噪过程 (Reverse Denoising Process)
+
+1. 扩散模型 (DM) 的核心目标是构建一个网络来预测添加到图像中的噪声。
+2. 
+```math
+L_{\text{simple}} = \|\epsilon - \epsilon_{\theta}(x_t, t)\|^2
+```
+3. 模型学习梯度场（分数函数，Score Function）$$\nabla \log p_t(x)$$，它指出了增加属于真实数据的概率的方向。
+
+## 感知压缩 (Perceptual Compression)
+
+1. 这一阶段的目标是找到一个计算效率更高，但在感知上与数据（图像）空间等效的空间。
+2. 因此，我们需要训练一个由编码器和解码器组成的网络。
+3. 编码器将数据（图像）映射到低维潜空间。解码器将潜变量映射回数据（图像）空间。
+```math
+z = E(x)
+\tilde{x} = D(z)
+```
+（注：此处没有时间步 $$t$$，因为这是独立于扩散过程的预训练阶段。）
+4. 为了避免潜空间的高方差，我们需要采用两种归一化方法：KL 归一化（类似于 VAE）和 VQ 归一化（通常解释为 VQGAN）。
+5. 通过去除高频噪声，随后的生成模型可以专注于数据的语义和概念构成（语义压缩）。
+
+## LDM (潜扩散模型)
+
+1. 生成过程是固定马尔可夫链的**逆过程**。它学习将正态分布逐渐去噪回**潜**分布（而不是像素空间）。
+2. 目标函数使用简化的**重加权变分下界 (RVLB)**。它训练一个时间条件 UNet $$\epsilon_\theta(z_t, t)$$ 来预测添加到潜代码 $$z_t$$ 中的噪声 $$\epsilon$$。
+```math
+L_{LDM} := E_{E(x), \epsilon \sim N(0,1), t} [\| \epsilon - \epsilon_\theta(z_t, t) \|^2_2]
+```
+
+## 条件机制 (Conditioning Mechanism)
+
+1. 使用像 CLIP 这样的专用编码器 $$\tau_\theta$$ 将文本编码为嵌入向量。
+2. 通过交叉注意力 (Cross-Attention) 层将条件表示引入 UNet 骨干网络。
+3. 
+```math
+L_{LDM} := E_{E(x),y,\epsilon \sim N(0,1),t} [\|\epsilon - \epsilon_\theta(z_t, t, \tau_\theta(y))\|^2_2]
+```
+
+## 总结 (Conclusion)
+
+像 VAE 这样的自编码器通过感知压缩解决了计算效率问题。
+扩散模型 (LDM) 利用马尔可夫链的力量来研究数据分布的概率路径。
+条件机制通过交叉注意力扩展了扩散模型的模态。
+每个组件在 LDM 中都起着至关重要的作用，赋予了模型高效率、高质量和多模态的能力。
+
+## 参考 (Reference)
+
+1. Rombach, Robin, A. Blattmann, Dominik Lorenz, Patrick Esser and Björn Ommer. “High-Resolution Image Synthesis with Latent Diffusion Models.” 2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) (2021): 10674-10685.

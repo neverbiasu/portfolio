@@ -1,0 +1,67 @@
+---
+title: A brief note of LDM(Latent Diffusion Models)
+description: It introduces basic definitions, theories of LDM.
+---
+
+The core objective of DM(Diffusion Model) is building a probability path which denoise a image from a noise. 
+It's hard to describe image distribution with mathematical formula.
+So, DM propose a solution to study a probability path ($$p_t$$) chagne with time $$t$$, transform noise to data smoothly.
+
+## Forward Process
+
+1. For studying image generation, must to learn the disruption first. DM defines a Markov Chain to add noise to image gradually.
+2. 
+```math
+q(x_t|x_{t-1}) = \mathcal{N}(x_t; \sqrt{1 - \beta_t}x_{t-1}, \beta_t\mathbf{I})
+```
+3. At every time step $$t$$, the $$x_t$$ only depends on $$x_{t-1}$$. $$q(x_t|x_{t-1})$$ represents the probability of $$x_t$$ given $$x_{t-1}$$. $$\mathcal{N}$$ is the normal (Gaussian) distribution. $$\sqrt{1 - \beta_t}$$ is the coefficient of the mean (scaling factor for $$x_{t-1}$$). $$\beta_t \mathbf{I}$$ is the covariance matrix of the distribution.
+
+## Reverse Denoising Process
+
+1. The core objective of DM(Diffusion Models) is building a net work to predict the noise added to image.
+2. 
+```math
+L_{\text{simple}} = \|\epsilon - \epsilon_{\theta}(x_t, t)\|^2
+```
+3. The model learn the gradient field(Score Function), $$\nabla \log p_t(x)$$ which tells the direction of increasing the probability of it belonging to true data.
+
+## Perceptual Compression
+
+1. The objective in this phase is to find a more computational efficient space but equal to data(image) space perceptually.
+2. Thus, we need to train a network composed by encoder and decoder.
+3. Encoder maps data(image) to a lower-dimensional latent space. Decoder maps latent to data(image) space.
+```math
+z = E(x)
+\tilde{x} = D(z)
+```
+(Note: No time step $$t$$ here, as this is the pre-training stage independent of the diffusion process.)
+4. To avoid high variance of latent space, we adopt two normalization methods: KL Normalization(Similar to VAE) and VQ Normalization(interpreted as VQGAN).
+5. By removing high-frequency noise, subsequent generative models can focus on the semantic and conceptual composition of the data (semantic compression).
+
+## LDM (Latent Diffusion Models)
+
+1. The generative process is the **reverse** of a fixed Markov Chain. It learns to gradually denoise a normal distribution back to the **latent** distribution (not pixel space).
+2. The objective function uses the simplified **Reweighted Variational Lower Bound (RVLB)**. It trains a time-conditional UNet $\epsilon_\theta(z_t, t)$ to predict the noise $\epsilon$ added to the latent code $z_t$.
+```math
+L_{LDM} := E_{E(x), \epsilon \sim N(0,1), t} [\| \epsilon - \epsilon_\theta(z_t, t) \|^2_2]
+```
+
+## Conditioning Mechanism
+
+1. Using specialized encoder $$\tau_\theta$$ like CLIP to encode text into embeddings.
+2. Introducing conditional representation into UNet backbone network through Cross-Attention layers.
+3. 
+```math
+L_{LDM} := E_{E(x),y,\epsilon \sim N(0,1),t} [\|\epsilon - \epsilon_\theta(z_t, t, \tau_\theta(y))\|^2_2]
+```
+
+## Conclusion
+
+Autoencoders like VAE solve the computational efficiency problem with perceptual compression. 
+Diffusion Models (LDMs) leverage the power of Markov Chain to study the probability path of data distribution.
+Conditioning Mechanism extends the modality of Diffusion Models by Cross-Attention.
+Each component plays a crucial role in the LDM, giving the model the ability to achieve high efficiency, high quality, and multi-modality.
+
+## Reference
+
+1. Rombach, Robin, A. Blattmann, Dominik Lorenz, Patrick Esser and Björn Ommer. “High-Resolution Image Synthesis with Latent Diffusion Models.” 2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) (2021): 10674-10685.
