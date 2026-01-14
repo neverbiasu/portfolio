@@ -1,0 +1,237 @@
+{
+  "platforms": [
+    { "id": "desktop", "label": { "en": "Desktop", "zh": "桌面端" }, "icon": "monitor" },
+    { "id": "mobile", "label": { "en": "Mobile", "zh": "移动端" }, "icon": "smartphone" },
+    { "id": "web", "label": { "en": "Web", "zh": "网页端" }, "icon": "globe" }
+  ],
+  "tags": [
+    { "id": "ide", "label": { "en": "IDE", "zh": "编辑器" }, "color": "mocha-green" },
+    { "id": "ai-assistant", "label": { "en": "AI Assistant", "zh": "AI 助手" }, "color": "mocha-mauve" },
+    { "id": "ai-coding", "label": { "en": "AI Coding", "zh": "AI 编程" }, "color": "mocha-lavender" },
+    { "id": "knowledge", "label": { "en": "Knowledge", "zh": "知识管理" }, "color": "mocha-blue" },
+    { "id": "research", "label": { "en": "Research", "zh": "学术研究" }, "color": "mocha-sapphire" },
+    { "id": "dev-tools", "label": { "en": "Dev Tools", "zh": "开发工具" }, "color": "mocha-teal" },
+    { "id": "reading", "label": { "en": "Reading", "zh": "阅读" }, "color": "mocha-sky" },
+    { "id": "browser", "label": { "en": "Browser", "zh": "浏览器" }, "color": "mocha-peach" },
+    { "id": "design", "label": { "en": "Design", "zh": "设计" }, "color": "mocha-pink" },
+    { "id": "automation", "label": { "en": "Automation", "zh": "自动化" }, "color": "mocha-flamingo" }
+  ],
+  "tools": [
+    {
+      "id": "vscode",
+      "name": "VS Code",
+      "platforms": ["desktop"],
+      "tags": ["ide", "dev-tools"],
+      "description": {
+        "en": "Highly extensible code editor with rich plugin ecosystem. My primary development environment.",
+        "zh": "高度可扩展的代码编辑器，拥有丰富的插件生态，我的主力开发环境。"
+      },
+      "url": "https://code.visualstudio.com",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg"
+    },
+    {
+      "id": "github-copilot",
+      "name": "GitHub Copilot",
+      "platforms": ["desktop"],
+      "tags": ["ai-coding", "ide"],
+      "description": {
+        "en": "AI pair programmer that suggests code completions in real-time. Integrated into VS Code.",
+        "zh": "实时建议代码补全的 AI 结对编程工具，集成在 VS Code 中。"
+      },
+      "url": "https://github.com/features/copilot",
+      "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/githubcopilot.png"
+    },
+    {
+      "id": "antigravity",
+      "name": "Antigravity",
+      "platforms": ["desktop"],
+      "tags": ["ai-coding", "ide"],
+      "description": {
+        "en": "Google's agent-first IDE powered by Gemini 3. Delegates complex tasks to autonomous AI agents.",
+        "zh": "Google 推出的 Agent-first IDE，由 Gemini 3 驱动，可将复杂任务委托给自主 AI 代理。"
+      },
+      "url": "https://antigravity.google",
+      "logo": "https://antigravity.google/assets/image/antigravity-logo.png"
+    },
+    {
+      "id": "jules",
+      "name": "Google Jules",
+      "platforms": ["web"],
+      "tags": ["ai-coding", "automation"],
+      "description": {
+        "en": "Autonomous AI coding agent by Google. Handles entire programming tasks asynchronously in the background.",
+        "zh": "Google 的自主 AI 编程代理，可在后台异步处理整个编程任务。"
+      },
+      "url": "https://jules.google.com",
+      "logo": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/google-jules.svg"
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini",
+      "platforms": ["web", "mobile"],
+      "tags": ["ai-assistant"],
+      "description": {
+        "en": "Google's multimodal AI assistant. Excels at reasoning, analysis and creative tasks.",
+        "zh": "Google 的多模态 AI 助手，擅长推理、分析和创意任务。"
+      },
+      "url": "https://gemini.google.com",
+      "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/gemini.png"
+    },
+    {
+      "id": "qwen-chat",
+      "name": "Qwen Chat",
+      "platforms": ["web"],
+      "tags": ["ai-assistant"],
+      "description": {
+        "en": "Alibaba's AI assistant powered by Qwen models. Strong in Chinese language understanding.",
+        "zh": "阿里巴巴的 AI 助手，基于通义千问模型，中文理解能力出色。"
+      },
+      "url": "https://chat.qwenlm.ai",
+      "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/qwen.png"
+    },
+    {
+      "id": "cherry-studio",
+      "name": "Cherry Studio",
+      "platforms": ["desktop"],
+      "tags": ["ai-assistant"],
+      "description": {
+        "en": "Open-source all-in-one AI client. Integrates 100+ models including GPT, Claude, and local LLMs.",
+        "zh": "开源全能 AI 客户端，集成 100+ 模型，包括 GPT、Claude 及本地大模型。"
+      },
+      "url": "https://cherry-ai.com",
+      "logo": "https://raw.githubusercontent.com/CherryHQ/cherry-studio/main/build/icon.png"
+    },
+    {
+      "id": "notebooklm",
+      "name": "NotebookLM",
+      "platforms": ["web"],
+      "tags": ["ai-assistant", "research", "knowledge"],
+      "description": {
+        "en": "Google's AI research assistant. Analyzes documents and generates summaries, audio overviews and Q&A.",
+        "zh": "Google AI 研究助手，可分析文档并生成摘要、音频概述和问答。"
+      },
+      "url": "https://notebooklm.google.com",
+      "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/notebooklm.png"
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "platforms": ["web", "mobile"],
+      "tags": ["dev-tools"],
+      "description": {
+        "en": "Code hosting and collaboration platform. Home for all my open-source projects.",
+        "zh": "代码托管与协作平台，我所有开源项目的大本营。"
+      },
+      "url": "https://github.com",
+      "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/github.png"
+    },
+    {
+      "id": "postman",
+      "name": "Postman",
+      "platforms": ["desktop", "web"],
+      "tags": ["dev-tools"],
+      "description": {
+        "en": "API development and testing platform. Essential for debugging and documenting APIs.",
+        "zh": "API 开发与测试平台，调试和文档化 API 的必备工具。"
+      },
+      "url": "https://postman.com",
+      "logo": "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "platforms": ["desktop", "web", "mobile"],
+      "tags": ["knowledge"],
+      "description": {
+        "en": "All-in-one workspace for notes, docs, and project management. My second brain.",
+        "zh": "集笔记、文档、项目管理于一体的工作空间，我的第二大脑。"
+      },
+      "url": "https://notion.so",
+      "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/notion.png"
+    },
+    {
+      "id": "folo",
+      "name": "Folo",
+      "platforms": ["desktop", "web", "mobile"],
+      "tags": ["reading", "knowledge"],
+      "description": {
+        "en": "AI-powered RSS reader with TL;DR summaries. Aggregates feeds, social media and newsletters.",
+        "zh": "AI 驱动的 RSS 阅读器，提供摘要总结，聚合订阅源、社交媒体和邮件订阅。"
+      },
+      "url": "https://folo.is",
+      "logo": "https://raw.githubusercontent.com/RSSNext/Folo/main/apps/desktop/resources/icon.png"
+    },
+    {
+      "id": "zotero",
+      "name": "Zotero",
+      "platforms": ["desktop"],
+      "tags": ["research", "knowledge"],
+      "description": {
+        "en": "Reference management tool for academic research. Organizes papers, generates citations.",
+        "zh": "学术研究参考文献管理工具，整理论文、生成引用。"
+      },
+      "url": "https://zotero.org",
+      "logo": "https://www.zotero.org/support/_media/logo/zotero_512x512x32.png"
+    },
+    {
+      "id": "anki",
+      "name": "Anki",
+      "platforms": ["desktop", "mobile"],
+      "tags": ["knowledge", "reading"],
+      "description": {
+        "en": "Spaced repetition flashcard app. The most effective way to memorize anything.",
+        "zh": "间隔重复记忆卡片应用，最高效的记忆方法。"
+      },
+      "url": "https://apps.ankiweb.net",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Anki-icon.svg"
+    },
+    {
+      "id": "purelibro",
+      "name": "PureLibro",
+      "platforms": ["mobile"],
+      "tags": ["reading"],
+      "description": {
+        "en": "Feature-rich ebook reader for iOS. Supports EPUB, MOBI, PDF and comic formats.",
+        "zh": "功能丰富的 iOS 电子书阅读器，支持 EPUB、MOBI、PDF 及漫画格式。"
+      },
+      "url": "https://apps.apple.com/app/purelibro/id6475309366",
+      "logo": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5f/43/1d/5f431d3b-b7bd-fc24-47e0-19675bce80a9/Placeholder.mill/400x400bb-75.webp"
+    },
+    {
+      "id": "chrome",
+      "name": "Chrome",
+      "platforms": ["desktop", "mobile"],
+      "tags": ["browser"],
+      "description": {
+        "en": "Primary browser with excellent DevTools. Syncs across all devices.",
+        "zh": "主力浏览器，拥有出色的开发者工具，跨设备同步。"
+      },
+      "url": "https://google.com/chrome",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Google_Chrome_icon_%28February_2022%29.svg"
+    },
+    {
+      "id": "autoglm",
+      "name": "AutoGLM",
+      "platforms": ["web", "mobile"],
+      "tags": ["automation", "ai-assistant"],
+      "description": {
+        "en": "Zhipu AI's autonomous agent for browser and app automation. Handles complex workflows.",
+        "zh": "智谱 AI 的自主代理，可自动化浏览器和应用操作，处理复杂工作流。"
+      },
+      "url": "https://zhipuai.cn",
+      "logo": "https://github.com/zai-org/Open-AutoGLM/raw/main/resources/logo.svg"
+    },
+    {
+      "id": "canva",
+      "name": "Canva",
+      "platforms": ["web", "mobile"],
+      "tags": ["design"],
+      "description": {
+        "en": "Online design platform for graphics, presentations and social media content.",
+        "zh": "在线设计平台，用于图形、演示文稿和社交媒体内容创作。"
+      },
+      "url": "https://canva.com",
+      "logo": "https://public.canva.site/logo/media/dfb96cc174513093cd6ed61489ccb750.svg"
+    }
+  ]
+}
