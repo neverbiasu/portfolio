@@ -1,0 +1,73 @@
+---
+title: A brief note of Denoising Diffusion Probabilistic Models(DDPM)
+description: It tells the basic method of DDPM
+---
+
+Previous methods like GANs, Autoregressive methods and VAEs often faced challenges with stable training and generating high-fidelity images. 
+While GANs can offer faster training and inference, they are prone to instability like mode collapse. 
+DDPMs provide stable training and high-fidelity image generation, though often with slower sampling speeds.
+
+## Notation
+
+| Symbol | Meaning |
+| --- | --- |
+| $x_0$ | A sample from the data distribution (e.g., an image). |
+| $x_t$ | The noisy version of $x_0$ at diffusion step $t$. |
+| $T$ | The total number of diffusion steps. |
+| $\beta_t$ | The variance schedule used in the forward process. |
+| $\alpha_t$ | $\alpha_t = 1 - \beta_t$. |
+| $\bar{\alpha}_t$ | $\bar{\alpha}_t = \prod_{s=1}^t \alpha_s$. |
+| $q$ | The fixed (forward) noising process. |
+| $p_\theta$ | The learned (reverse) denoising process. |
+
+## Forward Process
+
+1. The forward process defines a fixed Markov Chain named $$q$$.
+2. According to a default schedule $$\beta_t$$, adding Gaussian noise to the image gradually.
+3. If the $$T$$ is large enough(like 1000 steps), any images will become standard normal distribution noise.
+4. 
+```math
+q(x_{1:T}|x_0) = \prod_{t=1}^T q(x_t|x_{t-1})
+```
+
+## Reverse Process
+
+1. The reverse process learns to undo the forward process.
+2. The joint distribution is defined as:
+   ```math
+   p_\theta(x_{0:T}) = p(x_T) \prod_{t=1}^T p_\theta(x_{t-1}|x_t)
+   ```
+3. The transition is modeled as a Gaussian:
+   ```math 
+   p_\theta(x_{t-1}|x_t) = \mathcal{N}(x_{t-1}; \mu_\theta(x_t,t), \Sigma_\theta(x_t,t))
+   ```
+4. The mean $\mu_\theta$ is reparameterized by predicting the noise $\epsilon_\theta$:
+   ```math
+   \mu_\theta(x_t,t) = \frac{1}{\sqrt{\alpha_t}} \left(x_t - \frac{\beta_t}{\sqrt{1-\bar{\alpha}_t}} \epsilon_\theta(x_t, t)\right)
+   ```
+
+   In practice, predicting $\epsilon_\theta(x_t, t)$ is often more stable than directly predicting $\mu_\theta(x_t, t)$, even though they are mathematically equivalent.
+5. This reparameterization connects denoising score matching with model estimating the gradient of data density.
+
+## Intuition: Why Predict Noise?
+
+Think of $x_t$ as a clean image plus a specific amount of Gaussian noise determined by $t$. If the model predicts the noise component, the target distribution is close to standard normal across timesteps, which makes the regression problem more uniform.
+By contrast, predicting $\mu_\theta$ mixes both signal and noise in a timestep-dependent way, which can be harder to learn consistently.
+
+## Training
+
+1. We train the network to approximate the tractable ground-truth posterior $q(x_{t-1}|x_t, x_0)$.
+2. By ignoring weighting terms, the simplified objective is just the MSE between true noise and predicted noise:
+   ```math
+   L_{simple}(\theta) = \mathbb{E}_{t,x_0,\epsilon} \left[ \| \epsilon - \epsilon_\theta(\sqrt{\bar{\alpha}_t}x_0 + \sqrt{1-\bar{\alpha}_t}\epsilon, t) \|^2 \right]
+   ```
+
+## Conclusions
+
+1. DDPM uses two Markov chains. The forward chain adds Gaussian noise until the sample becomes almost pure noise. The reverse chain is learned to denoise step by step.
+2. In practice, the training objective can be simplified to noise prediction with MSE (instead of optimizing the full ELBO):
+   $$
+   L_{\text{simple}} = \|\epsilon - \epsilon_\theta(x_t, t)\|^2.
+   $$
+   Given $(x_t, t)$, the network predicts the noise $\epsilon$.
+3. The objective connects to denoising score matching. The reverse-time generation can also be viewed as sampling that is related to Langevin dynamics.
