@@ -4,7 +4,7 @@
       "name": "ComfyUI-SAM2",
       "description": "A ComfyUI extension for Segment-Anything 2",
       "html_url": "https://github.com/neverbiasu/ComfyUI-SAM2",
-      "stargazers_count": 241,
+      "stargazers_count": 242,
       "forks_count": 42,
       "language": "Python",
       "topics": [
@@ -12,7 +12,7 @@
         "comfyui-nodes",
         "custom-nodes"
       ],
-      "updated_at": "2026-01-12T16:08:53Z",
+      "updated_at": "2026-01-15T08:27:11Z",
       "created_at": "2024-08-01T13:58:47Z",
       "homepage": "",
       "license": null,
@@ -43,16 +43,16 @@
       "name": "awesome-gemini-prompts",
       "description": null,
       "html_url": "https://github.com/neverbiasu/awesome-gemini-prompts",
-      "stargazers_count": 77,
+      "stargazers_count": 79,
       "forks_count": 13,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-01-14T21:22:52Z",
+      "updated_at": "2026-01-15T15:17:14Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
       "open_issues_count": 3,
-      "size": 10095
+      "size": 10121
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -436,34 +436,19 @@
       "size": 65742
     },
     {
-      "name": "awesome-uofg-msc-cs",
+      "name": "dcos-crawler",
       "description": null,
-      "html_url": "https://github.com/neverbiasu/awesome-uofg-msc-cs",
+      "html_url": "https://github.com/neverbiasu/dcos-crawler",
       "stargazers_count": 0,
       "forks_count": 0,
-      "language": "HTML",
+      "language": "Python",
       "topics": [],
-      "updated_at": "2026-01-14T23:13:32Z",
-      "created_at": "2025-09-19T19:14:08Z",
-      "homepage": "https://awesome-uofg-msc-cs.vercel.app",
-      "license": null,
+      "updated_at": "2026-01-15T20:44:09Z",
+      "created_at": "2025-12-27T01:13:38Z",
+      "homepage": null,
+      "license": "MIT",
       "open_issues_count": 0,
-      "size": 808740
-    },
-    {
-      "name": "portfolio",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/portfolio",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "updated_at": "2026-01-14T22:16:08Z",
-      "created_at": "2025-10-12T22:14:47Z",
-      "homepage": "https://portfolio-six-beta-56.vercel.app",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 702
+      "size": 59
     },
     {
       "name": "neverbiasu",
@@ -473,12 +458,27 @@
       "forks_count": 0,
       "language": null,
       "topics": [],
-      "updated_at": "2026-01-14T18:30:09Z",
+      "updated_at": "2026-01-15T18:33:08Z",
       "created_at": "2025-02-14T09:17:41Z",
       "homepage": null,
       "license": null,
       "open_issues_count": 0,
-      "size": 159
+      "size": 160
+    },
+    {
+      "name": "awesome-uofg-msc-cs",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/awesome-uofg-msc-cs",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "HTML",
+      "topics": [],
+      "updated_at": "2026-01-15T03:29:08Z",
+      "created_at": "2025-09-19T19:14:08Z",
+      "homepage": "https://awesome-uofg-msc-cs.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 808832
     },
     {
       "name": "ModelScope-Top-LoRAs",
@@ -488,27 +488,27 @@
       "forks_count": 0,
       "language": "Python",
       "topics": [],
-      "updated_at": "2026-01-14T03:41:56Z",
+      "updated_at": "2026-01-15T03:25:54Z",
       "created_at": "2025-11-05T00:52:35Z",
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
       "license": null,
       "open_issues_count": 0,
-      "size": 116371
+      "size": 116388
     },
     {
-      "name": "dcos-crawler",
+      "name": "portfolio",
       "description": null,
-      "html_url": "https://github.com/neverbiasu/dcos-crawler",
+      "html_url": "https://github.com/neverbiasu/portfolio",
       "stargazers_count": 0,
       "forks_count": 0,
-      "language": "Python",
+      "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-01-13T17:14:13Z",
-      "created_at": "2025-12-27T01:13:38Z",
-      "homepage": null,
-      "license": "MIT",
+      "updated_at": "2026-01-15T00:43:30Z",
+      "created_at": "2025-10-12T22:14:47Z",
+      "homepage": "https://portfolio-six-beta-56.vercel.app",
+      "license": null,
       "open_issues_count": 0,
-      "size": 44
+      "size": 707
     },
     {
       "name": "calabiyau-data-vis",
@@ -833,5 +833,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-01-15T00:43:26.704Z"
+  "last_updated": "2026-01-16T00:46:17.201Z"
 }
