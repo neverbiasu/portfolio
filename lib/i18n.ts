@@ -21,6 +21,8 @@ export type SectionCopy = {
   nav: {
     home: string;
     blog: string;
+    tools: string;
+    socials: string;
     about: string;
   };
   // --- Terminal ---
@@ -34,6 +36,8 @@ export type SectionCopy = {
     projects: string;
     stats: string;
     blog: string;
+    tools: string;
+    socials: string;
     clear: string;
   };
 };
@@ -66,6 +70,8 @@ export const copy: CopyMap = {
     nav: {
       home: "Home",
       blog: "Blog",
+      tools: "Tools",
+      socials: "Socials",
       about: "About",
     },
     // --- Terminal ---
@@ -79,6 +85,8 @@ export const copy: CopyMap = {
       projects: "Show my selected projects",
       stats: "Display my coding statistics (Wakatime)",
       blog: "Read my technical blog",
+      tools: "Browse my daily tools and software",
+      socials: "View my social links and profiles",
       clear: "Clear the terminal screen",
     },
   },
@@ -104,6 +112,8 @@ export const copy: CopyMap = {
     nav: {
       home: "首页",
       blog: "博客",
+      tools: "工具箱",
+      socials: "社交",
       about: "关于",
     },
     // --- Terminal ---
@@ -117,6 +127,8 @@ export const copy: CopyMap = {
       projects: "展示我的精选项目",
       stats: "显示我的编程统计 (Wakatime)",
       blog: "阅读我的技术博客",
+      tools: "浏览我的日常工具和软件",
+      socials: "查看我的社交链接和主页",
       clear: "清空终端屏幕",
     },
   },

@@ -56,7 +56,7 @@ export function PortfolioPage() {
   const inputRef = useRef<HTMLInputElement>(null);
 
   // Available commands for Tab completion
-  const commandNames = useMemo(() => ['help', 'whoami', 'skills', 'projects', 'stats', 'blog', 'clear', 'faych'], []);
+  const commandNames = useMemo(() => ['help', 'whoami', 'skills', 'projects', 'stats', 'blog', 'tools', 'socials', 'clear', 'faych'], []);
 
   // Tab completion hook
   const { handleKeyDown: handleTabKeyDown, suggestion } = useTabCompletion({
@@ -112,6 +112,14 @@ export function PortfolioPage() {
       blog: () => {
         window.open('/blog', '_blank');
         return <span className="text-mocha-green">Opening blog in new tab...</span>;
+      },
+      tools: () => {
+        window.open('/tools', '_blank');
+        return <span className="text-mocha-green">Opening tools page in new tab...</span>;
+      },
+      socials: () => {
+        window.open('/socials', '_blank');
+        return <span className="text-mocha-green">Opening socials page in new tab...</span>;
       },
       clear: () => {
         setHistory([]);

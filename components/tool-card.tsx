@@ -42,17 +42,17 @@ const colorMap: Record<string, { text: string; bg: string }> = {
 
 export function ToolCard({ tool, locale, tagLabels, tagColors, platformLabels }: ToolCardProps) {
   return (
-    <div className="group flex flex-col bg-mocha-base border border-mocha-surface rounded-lg p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:border-mocha-overlay/50">
+    <div className="group flex flex-col bg-mocha-base border border-mocha-surface rounded-lg p-4 sm:p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:border-mocha-overlay/50">
       {/* Header: Logo + Link */}
-      <div className="flex items-start justify-between mb-4">
-        <div className="w-12 h-12 rounded bg-mocha-surface flex items-center justify-center overflow-hidden">
+      <div className="flex items-start justify-between mb-3 sm:mb-4">
+        <div className="w-10 h-10 sm:w-12 sm:h-12 rounded bg-mocha-surface flex items-center justify-center overflow-hidden">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={tool.logo}
             alt={tool.name}
             width={32}
             height={32}
-            className="object-contain w-8 h-8"
+            className="object-contain w-7 h-7 sm:w-8 sm:h-8"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
               target.style.display = 'none';
@@ -66,7 +66,7 @@ export function ToolCard({ tool, locale, tagLabels, tagColors, platformLabels }:
           href={tool.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-mocha-subtext hover:text-white transition-colors opacity-0 group-hover:opacity-100"
+          className="text-mocha-subtext hover:text-white transition-colors sm:opacity-0 sm:group-hover:opacity-100 p-1 -m-1"
           title="Visit website"
         >
           <ExternalLink className="w-4 h-4" />
@@ -74,21 +74,21 @@ export function ToolCard({ tool, locale, tagLabels, tagColors, platformLabels }:
       </div>
 
       {/* Name */}
-      <h3 className="font-mono text-lg font-bold text-white mb-2 group-hover:text-mocha-blue transition-colors">
+      <h3 className="font-mono text-base sm:text-lg font-bold text-white mb-2 group-hover:text-mocha-blue transition-colors">
         {tool.name}
       </h3>
 
       {/* Description */}
-      <p className="text-mocha-subtext text-sm leading-relaxed mb-4">
+      <p className="text-mocha-subtext text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4">
         {tool.description[locale]}
       </p>
 
       {/* Platforms */}
-      <div className="flex gap-2 mb-4">
+      <div className="flex gap-1.5 sm:gap-2 mb-3 sm:mb-4">
         {tool.platforms.map((platform) => (
           <span
             key={platform}
-            className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-mono text-mocha-overlay bg-mocha-surface/50"
+            className="inline-flex items-center gap-1 px-1.5 sm:px-2 py-0.5 rounded text-[10px] font-mono text-mocha-overlay bg-mocha-surface/50"
             title={platformLabels[platform]}
           >
             {platformIcons[platform]}

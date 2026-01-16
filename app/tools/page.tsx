@@ -59,18 +59,18 @@ export default function ToolsPage() {
       <main className="relative min-h-[100dvh] bg-mocha-crust p-3 pt-14 md:p-8 md:pt-20 lg:p-12 lg:pt-24">
         <div className="mx-auto max-w-6xl">
           <TerminalBlock title="~/tools">
-            <div className="mb-6">
-              <h1 className="text-2xl font-bold text-mocha-mauve mb-2 font-mono">
+            <div className="mb-4 sm:mb-6">
+              <h1 className="text-xl sm:text-2xl font-bold text-mocha-mauve mb-1 sm:mb-2 font-mono">
                 {locale === 'en' ? 'Tools' : '工具'}
               </h1>
-              <p className="text-mocha-subtext text-sm">
+              <p className="text-mocha-subtext text-xs sm:text-sm">
                 {locale === 'en'
                   ? 'The tools I use daily for development, research, and productivity.'
                   : '我日常用于开发、研究和效率提升的工具。'}
               </p>
             </div>
 
-            <div className="mb-6">
+            <div className="mb-4 sm:mb-6">
               <ToolsFilter
                 tags={tags}
                 platforms={platforms}
@@ -82,7 +82,7 @@ export default function ToolsPage() {
               />
             </div>
 
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-3 sm:gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {filteredTools.map((tool) => (
                 <ToolCard
                   key={tool.id}

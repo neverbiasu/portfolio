@@ -12,6 +12,15 @@
 3. 使用 fumadocs 原生组件
 4. 文档必须精炼、易读，避免创建重复或无用的文档。 (Documentation must be concise, easy to read, and avoid creating redundant or useless content.)
 
+### Blog-Specific Guidelines
+
+1. 对于论文笔记博客，优先使用有序列表。 (For paper-note blog posts, prefer using ordered lists.)
+2. 博客的第一段（前言）可以不用有序列表，使用段落文本形式。 (The first section (preamble) of a blog post can be in paragraph form without ordered lists.)
+3. 句子长度（英文为主）：每个列表项尽量只表达一个观点；优先使用短句；避免长从句、堆叠形容词。 (Sentence length (mainly English): keep one idea per list item; prefer short sentences; avoid long clauses and adjective stacking.)
+4. 句式约束：优先使用直接陈述（"X does Y" / "Given (x_t, t), ..."）；避免修辞性提问和夸张比喻；直觉解释最多 1-2 句，否则单独成小节。 (Sentence patterns: prefer direct statements; avoid rhetorical questions and heavy metaphors; keep intuition to 1-2 sentences or move it to a dedicated short section.)
+5. 术语一致性（MUST）：同一概念全篇使用同一术语（例如 forward/reverse process、noise prediction、MSE、ELBO）；不要在同一篇里切换同义词。 (Terminology consistency (MUST): use one term per concept across the post; do not swap synonyms within the same post.)
+6. 排版与符号（MUST）：避免使用花式引号（例如 “ ”），统一使用普通引号（" "); 当数学符号较多时，必须提供 Notation 表格集中解释。 (Formatting and notation (MUST): avoid curly quotes; use straight quotes; when there are many symbols, provide a Notation table.)
+
 ## File Management Guidelines
 
 1.  所有临时文件、测试文件或脚本都应放置在 `tmp/` 目录下。 (All temporary files, test files, or scripts should be placed under the `tmp/` directory.)
@@ -91,3 +100,4 @@ Required rules:
 - [Google TypeScript Style Guide](https://google.github.io/styleguide/tsguide.html)
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
 - [@typescript-eslint Rules](https://typescript-eslint.io/rules/)
+
