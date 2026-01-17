@@ -1,0 +1,225 @@
+---
+title: 在 ModelScope 上训练 SDXL LoRA：从选模型到调参数
+description: 面向 ModelScope UI 的 SDXL LoRA 训练实战指南，含模型推荐、参数解析与案例。
+---
+
+# 在 ModelScope 上训练 SDXL LoRA：从选模型到调参数
+
+这篇文章专注于 ModelScope 平台的**图形界面训练**，不涉及命令行和代码。整个流程是：选模型 → 准备数据 → 填参数 → 提交任务 → 等结果。
+
+## 0. 你要得到什么
+
+1. 一个 LoRA 权重文件（`.safetensors`），可以在 ComfyUI/Automatic1111/其他支持 SDXL 的工具里加载。
+2. 能让 SDXL Base 生成你训练集里的风格/角色/画风。
+
+## 1. 选择 SDXL 底座模型
+
+在 ModelScope 的"模型训练 → 视频生成"页面，第一步是选择"使用底模"。
+
+### 1.1 社区微调模型推荐
+
+ModelScope 上有很多社区微调的 SDXL 模型，根据你的训练目标选择合适的底座：
+
+| 模型 | 适合场景 | 特点 |
+| --- | --- | --- |
+| Pony Diffusion V6 XL | 动物、拟人角色 | 对毛发、四足动物的表现力更强。 |
+| ModelE/Illustrious-XL | 动漫、二次元 | 日系插画风格，线条清晰。 |
+| ModelE/Hassaku-XL | 动漫、二次元 | 类似 Illustrious，色彩更柔和。 |
+| DreamShaper XL | 写实人像、产品图 | 细节丰富，适合照片级质感。 |
+| Juggernaut XL | 写实人像、场景 | 光影和构图表现力强。 |
+
+<Callout type="info">
+在 UI 的"模型选择"页面，点击"图像模型"或"Checkpoint"标签，可以看到这些模型。如果找不到，可以在搜索框输入模型名。
+</Callout>
+
+![ModelScope 模型选择界面](/images/blog/modelscope/modelscope-model-select.png)
+
+## 2. 数据集准备（简化版）
+
+在 ModelScope 上，数据集管理有专门的页面。你需要：
+
+1. **准备图片**：10-50 张，主体占比高、风格一致。
+2. **上传到数据管理**：在"数据管理"页面新建数据集，上传图片。
+3. **自动打标**：选择 JoyCaption 或其他打标模型，为每张图生成英文描述（caption）。
+
+<Callout type="warning">
+打标质量直接影响训练效果。如果自动标注不准（如把"短发"标成"长发"），务必手动修正。
+</Callout>
+
+## 3. 在 UI 上调整训练参数
+
+上传好数据集、选好底座模型后，点击"发起训练"，会看到"专业参数（Expert Parameters）"面板。下面按照 UI 的 9 个子面板逐一讲解。
+
+### 参数速查表（新手推荐配置）
+
+| 参数类别 | 核心参数 | 推荐值 | 重要程度 |
+| --- | --- | --- | --- |
+| 学习率 | Unet 学习率 | `0.00005` (5e-5) | ⭐⭐⭐⭐⭐ |
+| 学习率 | Text Encoder 学习率 | `0.000025` (2.5e-5) | ⭐⭐⭐⭐⭐ |
+| 学习率 | 仅训练 Unet | ✅ 勾选 | ⭐⭐⭐⭐⭐ |
+| 网络 | Network Rank | `16-32` | ⭐⭐⭐⭐ |
+| 网络 | Network Alpha | `8-16` (Rank 的一半) | ⭐⭐⭐⭐ |
+| 数据集 | 图片分辨率 | `1024×1024` | ⭐⭐⭐⭐ |
+| 数据集 | Enable ARB Bucket | ✅ 勾选 | ⭐⭐⭐⭐ |
+| 保存 | Save every N epochs | `1` | ⭐⭐⭐⭐ |
+| 打标 | Shuffle Caption | ✅ 勾选 | ⭐⭐⭐ |
+| 训练 | Mixed Precision | `fp16` | ⭐⭐⭐ |
+| 主界面 | 单张次数 | `10-20` | ⭐⭐⭐⭐ |
+| 主界面 | 训练轮数 | `10-30` | ⭐⭐⭐⭐ |
+
+![ModelScope 训练参数界面 - 训练参数](/images/blog/modelscope/modelscope-params-1.png)
+
+### 3.1 训练参数
+
+| UI 参数名 | 推荐值 | 说明 |
+| --- | --- | --- |
+| 训练混合精度 (Mixed precision) | `fp16` | 节省显存，速度快；除非你的 GPU 是 A100/H100，否则用 fp16。 |
+
+### 3.2 样图设置
+
+| UI 参数名 | 推荐值 | 说明 |
+| --- | --- | --- |
+| **样图分辨率 (Resolution)** | **`1024×1024`** | 与数据集分辨率保持一致；训练时每隔 N 轮会生成验证图。 |
+| 随机种子数 (Seed) | `-1`（随机） | 固定种子（如 `42`）可以让每次验证图完全一样，便于对比不同 checkpoint。 |
+| 采样方式 (Sampler) | `DPM++ 2M Karras` | 默认即可，影响验证图质量，不影响训练。 |
+| 提示词 (Prompts) | 可不填 | 可选；如果填写，建议用"中性提示词"（不带训练集特定人物细节）。 |
+| 负向提示词 (Negative prompts) | 保持默认 | UI 会自动填一堆质量负面词，不用改。 |
+
+### 3.3 保存设置
+
+| UI 参数名 | 推荐值 | 说明 |
+| --- | --- | --- |
+| **每 N 轮保存一个 LoRA (Save every N epochs)** | **`1`** | **每轮都保存**，便于随时回退到任意轮次；可以在训练后挑选最佳 checkpoint。 |
+| LoRA 保存精度 (Save precision) | `fp16` | 文件小一半，质量几乎无损；除非你要做科研实验，否则用 fp16。 |
+
+![ModelScope 训练参数界面 - 学习率设置](/images/blog/modelscope/modelscope-params-2.png)
+
+### 3.4 学习率 & 优化器
+
+<Callout type="warning">
+**这是最影响训练效果的部分！**学习率设错了，要么训练没效果，要么过拟合。
+</Callout>
+
+| UI 参数名 | 推荐值 | 说明 |
+| --- | --- | --- |
+| 总学习率 (Learning rate) | 可不填 | 如果单独设置了 UNet 和 TE 学习率，这个参数可以忽略。 |
+| **Unet 学习率 (Unet learning rate)** | **`0.00005`（5e-5）** | **最重要的参数**。这是训练 UNet 的学习率，直接影响 LoRA 学习效果。 |
+| **文本编码器学习率 (Text encoder learning rate)** | **`0.000025`（2.5e-5）** | **设为 UNet 的 1/2**。过大会让模型"死记"提示词，导致换个词就不认识。 |
+| 学习率预热步数 (Learning rate warm up) | `0` | 新手保持 `0`；高级用法可以设 5-10% 总步数。 |
+| 学习率调度器 (Learning rate scheduler) | `cosine_with_restarts` | 推荐 `cosine_with_restarts`；小数据集也可用 `constant`。 |
+| 优化器 (Optimizer) | `AdamW` | 默认即可；显存紧张用 `AdamW8bit`。 |
+| 重启次数 (Learning rate scheduler num cycles) | `3` | 仅 `cosine_with_restarts` 生效；表示学习率衰减-重启 3 次；通常 1-3。 |
+| **仅训练 Unet (Train unet only)** | **✅ 勾选** | **小数据集（<50 张）✅ 必须勾选**；不训练文本编码器可以避免过拟合。 |
+| 仅训练文本编码器 (Train text encoder only) | ❎ 不勾选 | 几乎不用；只在"纯文本概念微调"时用。 |
+
+![ModelScope 训练参数界面 - 数据集与网络设置](/images/blog/modelscope/modelscope-params-3.png)
+
+### 3.5 数据集设置
+
+| UI 参数名 | 推荐值 | 说明 |
+| --- | --- | --- |
+| **图片分辨率 (Resolution)** | **`1024×1024`** | SDXL 原生分辨率；如果你的图是人像（竖图），可以设 `768×1024`。 |
+| **是否启动 arb 桶 (Enable bucket)** | **✅ 勾选** | **✅ 必须勾选**。支持不同长宽比的图片，自动归类到最近的 bucket。 |
+| arb 桶最小分辨率 (Min bucket reso) | `128` | 最小边不能小于 128；保持默认即可。 |
+| arb 桶最大分辨率 (Max bucket reso) | `8192` | 实际很少超过 2048；保持默认即可。 |
+| arb 分桶分辨率划分单位 (Bucket reso steps) | `64` | bucket 边长按 64 对齐；SDXL 常用 64 或 128。 |
+
+### 3.6 网络设置
+
+| UI 参数名 | 推荐值 | 说明 |
+| --- | --- | --- |
+| **网络大小 (Network rank dim)** | **`8-32`** | LoRA 的"容量"。常用值：`8`、`16`、`32`；数值越大容量越大，但也越容易过拟合。 |
+| **网络 Alpha (Network alpha)** | **`4-16`** | **通常设为 Rank 的一半**。如 Rank=16 则 Alpha=8，Rank=32 则 Alpha=16。 |
+
+![ModelScope 训练参数界面 - 打标与高级设置](/images/blog/modelscope/modelscope-params-4.png)
+
+### 3.7 打标设置
+
+| UI 参数名 | 推荐值 | 说明 |
+| --- | --- | --- |
+| **打乱标签 (Shuffle caption)** | **✅ 勾选** | **✅ 必须勾选**。打乱 caption 中词的顺序，避免模型记住固定的词序。 |
+| 使用带权重的 token (Weighted captions) | ❎ 不勾选 | 高级功能；允许用 `(keyword:1.2)` 语法加权，但容易过拟合。 |
+| 保持 n 个 token (Keep N tokens) | `0` | 角色 LoRA 可设 `1-2`（保留触发词，如 "1girl, chiikawa"）；风格 LoRA 保持 `0`。 |
+| 最大 token 长度 (Max token length) | `225` | SDXL 默认值，不用改。 |
+
+### 3.8 噪声设置
+
+| UI 参数名 | 推荐值 | 说明 |
+| --- | --- | --- |
+| 噪声偏移 (Noise offset 0~1) | `0` | 改善极暗/极亮场景；新手保持 `0`；高级用法设 `0.05-0.1`。 |
+| 多分辨率噪声扩散次数 (Multires noise iterations) | `0` | 增强多尺度细节；新手保持 `0`；高级用法设 `6-10`。 |
+| 多分辨率噪声衰减率 (Multires noise discount) | `0` | 配合上一项用，常用 `0.3`；新手保持 `0`。 |
+
+### 3.9 高级设置
+
+| UI 参数名 | 推荐值 | 说明 |
+| --- | --- | --- |
+| 随机数种子 (Seed) | `-1`（随机） | 固定种子（如 `42`）可以复现训练过程；对比实验时用固定值。 |
+| clip 跳过 (Clip skip) | `2` | SDXL 默认用 `2`；部分模型用 `1`（如 stable-diffusion-xl-base-1.0）。 |
+
+### 3.10 主界面参数
+
+在点击"发起训练"之前，主界面还有几个重要参数需要设置：
+
+| UI 参数名 | 推荐值 | 说明 |
+| --- | --- | --- |
+| **单张次数 (Repeat)** | **`10-20`** | 每张图片重复训练的次数。小数据集建议 10-20 次。 |
+| **训练轮数 (Epochs)** | **`10-30`** | 完整遍历整个数据集的次数。小数据集建议 10-30 轮。 |
+| LoRA 模型名称 | 自定义英文名 | 训练后的模型文件名，建议用英文。 |
+| LoRA 模型中文名称 | 自定义中文名 | 在 ModelScope 上显示的中文名称。 |
+| 模型触发词 | 可选 | 触发 LoRA 效果的关键词，如 "chiikawa style"。 |
+
+<Callout type="info">
+**训练步数计算公式**
+
+训练步数 = 训练集张数 × 单张次数 × 训练轮数 ÷ 批量大小（系统自动调整）
+
+例如：30 张图片 × 10 次 × 20 轮 ÷ 4 = 1500 步
+
+这个公式帮你估算训练时长。通常 1000-3000 步比较合适。
+</Callout>
+
+## 4. 提交任务与结果检查
+
+填完参数后，点击**"开始免费训练"**按钮（通常在右下角）。训练会进入队列，等待算力分配。
+
+### 4.1 训练过程中你能看到什么
+
+1. **Loss 曲线**：Loss 下降表示模型在学习；如果一直不降或暴涨，说明参数有问题（通常是学习率太大）。
+2. **验证图**：每隔 N 轮会生成一张验证图；通过验证图判断训练进度。
+
+![训练进度监控界面](/images/blog/modelscope/modelscope-training-progress.png)
+
+ModelScope 会按你设置的"训练轮数"自动停止。
+
+## 5. 使用 LoRA
+
+### 5.1 直接在 ModelScope 上使用
+
+训练完成后，在"我的模型"或"训练管理"页面可以看到你的 LoRA 模型：
+
+1. 选择一个训练好的版本（checkpoint）。
+2. 点击"开始生成"按钮。
+3. 输入提示词，调整 LoRA 权重（通常 0.5-1.0）。
+4. 生成图片。
+
+### 5.2 下载到本地使用
+
+训练结束后，在"我的模型"或"训练管理"页面可以找到你的 LoRA 文件（`.safetensors`）。
+
+### 6.1 在 ComfyUI 中使用
+
+1. 下载 `.safetensors` 文件。
+2. 放到 ComfyUI 的 `models/loras/` 目录。
+3. 在工作流中添加"Load LoRA"节点，选择你的 LoRA。
+4. 调整 LoRA 权重（通常 0.5-1.0）。
+
+#### 在 Automatic1111 WebUI 中使用
+
+1. 下载 `.safetensors` 文件。
+2. 放到 WebUI 的 `models/Lora/` 目录。
+3. 在提示词中写 `<lora:your_lora_name:0.8>`。
+
+---
+
+以上就是在 ModelScope 上训练 SDXL LoRA 的完整流程。如果你有其他问题，欢迎补充！
