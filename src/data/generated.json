@@ -43,16 +43,16 @@
       "name": "awesome-gemini-prompts",
       "description": null,
       "html_url": "https://github.com/neverbiasu/awesome-gemini-prompts",
-      "stargazers_count": 91,
+      "stargazers_count": 92,
       "forks_count": 15,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-01-20T12:42:57Z",
+      "updated_at": "2026-01-21T14:15:59Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
       "open_issues_count": 3,
-      "size": 12282
+      "size": 12321
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -162,12 +162,12 @@
         "comfyui-nodes",
         "comfyui-workflow"
       ],
-      "updated_at": "2026-01-20T01:58:44Z",
+      "updated_at": "2026-01-21T02:01:32Z",
       "created_at": "2025-04-25T15:41:44Z",
       "homepage": "",
       "license": "MIT",
       "open_issues_count": 1,
-      "size": 6684
+      "size": 6720
     },
     {
       "name": "ComfyUI-KittenTTS",
@@ -207,6 +207,30 @@
       "license": "MIT",
       "open_issues_count": 3,
       "size": 22
+    },
+    {
+      "name": "ComfyUI-Dashscope",
+      "description": "A ComfyUI extension for DashScope(Qwen Series API)",
+      "html_url": "https://github.com/neverbiasu/ComfyUI-Dashscope",
+      "stargazers_count": 5,
+      "forks_count": 3,
+      "language": "Python",
+      "topics": [
+        "aliyun",
+        "audio-driven-talking-face",
+        "comfyui",
+        "comfyui-nodes",
+        "custom-nodes",
+        "dashscope",
+        "llm",
+        "vlm"
+      ],
+      "updated_at": "2026-01-21T07:49:59Z",
+      "created_at": "2024-12-16T03:10:47Z",
+      "homepage": "",
+      "license": "MIT",
+      "open_issues_count": 2,
+      "size": 892
     },
     {
       "name": "ComfyUI-ChatTTS",
@@ -256,30 +280,6 @@
       "license": "Apache-2.0",
       "open_issues_count": 4,
       "size": 7545
-    },
-    {
-      "name": "ComfyUI-Dashscope",
-      "description": "A ComfyUI extension for DashScope(Qwen Series API)",
-      "html_url": "https://github.com/neverbiasu/ComfyUI-Dashscope",
-      "stargazers_count": 4,
-      "forks_count": 3,
-      "language": "Python",
-      "topics": [
-        "aliyun",
-        "audio-driven-talking-face",
-        "comfyui",
-        "comfyui-nodes",
-        "custom-nodes",
-        "dashscope",
-        "llm",
-        "vlm"
-      ],
-      "updated_at": "2025-12-28T11:03:01Z",
-      "created_at": "2024-12-16T03:10:47Z",
-      "homepage": "",
-      "license": "MIT",
-      "open_issues_count": 2,
-      "size": 892
     },
     {
       "name": "ComfyUI-StereoCrafter",
@@ -443,12 +443,42 @@
       "forks_count": 0,
       "language": null,
       "topics": [],
-      "updated_at": "2026-01-20T18:32:44Z",
+      "updated_at": "2026-01-21T18:38:52Z",
       "created_at": "2025-02-14T09:17:41Z",
       "homepage": null,
       "license": null,
       "open_issues_count": 0,
-      "size": 164
+      "size": 165
+    },
+    {
+      "name": "ModelScope-Top-LoRAs",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/ModelScope-Top-LoRAs",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Python",
+      "topics": [],
+      "updated_at": "2026-01-21T03:28:36Z",
+      "created_at": "2025-11-05T00:52:35Z",
+      "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 120867
+    },
+    {
+      "name": "portfolio",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/portfolio",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2026-01-21T00:47:18Z",
+      "created_at": "2025-10-12T22:14:47Z",
+      "homepage": "https://neverbiasu.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 22807
     },
     {
       "name": "awesome-uofg-msc-cs",
@@ -479,36 +509,6 @@
       "license": "MIT",
       "open_issues_count": 0,
       "size": 73
-    },
-    {
-      "name": "ModelScope-Top-LoRAs",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/ModelScope-Top-LoRAs",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "Python",
-      "topics": [],
-      "updated_at": "2026-01-20T03:28:28Z",
-      "created_at": "2025-11-05T00:52:35Z",
-      "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 120849
-    },
-    {
-      "name": "portfolio",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/portfolio",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "updated_at": "2026-01-20T00:44:34Z",
-      "created_at": "2025-10-12T22:14:47Z",
-      "homepage": "https://neverbiasu.vercel.app",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 22805
     },
     {
       "name": "calabiyau-data-vis",
@@ -833,5 +833,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-01-21T00:47:14.562Z"
+  "last_updated": "2026-01-22T00:46:06.944Z"
 }
