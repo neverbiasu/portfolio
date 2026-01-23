@@ -47,12 +47,12 @@
       "forks_count": 15,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-01-21T14:15:59Z",
+      "updated_at": "2026-01-22T02:30:11Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
       "open_issues_count": 3,
-      "size": 12321
+      "size": 12373
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -130,6 +130,26 @@
       "size": 420
     },
     {
+      "name": "Awesome-ComfyUI-Video",
+      "description": "A curated list of ComfyUI Video nodes and workflows",
+      "html_url": "https://github.com/neverbiasu/Awesome-ComfyUI-Video",
+      "stargazers_count": 16,
+      "forks_count": 5,
+      "language": "Python",
+      "topics": [
+        "comfyui-custom-node",
+        "comfyui-manager",
+        "comfyui-nodes",
+        "comfyui-workflow"
+      ],
+      "updated_at": "2026-01-22T14:50:50Z",
+      "created_at": "2025-04-25T15:41:44Z",
+      "homepage": "",
+      "license": "MIT",
+      "open_issues_count": 1,
+      "size": 6720
+    },
+    {
       "name": "ComfyUI-StyleShot",
       "description": "A ComfyUI extension for StyleShot.",
       "html_url": "https://github.com/neverbiasu/ComfyUI-StyleShot",
@@ -148,26 +168,6 @@
       "license": "MIT",
       "open_issues_count": 2,
       "size": 422
-    },
-    {
-      "name": "Awesome-ComfyUI-Video",
-      "description": "A curated list of ComfyUI Video nodes and workflows",
-      "html_url": "https://github.com/neverbiasu/Awesome-ComfyUI-Video",
-      "stargazers_count": 15,
-      "forks_count": 5,
-      "language": "Python",
-      "topics": [
-        "comfyui-custom-node",
-        "comfyui-manager",
-        "comfyui-nodes",
-        "comfyui-workflow"
-      ],
-      "updated_at": "2026-01-21T02:01:32Z",
-      "created_at": "2025-04-25T15:41:44Z",
-      "homepage": "",
-      "license": "MIT",
-      "open_issues_count": 1,
-      "size": 6720
     },
     {
       "name": "ComfyUI-KittenTTS",
@@ -443,7 +443,7 @@
       "forks_count": 0,
       "language": null,
       "topics": [],
-      "updated_at": "2026-01-21T18:38:52Z",
+      "updated_at": "2026-01-22T18:28:52Z",
       "created_at": "2025-02-14T09:17:41Z",
       "homepage": null,
       "license": null,
@@ -458,12 +458,27 @@
       "forks_count": 0,
       "language": "Python",
       "topics": [],
-      "updated_at": "2026-01-21T03:28:36Z",
+      "updated_at": "2026-01-22T03:42:30Z",
       "created_at": "2025-11-05T00:52:35Z",
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
       "license": null,
       "open_issues_count": 0,
-      "size": 120867
+      "size": 121100
+    },
+    {
+      "name": "calabiyau-data-vis",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/calabiyau-data-vis",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Vue",
+      "topics": [],
+      "updated_at": "2026-01-22T01:53:25Z",
+      "created_at": "2025-12-12T00:10:08Z",
+      "homepage": "https://calabiyau-data-vis.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 997
     },
     {
       "name": "portfolio",
@@ -473,12 +488,12 @@
       "forks_count": 0,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-01-21T00:47:18Z",
+      "updated_at": "2026-01-22T00:46:11Z",
       "created_at": "2025-10-12T22:14:47Z",
       "homepage": "https://neverbiasu.vercel.app",
       "license": null,
       "open_issues_count": 0,
-      "size": 22807
+      "size": 22808
     },
     {
       "name": "awesome-uofg-msc-cs",
@@ -509,21 +524,6 @@
       "license": "MIT",
       "open_issues_count": 0,
       "size": 73
-    },
-    {
-      "name": "calabiyau-data-vis",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/calabiyau-data-vis",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "Vue",
-      "topics": [],
-      "updated_at": "2026-01-19T04:54:54Z",
-      "created_at": "2025-12-12T00:10:08Z",
-      "homepage": "https://calabiyau-data-vis.vercel.app",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 996
     },
     {
       "name": "dataset-cat",
@@ -833,5 +833,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-01-22T00:46:06.944Z"
+  "last_updated": "2026-01-23T00:46:28.982Z"
 }
