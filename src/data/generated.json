@@ -43,16 +43,16 @@
       "name": "awesome-gemini-prompts",
       "description": null,
       "html_url": "https://github.com/neverbiasu/awesome-gemini-prompts",
-      "stargazers_count": 99,
-      "forks_count": 15,
+      "stargazers_count": 100,
+      "forks_count": 16,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-02-20T02:50:26Z",
+      "updated_at": "2026-02-21T09:03:31Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
       "open_issues_count": 3,
-      "size": 30028
+      "size": 31235
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -142,12 +142,12 @@
         "comfyui-nodes",
         "comfyui-workflow"
       ],
-      "updated_at": "2026-02-20T13:17:38Z",
+      "updated_at": "2026-02-21T02:12:43Z",
       "created_at": "2025-04-25T15:41:44Z",
       "homepage": "",
       "license": "MIT",
       "open_issues_count": 1,
-      "size": 7131
+      "size": 7171
     },
     {
       "name": "ComfyUI-StyleShot",
@@ -173,11 +173,11 @@
       "name": "ComfyUI-KittenTTS",
       "description": "A ComfyUI extension for KittenTTS",
       "html_url": "https://github.com/neverbiasu/ComfyUI-KittenTTS",
-      "stargazers_count": 8,
+      "stargazers_count": 9,
       "forks_count": 3,
       "language": "Python",
       "topics": [],
-      "updated_at": "2026-01-08T07:08:31Z",
+      "updated_at": "2026-02-21T03:19:19Z",
       "created_at": "2025-08-09T18:40:21Z",
       "homepage": null,
       "license": "Apache-2.0",
@@ -443,12 +443,12 @@
       "forks_count": 0,
       "language": null,
       "topics": [],
-      "updated_at": "2026-02-20T18:42:12Z",
+      "updated_at": "2026-02-21T18:31:33Z",
       "created_at": "2025-02-14T09:17:41Z",
       "homepage": null,
       "license": null,
       "open_issues_count": 0,
-      "size": 171
+      "size": 172
     },
     {
       "name": "ModelScope-Top-LoRAs",
@@ -458,12 +458,27 @@
       "forks_count": 0,
       "language": "Python",
       "topics": [],
-      "updated_at": "2026-02-20T04:09:14Z",
+      "updated_at": "2026-02-21T04:00:58Z",
       "created_at": "2025-11-05T00:52:35Z",
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
       "license": null,
       "open_issues_count": 0,
-      "size": 132021
+      "size": 132035
+    },
+    {
+      "name": "portfolio",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/portfolio",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2026-02-21T00:54:52Z",
+      "created_at": "2025-10-12T22:14:47Z",
+      "homepage": "https://neverbiasu.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 22510
     },
     {
       "name": "moneyio",
@@ -479,21 +494,6 @@
       "license": null,
       "open_issues_count": 0,
       "size": 20
-    },
-    {
-      "name": "portfolio",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/portfolio",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "updated_at": "2026-02-20T00:56:21Z",
-      "created_at": "2025-10-12T22:14:47Z",
-      "homepage": "https://neverbiasu.vercel.app",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 22509
     },
     {
       "name": "calabiyau-data-vis",
@@ -552,8 +552,8 @@
       "created_at": "2025-09-19T19:14:08Z",
       "homepage": "https://awesome-uofg-msc-cs.vercel.app",
       "license": null,
-      "open_issues_count": 0,
-      "size": 910637
+      "open_issues_count": 1,
+      "size": 910750
     },
     {
       "name": "dataset-cat",
@@ -848,5 +848,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-02-21T00:54:47.247Z"
+  "last_updated": "2026-02-22T00:58:23.935Z"
 }
