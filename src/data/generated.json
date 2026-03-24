@@ -4,7 +4,7 @@
       "name": "ComfyUI-SAM2",
       "description": "A ComfyUI extension for Segment-Anything 2",
       "html_url": "https://github.com/neverbiasu/ComfyUI-SAM2",
-      "stargazers_count": 252,
+      "stargazers_count": 253,
       "forks_count": 46,
       "language": "Python",
       "topics": [
@@ -12,7 +12,7 @@
         "comfyui-nodes",
         "custom-nodes"
       ],
-      "updated_at": "2026-03-15T01:49:37Z",
+      "updated_at": "2026-03-23T08:51:20Z",
       "created_at": "2024-08-01T13:58:47Z",
       "homepage": "",
       "license": null,
@@ -23,7 +23,7 @@
       "name": "ComfyUI-BAGEL",
       "description": "A ComfyUI extention for BAGEL(Unified Model for Multimodal Understanding and Generation)",
       "html_url": "https://github.com/neverbiasu/ComfyUI-BAGEL",
-      "stargazers_count": 187,
+      "stargazers_count": 188,
       "forks_count": 16,
       "language": "Python",
       "topics": [
@@ -32,7 +32,7 @@
         "comfyui-nodes",
         "custom-nodes"
       ],
-      "updated_at": "2025-11-25T03:18:14Z",
+      "updated_at": "2026-03-23T20:59:34Z",
       "created_at": "2025-05-25T14:05:45Z",
       "homepage": "",
       "license": "Apache-2.0",
@@ -47,12 +47,12 @@
       "forks_count": 17,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-03-22T03:15:52Z",
+      "updated_at": "2026-03-23T03:18:08Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
       "open_issues_count": 4,
-      "size": 31794
+      "size": 12321
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -142,12 +142,12 @@
         "comfyui-nodes",
         "comfyui-workflow"
       ],
-      "updated_at": "2026-03-21T02:20:12Z",
+      "updated_at": "2026-03-23T02:34:32Z",
       "created_at": "2025-04-25T15:41:44Z",
       "homepage": "",
       "license": "MIT",
       "open_issues_count": 1,
-      "size": 7630
+      "size": 7671
     },
     {
       "name": "ComfyUI-StyleShot",
@@ -443,27 +443,12 @@
       "forks_count": 0,
       "language": null,
       "topics": [],
-      "updated_at": "2026-03-22T18:33:25Z",
+      "updated_at": "2026-03-23T18:51:25Z",
       "created_at": "2025-02-14T09:17:41Z",
       "homepage": null,
       "license": null,
       "open_issues_count": 0,
       "size": 177
-    },
-    {
-      "name": "ModelScope-Top-LoRAs",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/ModelScope-Top-LoRAs",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "Python",
-      "topics": [],
-      "updated_at": "2026-03-22T04:13:05Z",
-      "created_at": "2025-11-05T00:52:35Z",
-      "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 138571
     },
     {
       "name": "calabiyau-data-vis",
@@ -473,12 +458,27 @@
       "forks_count": 0,
       "language": "Vue",
       "topics": [],
-      "updated_at": "2026-03-22T02:24:25Z",
+      "updated_at": "2026-03-23T05:40:51Z",
       "created_at": "2025-12-12T00:10:08Z",
       "homepage": "https://calabiyau-data-vis.vercel.app",
       "license": null,
       "open_issues_count": 0,
-      "size": 712
+      "size": 716
+    },
+    {
+      "name": "ModelScope-Top-LoRAs",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/ModelScope-Top-LoRAs",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Python",
+      "topics": [],
+      "updated_at": "2026-03-23T04:23:00Z",
+      "created_at": "2025-11-05T00:52:35Z",
+      "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 138588
     },
     {
       "name": "portfolio",
@@ -488,12 +488,12 @@
       "forks_count": 0,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-03-22T01:01:17Z",
+      "updated_at": "2026-03-23T01:02:41Z",
       "created_at": "2025-10-12T22:14:47Z",
       "homepage": "https://neverbiasu.vercel.app",
       "license": null,
       "open_issues_count": 0,
-      "size": 22508
+      "size": 22510
     },
     {
       "name": "moneyio",
@@ -887,5 +887,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-03-23T01:02:36.583Z"
+  "last_updated": "2026-03-24T00:55:05.610Z"
 }
