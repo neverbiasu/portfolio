@@ -47,12 +47,12 @@
       "forks_count": 17,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-03-27T03:24:40Z",
+      "updated_at": "2026-03-28T02:54:51Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
       "open_issues_count": 4,
-      "size": 20591
+      "size": 20638
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -443,7 +443,7 @@
       "forks_count": 0,
       "language": null,
       "topics": [],
-      "updated_at": "2026-03-27T18:52:42Z",
+      "updated_at": "2026-03-28T18:37:10Z",
       "created_at": "2025-02-14T09:17:41Z",
       "homepage": null,
       "license": null,
@@ -458,12 +458,27 @@
       "forks_count": 0,
       "language": "Python",
       "topics": [],
-      "updated_at": "2026-03-27T04:29:13Z",
+      "updated_at": "2026-03-28T04:13:10Z",
       "created_at": "2025-11-05T00:52:35Z",
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
       "license": null,
       "open_issues_count": 0,
-      "size": 139044
+      "size": 139062
+    },
+    {
+      "name": "calabiyau-data-vis",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/calabiyau-data-vis",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Vue",
+      "topics": [],
+      "updated_at": "2026-03-28T02:13:14Z",
+      "created_at": "2025-12-12T00:10:08Z",
+      "homepage": "https://calabiyau-data-vis.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 718
     },
     {
       "name": "portfolio",
@@ -473,12 +488,12 @@
       "forks_count": 0,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-03-27T01:05:30Z",
+      "updated_at": "2026-03-28T00:59:57Z",
       "created_at": "2025-10-12T22:14:47Z",
       "homepage": "https://neverbiasu.vercel.app",
       "license": null,
       "open_issues_count": 0,
-      "size": 22515
+      "size": 22516
     },
     {
       "name": "Awesome-AI-for-Science-Agents",
@@ -494,21 +509,6 @@
       "license": null,
       "open_issues_count": 0,
       "size": 0
-    },
-    {
-      "name": "calabiyau-data-vis",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/calabiyau-data-vis",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "Vue",
-      "topics": [],
-      "updated_at": "2026-03-25T02:22:37Z",
-      "created_at": "2025-12-12T00:10:08Z",
-      "homepage": "https://calabiyau-data-vis.vercel.app",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 717
     },
     {
       "name": "moneyio",
@@ -902,5 +902,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-03-28T00:59:53.653Z"
+  "last_updated": "2026-03-29T01:08:17.024Z"
 }
