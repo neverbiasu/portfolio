@@ -4,7 +4,7 @@
       "name": "ComfyUI-SAM2",
       "description": "A ComfyUI extension for Segment-Anything 2",
       "html_url": "https://github.com/neverbiasu/ComfyUI-SAM2",
-      "stargazers_count": 254,
+      "stargazers_count": 255,
       "forks_count": 46,
       "language": "Python",
       "topics": [
@@ -12,7 +12,7 @@
         "comfyui-nodes",
         "custom-nodes"
       ],
-      "updated_at": "2026-03-29T17:02:50Z",
+      "updated_at": "2026-04-03T12:17:20Z",
       "created_at": "2024-08-01T13:58:47Z",
       "homepage": "",
       "license": null,
@@ -47,12 +47,12 @@
       "forks_count": 17,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-04-02T03:19:11Z",
+      "updated_at": "2026-04-03T03:20:55Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
       "open_issues_count": 4,
-      "size": 29235
+      "size": 14975
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -443,12 +443,12 @@
       "forks_count": 0,
       "language": null,
       "topics": [],
-      "updated_at": "2026-04-02T18:53:36Z",
+      "updated_at": "2026-04-03T18:42:00Z",
       "created_at": "2025-02-14T09:17:41Z",
       "homepage": null,
       "license": null,
       "open_issues_count": 0,
-      "size": 184
+      "size": 185
     },
     {
       "name": "ModelScope-Top-LoRAs",
@@ -458,12 +458,12 @@
       "forks_count": 0,
       "language": "Python",
       "topics": [],
-      "updated_at": "2026-04-02T04:24:20Z",
+      "updated_at": "2026-04-03T04:25:10Z",
       "created_at": "2025-11-05T00:52:35Z",
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
       "license": null,
       "open_issues_count": 0,
-      "size": 139150
+      "size": 139171
     },
     {
       "name": "portfolio",
@@ -473,12 +473,12 @@
       "forks_count": 0,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-04-02T01:03:27Z",
+      "updated_at": "2026-04-03T01:06:28Z",
       "created_at": "2025-10-12T22:14:47Z",
       "homepage": "https://neverbiasu.vercel.app",
       "license": null,
       "open_issues_count": 0,
-      "size": 22523
+      "size": 22524
     },
     {
       "name": "calabiyau-data-vis",
@@ -902,5 +902,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-04-03T01:06:22.479Z"
+  "last_updated": "2026-04-04T01:00:55.590Z"
 }
