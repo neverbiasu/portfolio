@@ -44,15 +44,15 @@
       "description": null,
       "html_url": "https://github.com/neverbiasu/awesome-gemini-prompts",
       "stargazers_count": 106,
-      "forks_count": 17,
+      "forks_count": 18,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-04-04T15:34:14Z",
+      "updated_at": "2026-04-05T03:31:37Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
       "open_issues_count": 4,
-      "size": 15000
+      "size": 19270
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -443,12 +443,12 @@
       "forks_count": 0,
       "language": null,
       "topics": [],
-      "updated_at": "2026-04-04T18:38:06Z",
+      "updated_at": "2026-04-05T18:39:52Z",
       "created_at": "2025-02-14T09:17:41Z",
       "homepage": null,
       "license": null,
       "open_issues_count": 0,
-      "size": 186
+      "size": 187
     },
     {
       "name": "ModelScope-Top-LoRAs",
@@ -458,12 +458,27 @@
       "forks_count": 0,
       "language": "Python",
       "topics": [],
-      "updated_at": "2026-04-04T04:10:51Z",
+      "updated_at": "2026-04-05T04:32:23Z",
       "created_at": "2025-11-05T00:52:35Z",
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
       "license": null,
       "open_issues_count": 0,
-      "size": 139189
+      "size": 139206
+    },
+    {
+      "name": "portfolio",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/portfolio",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2026-04-05T01:08:50Z",
+      "created_at": "2025-10-12T22:14:47Z",
+      "homepage": "https://neverbiasu.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 22527
     },
     {
       "name": "calabiyau-data-vis",
@@ -479,21 +494,6 @@
       "license": null,
       "open_issues_count": 0,
       "size": 723
-    },
-    {
-      "name": "portfolio",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/portfolio",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "updated_at": "2026-04-04T01:01:00Z",
-      "created_at": "2025-10-12T22:14:47Z",
-      "homepage": "https://neverbiasu.vercel.app",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 22526
     },
     {
       "name": "Awesome-AI-for-Science-Agents",
@@ -902,5 +902,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-04-05T01:08:44.982Z"
+  "last_updated": "2026-04-06T01:08:57.084Z"
 }
