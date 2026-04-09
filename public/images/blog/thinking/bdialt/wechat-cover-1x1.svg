@@ -1,0 +1,53 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="coverBg" x1="70" y1="40" x2="1030" y2="1040" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="0.55" stop-color="#1E293B"/>
+      <stop offset="1" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="accentA" x1="130" y1="160" x2="860" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#3B82F6" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="accentB" x1="280" y1="620" x2="940" y2="930" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F59E0B" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#EF4444" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#coverBg)"/>
+
+  <circle cx="250" cy="230" r="230" fill="url(#accentA)"/>
+  <circle cx="850" cy="820" r="270" fill="url(#accentB)"/>
+
+  <rect x="76" y="86" width="928" height="908" rx="36" fill="#0B1224" fill-opacity="0.58" stroke="#64748B" stroke-opacity="0.35"/>
+
+  <text x="126" y="206" fill="#94A3B8" font-size="30" font-family="JetBrains Mono, Menlo, Monaco, monospace" font-weight="600" letter-spacing="2">
+    AI TALK NOTES
+  </text>
+
+  <text x="126" y="342" fill="#F8FAFC" font-size="88" font-family="Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-weight="800">
+    信念感
+  </text>
+  <text x="126" y="450" fill="#F8FAFC" font-size="88" font-family="Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-weight="800">
+    差异化
+  </text>
+  <text x="126" y="558" fill="#F8FAFC" font-size="88" font-family="Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-weight="800">
+    影响力与长期主义
+  </text>
+
+  <line x1="126" y1="630" x2="930" y2="630" stroke="#334155" stroke-width="2"/>
+
+  <text x="126" y="706" fill="#CBD5E1" font-size="34" font-family="Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-weight="500">
+    4 位一线 AI 从业者访谈观察
+  </text>
+
+  <rect x="126" y="760" width="392" height="74" rx="12" fill="#111827" stroke="#0EA5E9" stroke-opacity="0.7"/>
+  <text x="154" y="809" fill="#67E8F9" font-size="34" font-family="Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-weight="700">
+    Reward Model · Impact
+  </text>
+
+  <text x="126" y="916" fill="#94A3B8" font-size="27" font-family="Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-weight="500">
+    neverbiasu · 2026
+  </text>
+</svg>

@@ -1,0 +1,54 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B132B"/>
+      <stop offset="1" stop-color="#1C2541"/>
+    </linearGradient>
+    <linearGradient id="core" x1="690" y1="345" x2="910" y2="555" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5B700"/>
+      <stop offset="1" stop-color="#F18701"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <text x="110" y="110" fill="#F8FAFC" font-size="54" font-family="Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-weight="700">
+    四个关键词：信念感、差异化、Impact、长期主义
+  </text>
+  <text x="110" y="158" fill="#B8C2D9" font-size="28" font-family="Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-weight="400">
+    从一线 AI 创业者中提炼出的可执行方法论
+  </text>
+
+  <line x1="800" y1="450" x2="420" y2="255" stroke="#84A59D" stroke-width="4" stroke-dasharray="10 10"/>
+  <line x1="800" y1="450" x2="1180" y2="255" stroke="#F28482" stroke-width="4" stroke-dasharray="10 10"/>
+  <line x1="800" y1="450" x2="420" y2="660" stroke="#84A59D" stroke-width="4" stroke-dasharray="10 10"/>
+  <line x1="800" y1="450" x2="1180" y2="660" stroke="#F28482" stroke-width="4" stroke-dasharray="10 10"/>
+
+  <rect x="250" y="170" width="340" height="170" rx="18" fill="#111A35" stroke="#2FD3A3" stroke-width="2" filter="url(#soft)"/>
+  <text x="280" y="230" fill="#2FD3A3" font-size="34" font-family="Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-weight="700">1. 内在 Reward Model</text>
+  <text x="280" y="278" fill="#D6DDEE" font-size="24" font-family="Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-weight="400">不追外部进度条</text>
+  <text x="280" y="312" fill="#D6DDEE" font-size="24" font-family="Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-weight="400">聚焦真实 Impact</text>
+
+  <rect x="1010" y="170" width="340" height="170" rx="18" fill="#111A35" stroke="#FF9F1C" stroke-width="2" filter="url(#soft)"/>
+  <text x="1040" y="230" fill="#FF9F1C" font-size="34" font-family="Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-weight="700">2. 弱项外包</text>
+  <text x="1040" y="278" fill="#D6DDEE" font-size="24" font-family="Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-weight="400">承认边界</text>
+  <text x="1040" y="312" fill="#D6DDEE" font-size="24" font-family="Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-weight="400">单点死磕</text>
+
+  <rect x="250" y="575" width="340" height="170" rx="18" fill="#111A35" stroke="#4CC9F0" stroke-width="2" filter="url(#soft)"/>
+  <text x="280" y="635" fill="#4CC9F0" font-size="34" font-family="Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-weight="700">3. 务实底盘</text>
+  <text x="280" y="683" fill="#D6DDEE" font-size="24" font-family="Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-weight="400">现金流给自由</text>
+  <text x="280" y="717" fill="#D6DDEE" font-size="24" font-family="Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-weight="400">理想才能落地</text>
+
+  <rect x="1010" y="575" width="340" height="170" rx="18" fill="#111A35" stroke="#FF4D6D" stroke-width="2" filter="url(#soft)"/>
+  <text x="1040" y="635" fill="#FF4D6D" font-size="34" font-family="Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-weight="700">4. Timing + 迭代</text>
+  <text x="1040" y="683" fill="#D6DDEE" font-size="24" font-family="Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-weight="400">先上桌再优化</text>
+  <text x="1040" y="717" fill="#D6DDEE" font-size="24" font-family="Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-weight="400">速度决定上限</text>
+
+  <circle cx="800" cy="450" r="118" fill="url(#core)"/>
+  <circle cx="800" cy="450" r="126" stroke="#FFE4A3" stroke-opacity="0.4" stroke-width="2"/>
+  <text x="748" y="438" fill="#1A1A1A" font-size="40" font-family="Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-weight="800">信念感</text>
+  <text x="731" y="484" fill="#1A1A1A" font-size="32" font-family="Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-weight="700">差异化 · 长期主义</text>
+</svg>
