@@ -43,16 +43,16 @@
       "name": "awesome-gemini-prompts",
       "description": null,
       "html_url": "https://github.com/neverbiasu/awesome-gemini-prompts",
-      "stargazers_count": 107,
+      "stargazers_count": 108,
       "forks_count": 18,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-04-12T03:38:48Z",
+      "updated_at": "2026-04-13T18:57:34Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
       "open_issues_count": 4,
-      "size": 32337
+      "size": 15209
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -436,6 +436,36 @@
       "size": 65742
     },
     {
+      "name": "dataset-cat",
+      "description": "A web UI for scraping anime data, driven by waifuc",
+      "html_url": "https://github.com/neverbiasu/dataset-cat",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Python",
+      "topics": [],
+      "updated_at": "2026-04-14T00:39:05Z",
+      "created_at": "2025-05-18T13:37:01Z",
+      "homepage": null,
+      "license": null,
+      "open_issues_count": 0,
+      "size": 628
+    },
+    {
+      "name": "calabiyau-data-vis",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/calabiyau-data-vis",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Vue",
+      "topics": [],
+      "updated_at": "2026-04-13T06:17:36Z",
+      "created_at": "2025-12-12T00:10:08Z",
+      "homepage": "https://calabiyau-data-vis.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 731
+    },
+    {
       "name": "ModelScope-Top-LoRAs",
       "description": null,
       "html_url": "https://github.com/neverbiasu/ModelScope-Top-LoRAs",
@@ -443,12 +473,12 @@
       "forks_count": 0,
       "language": "Python",
       "topics": [],
-      "updated_at": "2026-04-12T04:42:39Z",
+      "updated_at": "2026-04-13T04:53:59Z",
       "created_at": "2025-11-05T00:52:35Z",
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
       "license": null,
       "open_issues_count": 0,
-      "size": 140546
+      "size": 140564
     },
     {
       "name": "portfolio",
@@ -458,12 +488,12 @@
       "forks_count": 0,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-04-12T01:12:59Z",
+      "updated_at": "2026-04-13T01:14:57Z",
       "created_at": "2025-10-12T22:14:47Z",
       "homepage": "https://neverbiasu.vercel.app",
       "license": null,
       "open_issues_count": 0,
-      "size": 37726
+      "size": 37727
     },
     {
       "name": "neverbiasu",
@@ -479,21 +509,6 @@
       "license": null,
       "open_issues_count": 0,
       "size": 189
-    },
-    {
-      "name": "calabiyau-data-vis",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/calabiyau-data-vis",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "Vue",
-      "topics": [],
-      "updated_at": "2026-04-10T02:38:58Z",
-      "created_at": "2025-12-12T00:10:08Z",
-      "homepage": "https://calabiyau-data-vis.vercel.app",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 730
     },
     {
       "name": "Awesome-AI-for-Science-Agents",
@@ -608,21 +623,6 @@
       "license": "MIT",
       "open_issues_count": 0,
       "size": 81
-    },
-    {
-      "name": "dataset-cat",
-      "description": "A web UI for scraping anime data, driven by waifuc",
-      "html_url": "https://github.com/neverbiasu/dataset-cat",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "Python",
-      "topics": [],
-      "updated_at": "2026-01-12T00:50:04Z",
-      "created_at": "2025-05-18T13:37:01Z",
-      "homepage": null,
-      "license": null,
-      "open_issues_count": 0,
-      "size": 628
     },
     {
       "name": "deepmind-exercise",
@@ -902,5 +902,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-04-13T01:14:47.711Z"
+  "last_updated": "2026-04-14T01:13:51.245Z"
 }
