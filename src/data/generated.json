@@ -43,16 +43,16 @@
       "name": "awesome-gemini-prompts",
       "description": null,
       "html_url": "https://github.com/neverbiasu/awesome-gemini-prompts",
-      "stargazers_count": 108,
-      "forks_count": 18,
+      "stargazers_count": 109,
+      "forks_count": 19,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-04-23T03:39:04Z",
+      "updated_at": "2026-04-24T16:14:37Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
       "open_issues_count": 4,
-      "size": 15446
+      "size": 15468
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -458,12 +458,12 @@
       "forks_count": 0,
       "language": null,
       "topics": [],
-      "updated_at": "2026-04-23T19:04:06Z",
+      "updated_at": "2026-04-24T18:45:52Z",
       "created_at": "2025-02-14T09:17:41Z",
       "homepage": null,
       "license": null,
       "open_issues_count": 0,
-      "size": 196
+      "size": 197
     },
     {
       "name": "ModelScope-Top-LoRAs",
@@ -473,12 +473,12 @@
       "forks_count": 0,
       "language": "Python",
       "topics": [],
-      "updated_at": "2026-04-23T04:46:26Z",
+      "updated_at": "2026-04-24T04:50:13Z",
       "created_at": "2025-11-05T00:52:35Z",
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
       "license": null,
       "open_issues_count": 0,
-      "size": 141595
+      "size": 141613
     },
     {
       "name": "portfolio",
@@ -488,12 +488,12 @@
       "forks_count": 0,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-04-23T01:17:18Z",
+      "updated_at": "2026-04-24T01:16:38Z",
       "created_at": "2025-10-12T22:14:47Z",
       "homepage": "https://neverbiasu.vercel.app",
       "license": null,
       "open_issues_count": 0,
-      "size": 37741
+      "size": 37742
     },
     {
       "name": "calabiyau-data-vis",
@@ -917,5 +917,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-04-24T01:16:32.491Z"
+  "last_updated": "2026-04-25T01:09:45.563Z"
 }
