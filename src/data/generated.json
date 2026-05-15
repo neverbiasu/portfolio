@@ -4,7 +4,7 @@
       "name": "ComfyUI-SAM2",
       "description": "A ComfyUI extension for Segment-Anything 2",
       "html_url": "https://github.com/neverbiasu/ComfyUI-SAM2",
-      "stargazers_count": 258,
+      "stargazers_count": 259,
       "forks_count": 47,
       "language": "Python",
       "topics": [
@@ -12,7 +12,7 @@
         "comfyui-nodes",
         "custom-nodes"
       ],
-      "updated_at": "2026-05-10T01:52:21Z",
+      "updated_at": "2026-05-14T03:49:34Z",
       "created_at": "2024-08-01T13:58:47Z",
       "homepage": "",
       "license": null,
@@ -47,12 +47,12 @@
       "forks_count": 20,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-05-13T04:08:11Z",
+      "updated_at": "2026-05-14T04:07:16Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
       "open_issues_count": 4,
-      "size": 15965
+      "size": 15991
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -133,7 +133,7 @@
       "name": "Awesome-ComfyUI-Video",
       "description": "A curated list of ComfyUI Video nodes and workflows",
       "html_url": "https://github.com/neverbiasu/Awesome-ComfyUI-Video",
-      "stargazers_count": 20,
+      "stargazers_count": 21,
       "forks_count": 6,
       "language": "Python",
       "topics": [
@@ -142,12 +142,12 @@
         "comfyui-nodes",
         "comfyui-workflow"
       ],
-      "updated_at": "2026-05-12T03:33:25Z",
+      "updated_at": "2026-05-14T15:44:23Z",
       "created_at": "2025-04-25T15:41:44Z",
       "homepage": "",
       "license": "MIT",
       "open_issues_count": 2,
-      "size": 9046
+      "size": 8172
     },
     {
       "name": "ComfyUI-StyleShot",
@@ -371,12 +371,12 @@
       "forks_count": 0,
       "language": "Python",
       "topics": [],
-      "updated_at": "2026-05-07T22:11:51Z",
+      "updated_at": "2026-05-14T21:48:34Z",
       "created_at": "2026-02-12T23:53:37Z",
       "homepage": null,
       "license": null,
       "open_issues_count": 0,
-      "size": 371
+      "size": 404
     },
     {
       "name": "civitai-dl",
@@ -458,12 +458,12 @@
       "forks_count": 0,
       "language": "Python",
       "topics": [],
-      "updated_at": "2026-05-14T01:19:13Z",
+      "updated_at": "2026-05-14T21:58:37Z",
       "created_at": "2026-05-11T21:43:37Z",
       "homepage": null,
       "license": null,
       "open_issues_count": 0,
-      "size": 288
+      "size": 7352
     },
     {
       "name": "neverbiasu",
@@ -473,12 +473,12 @@
       "forks_count": 0,
       "language": null,
       "topics": [],
-      "updated_at": "2026-05-13T20:03:03Z",
+      "updated_at": "2026-05-14T19:42:57Z",
       "created_at": "2025-02-14T09:17:41Z",
       "homepage": null,
       "license": null,
       "open_issues_count": 0,
-      "size": 210
+      "size": 193
     },
     {
       "name": "ModelScope-Top-LoRAs",
@@ -488,12 +488,27 @@
       "forks_count": 0,
       "language": "Python",
       "topics": [],
-      "updated_at": "2026-05-13T05:42:52Z",
+      "updated_at": "2026-05-14T05:42:10Z",
       "created_at": "2025-11-05T00:52:35Z",
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
       "license": null,
       "open_issues_count": 0,
-      "size": 142445
+      "size": 142463
+    },
+    {
+      "name": "portfolio",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/portfolio",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2026-05-14T01:50:41Z",
+      "created_at": "2025-10-12T22:14:47Z",
+      "homepage": "https://neverbiasu.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 37734
     },
     {
       "name": "calabiyau-data-vis",
@@ -509,21 +524,6 @@
       "license": null,
       "open_issues_count": 0,
       "size": 748
-    },
-    {
-      "name": "portfolio",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/portfolio",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "updated_at": "2026-05-13T01:47:57Z",
-      "created_at": "2025-10-12T22:14:47Z",
-      "homepage": "https://neverbiasu.vercel.app",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 37732
     },
     {
       "name": "TikHub-Skills",
@@ -947,5 +947,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-05-14T01:50:36.855Z"
+  "last_updated": "2026-05-15T01:48:13.626Z"
 }
