@@ -11,6 +11,7 @@ export interface LLM {
   url: string;
   logo: string;
   tags: string[];
+  versions: string[];
   description: { en: string; zh: string };
   features: { en: string[]; zh: string[] };
 }
@@ -111,6 +112,25 @@ export function LLMCard({ llm, locale, tagLabels, tagColors }: LLMCardProps) {
           ))}
         </ul>
       </div>
+
+      {/* Versions Horizontal Scrollable List */}
+      {llm.versions && llm.versions.length > 0 && (
+        <div className="mb-4">
+          <span className="text-[10px] font-mono text-mocha-subtext/50 block mb-1.5 uppercase tracking-wider">
+            {isZh ? '版本历史' : 'Versions'}
+          </span>
+          <div className="flex gap-2 overflow-x-auto py-1 -my-1 scrollbar-none [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            {llm.versions.map((ver, index) => (
+              <span
+                key={index}
+                className="inline-block px-2 py-0.5 rounded bg-mocha-surface text-mocha-text border border-white/5 text-[10px] font-mono whitespace-nowrap shrink-0 hover:border-mocha-overlay/40 transition-colors"
+              >
+                {ver}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Tags */}
       <div className="mt-auto flex flex-wrap gap-1.5 pt-3.5 border-t border-mocha-surface/40">

@@ -61,6 +61,19 @@ export default function LLMsPage() {
                   ? 'A curated list of LLMs I regularly use, build upon, or recommend for AI engineering.'
                   : '我日常开发、调用或推荐的大语言模型列表。'}
               </p>
+              {llmsData.source && (
+                <p className="text-mocha-subtext/60 text-[11px] sm:text-xs mt-1.5 font-mono">
+                  {locale === 'en' ? 'Source: ' : '数据来源：'}
+                  <a
+                    href={llmsData.source.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-mocha-blue hover:underline transition-colors"
+                  >
+                    {llmsData.source.name}
+                  </a>
+                </p>
+              )}
             </div>
 
             <div className="mb-5 sm:mb-6">
