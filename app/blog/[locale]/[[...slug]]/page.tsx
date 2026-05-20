@@ -41,7 +41,8 @@ export default async function Page({
 
   if (!page) notFound();
 
-  const MDX = page.data.body;
+  const pageData = page.data as any;
+  const MDX = pageData.body;
   
   const processTree = (nodes: any[]): any[] => {
     // Helper to clean URL based on file path
@@ -106,9 +107,9 @@ export default async function Page({
         { text: 'Home', url: '/' },
       ]}
     >
-      <DocsPage toc={page.data.toc} full={page.data.full}>
-        <DocsTitle>{page.data.title}</DocsTitle>
-        <DocsDescription>{page.data.description}</DocsDescription>
+      <DocsPage toc={pageData.toc} full={pageData.full}>
+        <DocsTitle>{pageData.title}</DocsTitle>
+        <DocsDescription>{pageData.description}</DocsDescription>
         <DocsBody>
           <MDX components={{ 
             ...defaultMdxComponents,
