@@ -4,18 +4,86 @@
     "url": "https://github.com/lobehub/lobe-chat"
   },
   "regions": [
-    { "id": "global", "label": { "en": "Global", "zh": "海外模型" } },
-    { "id": "domestic", "label": { "en": "Domestic", "zh": "国内模型" } }
+    {
+      "id": "global",
+      "label": {
+        "en": "Global",
+        "zh": "海外模型"
+      }
+    },
+    {
+      "id": "domestic",
+      "label": {
+        "en": "Domestic",
+        "zh": "国内模型"
+      }
+    }
   ],
   "tags": [
-    { "id": "reasoning", "label": { "en": "Reasoning", "zh": "深度推理" }, "color": "mocha-mauve" },
-    { "id": "long-context", "label": { "en": "Long Context", "zh": "长上下文" }, "color": "mocha-blue" },
-    { "id": "coding", "label": { "en": "Coding", "zh": "代码智能" }, "color": "mocha-green" },
-    { "id": "multimodal", "label": { "en": "Multimodal", "zh": "多模态" }, "color": "mocha-teal" },
-    { "id": "open-source", "label": { "en": "Open Source", "zh": "开源权重" }, "color": "mocha-peach" },
-    { "id": "agent", "label": { "en": "Agentic", "zh": "智能代理" }, "color": "mocha-pink" },
-    { "id": "multilingual", "label": { "en": "Multilingual", "zh": "多语言" }, "color": "mocha-sky" },
-    { "id": "real-time", "label": { "en": "Real-time", "zh": "实时网络" }, "color": "mocha-flamingo" }
+    {
+      "id": "reasoning",
+      "label": {
+        "en": "Reasoning",
+        "zh": "深度推理"
+      },
+      "color": "mocha-mauve"
+    },
+    {
+      "id": "long-context",
+      "label": {
+        "en": "Long Context",
+        "zh": "长上下文"
+      },
+      "color": "mocha-blue"
+    },
+    {
+      "id": "coding",
+      "label": {
+        "en": "Coding",
+        "zh": "代码智能"
+      },
+      "color": "mocha-green"
+    },
+    {
+      "id": "multimodal",
+      "label": {
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      "color": "mocha-teal"
+    },
+    {
+      "id": "open-source",
+      "label": {
+        "en": "Open Source",
+        "zh": "开源权重"
+      },
+      "color": "mocha-peach"
+    },
+    {
+      "id": "agent",
+      "label": {
+        "en": "Agentic",
+        "zh": "智能代理"
+      },
+      "color": "mocha-pink"
+    },
+    {
+      "id": "multilingual",
+      "label": {
+        "en": "Multilingual",
+        "zh": "多语言"
+      },
+      "color": "mocha-sky"
+    },
+    {
+      "id": "real-time",
+      "label": {
+        "en": "Real-time",
+        "zh": "实时网络"
+      },
+      "color": "mocha-flamingo"
+    }
   ],
   "llms": [
     {
@@ -25,15 +93,46 @@
       "region": "global",
       "url": "https://gemini.google.com",
       "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/gemini.png",
-      "tags": ["multimodal", "long-context", "reasoning"],
-      "versions": ["Gemini 2.5 Pro", "Gemini 2.5 Flash", "Gemini 1.5 Pro", "Gemini 1.5 Flash"],
+      "tags": [
+        "multimodal",
+        "long-context",
+        "reasoning"
+      ],
+      "versions": [
+        "Gemini Pro Latest",
+        "Gemini Flash Latest",
+        "Gemini Flash-Lite Latest",
+        "Gemma 4 26B A4B IT",
+        "Gemma 4 31B IT",
+        "Gemini 3.1 Pro Preview",
+        "Gemini 3.1 Flash-Lite",
+        "Gemini 3.1 Flash-Lite Preview",
+        "Gemini 3 Flash Preview",
+        "Gemini 2.5 Pro",
+        "Gemini 2.5 Flash",
+        "Gemini 2.5 Flash-Lite",
+        "Gemini 2.0 Flash",
+        "Gemini 2.0 Flash 001",
+        "Gemini 2.0 Flash-Lite",
+        "Gemini 2.0 Flash-Lite 001",
+        "Gemini 1.5 Pro",
+        "Gemini 1.5 Flash"
+      ],
       "description": {
         "en": "Google's advanced multimodal model, offering large context windows (up to 2M tokens) and strong reasoning.",
         "zh": "Google 的先进多模态大模型，提供极长上下文窗口（最高支持 200 万 token）与强大的推理能力。"
       },
       "features": {
-        "en": ["Up to 2M context window", "Native multimodality", "Fast audio & video input processing"],
-        "zh": ["最高支持 2M 上下文", "原生多模态理解", "快速处理音视频输入"]
+        "en": [
+          "Up to 2M context window",
+          "Native multimodality",
+          "Fast audio & video input processing"
+        ],
+        "zh": [
+          "最高支持 2M 上下文",
+          "原生多模态理解",
+          "快速处理音视频输入"
+        ]
       }
     },
     {
@@ -43,15 +142,42 @@
       "region": "global",
       "url": "https://claude.ai",
       "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/claude.png",
-      "tags": ["coding", "reasoning", "agent"],
-      "versions": ["Claude 3.5 Sonnet", "Claude 3.5 Haiku", "Claude 3 Opus", "Claude 3 Sonnet", "Claude 3 Haiku"],
+      "tags": [
+        "coding",
+        "reasoning",
+        "agent"
+      ],
+      "versions": [
+        "Claude Opus 4.7",
+        "Claude Opus 4.6",
+        "Claude Sonnet 4.6",
+        "Claude Opus 4.5",
+        "Claude Sonnet 4.5",
+        "Claude Haiku 4.5",
+        "Claude Opus 4.1",
+        "Claude Opus 4",
+        "Claude Sonnet 4",
+        "Claude 3.5 Sonnet",
+        "Claude 3.5 Haiku",
+        "Claude 3 Opus",
+        "Claude 3 Sonnet",
+        "Claude 3 Haiku"
+      ],
       "description": {
         "en": "Anthropic's flagship model series, renowned for human-like writing, code intelligence, and reliable logic.",
         "zh": "Anthropic 的旗舰模型系列，以极为拟人化的表达、卓越的代码能力与可靠的逻辑推理著称。"
       },
       "features": {
-        "en": ["Superb code & software engineering", "Natural & nuanced writing style", "High safety & alignment standards"],
-        "zh": ["顶尖的代码与软件工程能力", "自然且有深度的人文写作风格", "高标准的安全性与对齐性"]
+        "en": [
+          "Superb code & software engineering",
+          "Natural & nuanced writing style",
+          "High safety & alignment standards"
+        ],
+        "zh": [
+          "顶尖的代码与软件工程能力",
+          "自然且有深度的人文写作风格",
+          "高标准的安全性与对齐性"
+        ]
       }
     },
     {
@@ -61,15 +187,84 @@
       "region": "global",
       "url": "https://chatgpt.com",
       "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/openai.png",
-      "tags": ["reasoning", "multimodal", "agent"],
-      "versions": ["GPT-o3-mini", "GPT-o1", "GPT-o1-mini", "GPT-4o", "GPT-4o-mini", "GPT-4"],
+      "tags": [
+        "reasoning",
+        "multimodal",
+        "agent"
+      ],
+      "versions": [
+        "Chat Latest",
+        "GPT-5.5",
+        "GPT-5.5 Pro",
+        "GPT-5.4",
+        "GPT-5.4 Pro",
+        "GPT-5.4 mini",
+        "GPT-5.4 nano",
+        "GPT-5.3 Chat",
+        "GPT-5.3 Codex",
+        "GPT-5.2",
+        "GPT-5.2 Codex",
+        "GPT-5.2 pro",
+        "GPT-5.2 Chat",
+        "GPT-5.1",
+        "GPT-5.1 Chat",
+        "GPT-5.1 Codex Max",
+        "GPT-5.1 Codex",
+        "GPT-5.1 Codex mini",
+        "GPT-5 pro",
+        "GPT-5 Codex",
+        "GPT-5",
+        "GPT-5 mini",
+        "GPT-5 nano",
+        "GPT-5 Chat",
+        "o4-mini",
+        "o4-mini Deep Research",
+        "o3-pro",
+        "o3",
+        "o3 Deep Research",
+        "o3-mini",
+        "o1-pro",
+        "o1",
+        "GPT-4.1",
+        "GPT-4.1 mini",
+        "GPT-4.1 nano",
+        "GPT-4o mini",
+        "GPT-4o mini Search Preview",
+        "GPT-4o",
+        "GPT-4o Search Preview",
+        "GPT-4o 1120",
+        "GPT-4o 0513",
+        "GPT-4o Audio Preview",
+        "GPT-4o mini Audio",
+        "GPT-4 Turbo",
+        "GPT-4 Turbo Vision 0409",
+        "GPT-4",
+        "GPT-4 0613",
+        "GPT-4o Transcribe",
+        "GPT-4o Mini Transcribe",
+        "GPT-4o Realtime 241217",
+        "GPT-4o Realtime 250603",
+        "GPT-4o Realtime 241001",
+        "GPT-4o Mini Realtime",
+        "GPT-o3-mini",
+        "GPT-o1",
+        "GPT-o1-mini"
+      ],
       "description": {
         "en": "OpenAI's industry-standard conversational AI, featuring powerful general intelligence and advanced reasoning capabilities.",
         "zh": "OpenAI 行业标准的对话式 AI，具备极强的通用智能与高水准的进阶推理能力。"
       },
       "features": {
-        "en": ["Advanced o-series reasoning", "Rich GPTs plugin ecosystem", "Reliable web searching & data analysis"],
-        "zh": ["先进的 o 系列深度推理", "丰富的 GPTs 插件生态", "可靠的联网搜索与数据分析"]
+        "en": [
+          "Advanced o-series reasoning",
+          "Rich GPTs plugin ecosystem",
+          "Reliable web searching & data analysis"
+        ],
+        "zh": [
+          "先进的 o 系列深度推理",
+          "丰富的 GPTs 插件生态",
+          "可靠的联网搜索与数据分析"
+        ]
       }
     },
     {
@@ -79,15 +274,34 @@
       "region": "domestic",
       "url": "https://chat.deepseek.com",
       "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/deepseek.png",
-      "tags": ["reasoning", "coding", "open-source"],
-      "versions": ["DeepSeek-R1", "DeepSeek-V3", "DeepSeek-Coder-V2", "DeepSeek-V2.5"],
+      "tags": [
+        "reasoning",
+        "coding",
+        "open-source"
+      ],
+      "versions": [
+        "DeepSeek V4 Flash",
+        "DeepSeek V4 Pro",
+        "DeepSeek-R1",
+        "DeepSeek-V3",
+        "DeepSeek-Coder-V2",
+        "DeepSeek-V2.5"
+      ],
       "description": {
         "en": "Advanced open-source mixture-of-experts model, offering top-tier reasoning and coding at extreme cost-efficiency.",
         "zh": "极高性价比的开源混合专家（MoE）模型，提供业内顶尖的深度逻辑推理与代码补全能力。"
       },
       "features": {
-        "en": ["Deep reasoning (R1 math/logic)", "Ultra low latency & high throughput", "Fully open weights (MIT License)"],
-        "zh": ["深度逻辑推理与思考 (R1)", "超低延迟与高吞吐率", "完全开源权重 (MIT 协议)"]
+        "en": [
+          "Deep reasoning (R1 math/logic)",
+          "Ultra low latency & high throughput",
+          "Fully open weights (MIT License)"
+        ],
+        "zh": [
+          "深度逻辑推理与思考 (R1)",
+          "超低延迟与高吞吐率",
+          "完全开源权重 (MIT 协议)"
+        ]
       }
     },
     {
@@ -97,15 +311,38 @@
       "region": "domestic",
       "url": "https://kimi.moonshot.cn",
       "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/kimi.png",
-      "tags": ["long-context", "agent", "reasoning"],
-      "versions": ["Kimi Chat (Kimi+)", "Kimi Explorer", "Kimi Chat v1"],
+      "tags": [
+        "long-context",
+        "agent",
+        "reasoning"
+      ],
+      "versions": [
+        "Kimi K2.6",
+        "Kimi K2.5",
+        "Kimi K2 Thinking",
+        "Kimi K2 Thinking Turbo",
+        "Kimi K2 0905 Preview",
+        "Kimi K2 0711 Preview",
+        "Kimi K2 Turbo Preview",
+        "Kimi Chat (Kimi+)",
+        "Kimi Explorer",
+        "Kimi Chat v1"
+      ],
       "description": {
         "en": "Moonshot AI's long-context pioneer, specializing in parsing huge documents, books, and real-time web searches.",
         "zh": "月之暗面推出的长上下文先驱，专注于解析大型复杂文档、学术文献以及联网实时搜索。"
       },
       "features": {
-        "en": ["Billion-character context parser", "Excellent document reading companion", "Smart Kimi+ specialized agents"],
-        "zh": ["支持百万字无损上下文", "极为优秀的长文阅读助手", "实用的 Kimi+ 专属智能体"]
+        "en": [
+          "Billion-character context parser",
+          "Excellent document reading companion",
+          "Smart Kimi+ specialized agents"
+        ],
+        "zh": [
+          "支持百万字无损上下文",
+          "极为优秀的长文阅读助手",
+          "实用的 Kimi+ 专属智能体"
+        ]
       }
     },
     {
@@ -115,15 +352,116 @@
       "region": "domestic",
       "url": "https://chat.qwenlm.ai",
       "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/qwen.png",
-      "tags": ["coding", "multilingual", "open-source"],
-      "versions": ["Qwen 2.5 Coder 32B", "Qwen 2.5 72B", "Qwen 2.5 VL", "Qwen 2.0 Plus"],
+      "tags": [
+        "coding",
+        "multilingual",
+        "open-source"
+      ],
+      "versions": [
+        "Qwen3 VL Plus",
+        "Qwen3 VL Flash",
+        "Qwen3 Coder Next",
+        "Qwen3 Coder Plus",
+        "Qwen3 Coder Flash",
+        "Qwen3 Coder 480B A35B",
+        "Qwen3 Coder 30B A3B",
+        "Qwen3.6-27B",
+        "Qwen3.6-35B-A3B",
+        "Qwen3.5-397B-A17B",
+        "Qwen3.5-122B-A10B",
+        "Qwen3.5-27B",
+        "Qwen3.5-35B-A3B",
+        "Qwen3 235B A22B Thinking 2507",
+        "Qwen3 235B A22B Instruct 2507",
+        "Qwen3 30B A3B Thinking 2507",
+        "Qwen3 30B A3B Instruct 2507",
+        "Qwen3 Next 80B A3B Thinking",
+        "Qwen3 Next 80B A3B Instruct",
+        "Qwen3 235B A22B",
+        "Qwen3 32B",
+        "Qwen3 30B A3B",
+        "Qwen3 14B",
+        "Qwen3 8B",
+        "Qwen3 4B",
+        "Qwen3 1.7B",
+        "Qwen3 0.6B",
+        "Qwen3.6 Flash",
+        "Qwen3.5 Flash",
+        "Qwen Flash",
+        "Qwen Turbo",
+        "Qwen3.6 Plus",
+        "Qwen3.5 Plus 2026-04-20",
+        "Qwen3.5 Plus",
+        "Qwen Plus",
+        "Qwen3.6 Max Preview",
+        "Qwen3 Max",
+        "Qwen3 Max Preview",
+        "Qwen Max",
+        "Qwen Long",
+        "Qwen3.5 Omni Plus",
+        "Qwen3.5 Omni Flash",
+        "Qwen3 Omni Flash",
+        "Qwen Omni Turbo",
+        "Qwen2.5 Omni 7B",
+        "Qwen VL Plus",
+        "Qwen VL Max",
+        "Qwen VL OCR",
+        "Qwen3 VL 30B A3B Thinking",
+        "Qwen3 VL 30B A3B Instruct",
+        "Qwen3 VL 8B Thinking",
+        "Qwen3 VL 8B Instruct",
+        "Qwen3 VL 235B A22B Thinking",
+        "Qwen3 VL 235B A22B Instruct",
+        "Qwen3 VL 32B Thinking",
+        "Qwen3 VL 32B Instruct",
+        "Qwen Math Turbo",
+        "Qwen Math Plus",
+        "Qwen Coder Turbo",
+        "Qwen Coder Plus",
+        "Qwen2.5 7B",
+        "Qwen2.5 14B",
+        "Qwen2.5 32B",
+        "Qwen2.5 72B",
+        "Qwen2.5 14B 1M",
+        "Qwen2.5 Math 7B",
+        "Qwen2.5 Math 72B",
+        "Qwen2.5 Coder 7B",
+        "Qwen2.5 Coder 14B",
+        "Qwen2.5 Coder 32B",
+        "Qwen2.5 VL 72B",
+        "Qwen2.5 VL 32B",
+        "Qwen2.5 VL 7B",
+        "DeepSeek R1 Distill Qwen 1.5B",
+        "DeepSeek R1 Distill Qwen 7B",
+        "DeepSeek R1 Distill Qwen 14B",
+        "DeepSeek R1 Distill Qwen 32B",
+        "Qwen Image 2.0 Pro 2026-04-22",
+        "Qwen Image 2.0 Pro",
+        "Qwen Image 2.0",
+        "Qwen Image Edit Max",
+        "Qwen Image Edit Plus",
+        "Qwen Image Edit",
+        "Qwen Image Max",
+        "Qwen Image Plus",
+        "Qwen Image",
+        "Qwen 2.5 VL",
+        "Qwen 2.0 Plus"
+      ],
       "description": {
         "en": "Alibaba's robust LLM series, with strong multilingual capabilities, mathematics, and code comprehension.",
         "zh": "阿里巴巴推出的强大通义千问大模型系列，在双语/多语言、数学运算与代码理解方面表现卓越。"
       },
       "features": {
-        "en": ["Exceptional bilingual performance", "Top-tier open-source Qwen2.5 weights", "Reliable scientific calculation"],
-        "zh": ["出色的中英双语表现", "业界知名的开源 Qwen2.5 权重", "可靠的数理与科学计算能力"]
+        "en": [
+          "Exceptional bilingual performance",
+          "Top-tier open-source Qwen2.5 weights",
+          "Reliable scientific calculation"
+        ],
+        "zh": [
+          "出色的中英双语表现",
+          "业界知名的开源 Qwen2.5 权重",
+          "可靠的数理与科学计算能力"
+        ]
       }
     },
     {
@@ -133,15 +471,45 @@
       "region": "domestic",
       "url": "https://www.doubao.com",
       "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/doubao.png",
-      "tags": ["agent", "fast", "multimodal"],
-      "versions": ["Doubao-pro-128k", "Doubao-pro-32k", "Doubao-lite-32k"],
+      "tags": [
+        "agent",
+        "fast",
+        "multimodal"
+      ],
+      "versions": [
+        "Doubao Seed 2.0 Pro",
+        "Doubao Seed 2.0 Lite",
+        "Doubao Seed 2.0 Mini",
+        "Doubao Seed 2.0 Code",
+        "Doubao Seed 1.8",
+        "Doubao Seed Code",
+        "Doubao Seed 1.6 Vision",
+        "Doubao Seed 1.6",
+        "Doubao Seed 1.6 Lite",
+        "Doubao Seed 1.6 Flash",
+        "Doubao 1.5 Pro 32k",
+        "Doubao 1.5 Pro 256k",
+        "Doubao 1.5 Lite 32k",
+        "Doubao 1.5 Vision Pro 32k",
+        "Doubao Lite 32k",
+        "Doubao Pro 32k",
+        "Doubao-pro-128k"
+      ],
       "description": {
         "en": "ByteDance's highly efficient conversational agent, optimized for speed, daily assistance, and natural voice interaction.",
         "zh": "字节跳动推出的一款高效对话助手，专为流畅的日常答疑、高响应速度及自然语音交互优化。"
       },
       "features": {
-        "en": ["Ultra fast inference speed", "Highly natural voice chat modes", "Comprehensive search integration"],
-        "zh": ["极快的模型响应速度", "十分逼真的语音对话模式", "多方位的联网信息聚合"]
+        "en": [
+          "Ultra fast inference speed",
+          "Highly natural voice chat modes",
+          "Comprehensive search integration"
+        ],
+        "zh": [
+          "极快的模型响应速度",
+          "十分逼真的语音对话模式",
+          "多方位的联网信息聚合"
+        ]
       }
     },
     {
@@ -151,15 +519,41 @@
       "region": "domestic",
       "url": "https://yi.01.ai",
       "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/yi.png",
-      "tags": ["multilingual", "open-source", "long-context"],
-      "versions": ["Yi-Large", "Yi-Lightning", "Yi-Medium", "Yi-1.5-34B"],
+      "tags": [
+        "multilingual",
+        "open-source",
+        "long-context"
+      ],
+      "versions": [
+        "Yi Lightning",
+        "Yi Vision V2",
+        "Yi Spark",
+        "Yi Medium",
+        "Yi Medium 200K",
+        "Yi Large Turbo",
+        "Yi Large RAG",
+        "Yi Large FC",
+        "Yi Large",
+        "Yi Vision",
+        "Yi Large Preview",
+        "Yi Lightning Lite",
+        "Yi-1.5-34B"
+      ],
       "description": {
         "en": "01.AI's high-performance bilingual model, excelling in multi-turn chat, reading comprehension, and translation.",
         "zh": "零一万物推出的低延迟双语模型，在多轮对话、长文阅读理解与翻译任务中表现亮眼。"
       },
       "features": {
-        "en": ["Bilingual training from scratch", "Excellent multi-turn reasoning", "Highly optimized open weights"],
-        "zh": ["原生中英双语基座训练", "优秀的多轮会话推理", "深度优化的开源社区权重"]
+        "en": [
+          "Bilingual training from scratch",
+          "Excellent multi-turn reasoning",
+          "Highly optimized open weights"
+        ],
+        "zh": [
+          "原生中英双语基座训练",
+          "优秀的多轮会话推理",
+          "深度优化的开源社区权重"
+        ]
       }
     },
     {
@@ -169,15 +563,39 @@
       "region": "global",
       "url": "https://grok.com",
       "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/grok.png",
-      "tags": ["reasoning", "real-time", "coding"],
-      "versions": ["Grok-2", "Grok-1.5-Vision", "Grok-1.5", "Grok-1"],
+      "tags": [
+        "reasoning",
+        "real-time",
+        "coding"
+      ],
+      "versions": [
+        "Grok 4.3",
+        "Grok 4.20 (Non-Reasoning)",
+        "Grok 4.20",
+        "Grok 4.20 Multi-Agent",
+        "Grok Imagine Image Quality",
+        "Grok Imagine Image",
+        "Grok Imagine Video",
+        "Grok-2",
+        "Grok-1.5-Vision",
+        "Grok-1.5",
+        "Grok-1"
+      ],
       "description": {
         "en": "xAI's witty conversational assistant, integrated with real-time world knowledge from the X platform.",
         "zh": "xAI 打造的具幽默色彩的对话助手，深度集成来自 X 平台的实时世界知识。"
       },
       "features": {
-        "en": ["Real-time feeds from X platform", "Uncensored and witty responses", "Strong code generation and analysis"],
-        "zh": ["X 平台的实时资讯抓取", "风趣且个性的对话调性", "强劲的代码生成与分析能力"]
+        "en": [
+          "Real-time feeds from X platform",
+          "Uncensored and witty responses",
+          "Strong code generation and analysis"
+        ],
+        "zh": [
+          "X 平台的实时资讯抓取",
+          "风趣且个性的对话调性",
+          "强劲的代码生成与分析能力"
+        ]
       }
     },
     {
@@ -187,15 +605,45 @@
       "region": "global",
       "url": "https://mistral.ai",
       "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/mistral.png",
-      "tags": ["open-source", "coding", "reasoning"],
-      "versions": ["Mistral Large 2", "Codestral 22B", "Mistral Nemo 12B", "Mixtral 8x22B"],
+      "tags": [
+        "open-source",
+        "coding",
+        "reasoning"
+      ],
+      "versions": [
+        "Mistral Medium 3.5",
+        "Devstral 2",
+        "Devstral Small 2",
+        "Mistral Medium 3.1",
+        "Magistral Medium 1.2",
+        "Magistral Small 1.2",
+        "Mistral Nemo",
+        "Mistral Small 4",
+        "Mistral Small 3.2",
+        "Mistral Large 3",
+        "Mistral Large 2.1",
+        "Codestral 2508",
+        "Codestral Mamba",
+        "Mistral Large 2",
+        "Codestral 22B",
+        "Mistral Nemo 12B",
+        "Mixtral 8x22B"
+      ],
       "description": {
         "en": "Europe's leading open-source model champion, focusing on customizable, lightweight, and powerful architectures.",
         "zh": "来自欧洲的开源大模型先锋，专注于高可定制性、轻量化且性能强劲的架构设计。"
       },
       "features": {
-        "en": ["Highly efficient MoE design", "Excellent European multilingual support", "Developer-first API integration"],
-        "zh": ["高效的 MoE 架构设计", "出色的欧洲多语言能力", "面向开发者的敏捷 API 接入"]
+        "en": [
+          "Highly efficient MoE design",
+          "Excellent European multilingual support",
+          "Developer-first API integration"
+        ],
+        "zh": [
+          "高效的 MoE 架构设计",
+          "出色的欧洲多语言能力",
+          "面向开发者的敏捷 API 接入"
+        ]
       }
     },
     {
@@ -205,15 +653,40 @@
       "region": "domestic",
       "url": "https://xinghuo.xfyun.cn",
       "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/spark.png",
-      "tags": ["agent", "multimodal", "coding"],
-      "versions": ["Spark 4.0 Ultra", "Spark 3.5 Max", "Spark 3.0", "Spark 2.0"],
+      "tags": [
+        "agent",
+        "multimodal",
+        "coding"
+      ],
+      "versions": [
+        "Spark X2 Flash",
+        "Spark X2",
+        "Spark X1.5",
+        "Spark Lite",
+        "Spark Pro",
+        "Spark Pro 128K",
+        "Spark Max",
+        "Spark Max 32K",
+        "Spark 4.0 Ultra",
+        "Spark 3.5 Max",
+        "Spark 3.0",
+        "Spark 2.0"
+      ],
       "description": {
         "en": "iFlytek's cognitive model, with outstanding voice integration, document generation, and business analysis.",
         "zh": "科大讯飞的星火认知大模型，在中文语音识别合成集成、公文写作与多行业垂直场景中表现稳定。"
       },
       "features": {
-        "en": ["Industry-leading voice features", "Powerful business draft generator", "Rich desktop application support"],
-        "zh": ["业内领先的语音交互结合", "出色的公文与报告生成器", "丰富的桌面客户端软硬件协同"]
+        "en": [
+          "Industry-leading voice features",
+          "Powerful business draft generator",
+          "Rich desktop application support"
+        ],
+        "zh": [
+          "业内领先的语音交互结合",
+          "出色的公文与报告生成器",
+          "丰富的桌面客户端软硬件协同"
+        ]
       }
     },
     {
@@ -223,15 +696,575 @@
       "region": "domestic",
       "url": "https://www.stepfun.com",
       "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/stepfun.png",
-      "tags": ["long-context", "reasoning", "multimodal"],
-      "versions": ["Step-2-16K", "Step-1.5-Pro", "Step-1.5-Flash", "Step-1-200K"],
+      "tags": [
+        "long-context",
+        "reasoning",
+        "multimodal"
+      ],
+      "versions": [
+        "Step 3.5 Flash 2603",
+        "Step 3.5 Flash",
+        "Step 3",
+        "Step R1 V Mini",
+        "Step 1 8K",
+        "Step 1 32K",
+        "Step 1 256K",
+        "Step 2 Mini",
+        "Step 2 16K",
+        "Step 2 16K Exp",
+        "Step 1V 8K",
+        "Step 1V 32K",
+        "Step 1o Vision 32K",
+        "Step 1o Turbo Vision",
+        "Step Image Edit 2",
+        "Step 2X Large",
+        "Step 1X Medium",
+        "Step 1X Edit",
+        "Step-1.5-Pro",
+        "Step-1.5-Flash",
+        "Step-1-200K"
+      ],
       "description": {
         "en": "Stepfun's multi-million token context and step-by-step reasoning model series, aiming for AGI breakthroughs.",
         "zh": "阶跃星辰推出的大模型，支持极长上下文并专注于复杂的长链条多步逻辑推理。"
       },
       "features": {
-        "en": ["Multi-million token context window", "Step-by-step reasoning logic", "Native multimodal parsing"],
-        "zh": ["数百万级的超长上下文解析", "清晰的分步逻辑链条推理", "原生的多模态解析能力"]
+        "en": [
+          "Multi-million token context window",
+          "Step-by-step reasoning logic",
+          "Native multimodal parsing"
+        ],
+        "zh": [
+          "数百万级的超长上下文解析",
+          "清晰的分步逻辑链条推理",
+          "原生的多模态解析能力"
+        ]
+      }
+    },
+    {
+      "id": "zhipu",
+      "name": "GLM",
+      "provider": "Zhipu AI",
+      "region": "domestic",
+      "url": "https://open.bigmodel.cn",
+      "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/zhipu.png",
+      "tags": [
+        "reasoning",
+        "coding",
+        "multimodal"
+      ],
+      "versions": [
+        "GLM-5.1",
+        "GLM-5-Turbo",
+        "GLM-5",
+        "GLM-4.7",
+        "GLM-4.7-Flash",
+        "GLM-4.7-FlashX",
+        "GLM-5V-Turbo",
+        "GLM-4.6V",
+        "GLM-4.6V-FlashX",
+        "GLM-4.6V-Flash",
+        "GLM-4.6",
+        "GLM-4.5V",
+        "GLM-4.5",
+        "GLM-4.5-X",
+        "GLM-4.5-Air",
+        "GLM-4.5-AirX",
+        "GLM-4.1V-Thinking-FlashX",
+        "GLM-4.1V-Thinking-Flash",
+        "GLM-Zero-Preview",
+        "GLM-Z1-Air",
+        "GLM-Z1-AirX",
+        "GLM-Z1-FlashX",
+        "GLM-Z1-Flash",
+        "GLM-4-Flash-250414",
+        "GLM-4-FlashX-250414",
+        "GLM-4-Long",
+        "GLM-4-Air-250414",
+        "GLM-4-AirX",
+        "GLM-4-Plus",
+        "GLM-4-0520",
+        "GLM-4V-Flash",
+        "GLM-4V-Plus-0111",
+        "GLM-4V",
+        "CharGLM-4",
+        "GLM-Image"
+      ],
+      "description": {
+        "en": "Zhipu AI's flagship GLM model series, offering strong bilingual reasoning, coding, and multi-modal capabilities.",
+        "zh": "智谱 AI 的自研旗舰大模型系列，具备强大的双语推理、代码与多模态理解能力。"
+      },
+      "features": {
+        "en": [
+          "Strong Chinese-English reasoning",
+          "Fully self-developed GLM architecture",
+          "Excellent long context understanding"
+        ],
+        "zh": [
+          "优秀的中英双语推理",
+          "全栈自研 GLM 模型系列",
+          "卓越的长文本处理能力"
+        ]
+      }
+    },
+    {
+      "id": "baichuan",
+      "name": "Baichuan",
+      "provider": "Baichuan Intelligent",
+      "region": "domestic",
+      "url": "https://www.baichuan-ai.com",
+      "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/baichuan.png",
+      "tags": [
+        "multilingual",
+        "long-context",
+        "agent"
+      ],
+      "versions": [
+        "Baichuan M3 Plus",
+        "Baichuan M3",
+        "Baichuan M2 Plus",
+        "Baichuan M2",
+        "Baichuan 4",
+        "Baichuan 4 Turbo",
+        "Baichuan 4 Air",
+        "Baichuan 3 Turbo",
+        "Baichuan 3 Turbo 128k",
+        "Baichuan 2 Turbo"
+      ],
+      "description": {
+        "en": "Baichuan's high-performance Chinese model series, built with vast medical and vertical domain knowledge.",
+        "zh": "百川智能的高性能中文大模型系列，在医疗、法律等垂直行业与中文语义理解上表现突出。"
+      },
+      "features": {
+        "en": [
+          "Deep vertical domain expertise",
+          "Excellent Chinese search enhancement",
+          "High efficiency text generation"
+        ],
+        "zh": [
+          "深厚的垂直领域知识积累",
+          "优秀的中文搜索增强 (RAG)",
+          "高效的文本生成与处理"
+        ]
+      }
+    },
+    {
+      "id": "minimax",
+      "name": "MiniMax",
+      "provider": "MiniMax",
+      "region": "domestic",
+      "url": "https://www.minimaxi.com",
+      "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/minimax.png",
+      "tags": [
+        "multimodal",
+        "agent",
+        "fast"
+      ],
+      "versions": [
+        "MiniMax M2.7",
+        "MiniMax M2.7 Highspeed",
+        "MiniMax M2.5",
+        "MiniMax M2.5 highspeed",
+        "MiniMax M2-her",
+        "MiniMax M2.1",
+        "MiniMax M2.1 highspeed",
+        "MiniMax M2",
+        "MiniMax M2 Stable",
+        "MiniMax M1",
+        "MiniMax Text 01",
+        "MiniMax Hailuo 2.3 Fast",
+        "MiniMax Hailuo 2.3",
+        "MiniMax Hailuo 02"
+      ],
+      "description": {
+        "en": "MiniMax's advanced MoE model series, excelling in multi-turn role-playing and natural conversation.",
+        "zh": "MiniMax 推出的一流大模型系列，在多轮角色扮演与拟人化自然语言对话中非常出色。"
+      },
+      "features": {
+        "en": [
+          "Vivid role-playing conversations",
+          "Advanced MoE architecture",
+          "Native text-to-speech integration"
+        ],
+        "zh": [
+          "生动逼真的角色扮演对话",
+          "领先的混合专家 (MoE) 架构",
+          "原生级音视频与语音结合"
+        ]
+      }
+    },
+    {
+      "id": "hunyuan",
+      "name": "Hunyuan",
+      "provider": "Tencent",
+      "region": "domestic",
+      "url": "https://hunyuan.tencent.com",
+      "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/hunyuan.png",
+      "tags": [
+        "multimodal",
+        "agent",
+        "reasoning"
+      ],
+      "versions": [
+        "Hy3 preview",
+        "HY 2.0 Think",
+        "HY 2.0 Instruct",
+        "Hunyuan-role"
+      ],
+      "description": {
+        "en": "Tencent's enterprise-grade LLM, offering robust performance in logical reasoning, coding, and Tencent ecosystem integration.",
+        "zh": "腾讯混元企业级大模型，在逻辑推理、代码编写及腾讯生态场景融合中表现稳健。"
+      },
+      "features": {
+        "en": [
+          "Robust Chinese logical reasoning",
+          "Native image/video generation",
+          "Seamless enterprise system integration"
+        ],
+        "zh": [
+          "稳健的中文逻辑推理",
+          "原生的文生图与文生视频",
+          "无缝集成企业级应用场景"
+        ]
+      }
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "provider": "Perplexity",
+      "region": "global",
+      "url": "https://www.perplexity.ai",
+      "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/perplexity.png",
+      "tags": [
+        "real-time",
+        "reasoning",
+        "agent"
+      ],
+      "versions": [
+        "Sonar Deep Research",
+        "Sonar Reasoning Pro",
+        "Sonar Reasoning",
+        "Sonar Pro",
+        "Sonar"
+      ],
+      "description": {
+        "en": "Perplexity's search-optimized model series, delivering fast, sourced, and accurate real-time answers.",
+        "zh": "Perplexity 专为搜索优化的大模型系列，提供极速、附带信源引用且准确的实时答复。"
+      },
+      "features": {
+        "en": [
+          "Real-time citation engine",
+          "In-depth web searching",
+          "Highly concise & objective text synthesis"
+        ],
+        "zh": [
+          "实时信源追踪与引用",
+          "深度的全网信息检索",
+          "高度简洁与客观的文本整合"
+        ]
+      }
+    },
+    {
+      "id": "cohere",
+      "name": "Cohere",
+      "provider": "Cohere",
+      "region": "global",
+      "url": "https://cohere.com",
+      "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/cohere.png",
+      "tags": [
+        "multilingual",
+        "agent",
+        "open-source"
+      ],
+      "versions": [
+        "Command A 2503",
+        "Command R+ 2404",
+        "Command R+ 2408",
+        "Command R 2403",
+        "Command R 2408",
+        "Command R7B 2412",
+        "Command",
+        "Command Nightly",
+        "Command Light",
+        "Command Light Nightly"
+      ],
+      "description": {
+        "en": "Cohere's enterprise-focused Command series, specializing in multilingual search, RAG, and tool use.",
+        "zh": "Cohere 专注于企业场景的 Command 系列模型，擅长跨语言搜索、RAG 检索增强及工具调用。"
+      },
+      "features": {
+        "en": [
+          "State-of-the-art multilingual RAG",
+          "Excellent structured tool calling",
+          "Highly developer-friendly deployment"
+        ],
+        "zh": [
+          "顶尖的跨语言检索增强 (RAG)",
+          "优秀且稳定的结构化工具调用",
+          "对开发者极度友好的部署选项"
+        ]
+      }
+    },
+    {
+      "id": "wenxin",
+      "name": "ERNIE",
+      "provider": "Baidu",
+      "region": "domestic",
+      "url": "https://yiyan.baidu.com",
+      "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/wenxin.png",
+      "tags": [
+        "multilingual",
+        "agent",
+        "reasoning"
+      ],
+      "versions": [
+        "ERNIE 5.1",
+        "ERNIE 5.0",
+        "ERNIE 5.0 Thinking",
+        "ERNIE 5.0 Thinking Preview",
+        "ERNIE 4.5 Turbo 20260402",
+        "ERNIE 4.5 Turbo 128K",
+        "ERNIE 4.5 Turbo 32K",
+        "ERNIE 4.5 Turbo Latest",
+        "ERNIE Speed Pro 128K",
+        "ERNIE Lite Pro 128K",
+        "ERNIE Character Fiction 8K",
+        "ERNIE Character Fiction 8K Preview",
+        "ERNIE Novel 8K",
+        "ERNIE 4.5 0.3B",
+        "ERNIE 4.5 Turbo VL",
+        "ERNIE 4.5 Turbo VL 32K",
+        "ERNIE 4.5 Turbo VL Latest",
+        "ERNIE 4.5 8K Preview",
+        "ERNIE X1.1",
+        "ERNIE X1.1 Preview",
+        "ERNIE X1 Turbo 32K",
+        "ERNIE X1 Turbo 32K Preview",
+        "ERNIE Image Turbo",
+        "ERNIE iRAG",
+        "ERNIE iRAG Edit"
+      ],
+      "description": {
+        "en": "Baidu's pioneer Chinese foundation model series, ERNIE, tailored for Chinese language nuance, search integration, and smart agents.",
+        "zh": "百度自研的文心大模型系列（ERNIE），专为中文语义理解、搜索增强与智能体生态设计。"
+      },
+      "features": {
+        "en": [
+          "Native search integration with Baidu",
+          "Strong Chinese semantics & culture understanding",
+          "Vibrant app builder ecosystem"
+        ],
+        "zh": [
+          "原生集成百度搜索数据",
+          "极强的中文语义与国学理解",
+          "丰富的零代码智能体生态"
+        ]
+      }
+    },
+    {
+      "id": "internlm",
+      "name": "InternLM",
+      "provider": "Shanghai AI Lab",
+      "region": "domestic",
+      "url": "https://internlm.shlab.org.cn",
+      "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/internlm.png",
+      "tags": [
+        "coding",
+        "reasoning",
+        "open-source"
+      ],
+      "versions": [
+        "Intern",
+        "Intern-S1-Pro",
+        "Intern-S1",
+        "Intern-S1-Mini",
+        "InternVL3.5",
+        "InternVL3.5-241B-A28B"
+      ],
+      "description": {
+        "en": "Shanghai AI Lab's open-source model series, InternLM, leading in reasoning, mathematics, coding, and multi-modal understanding.",
+        "zh": "上海人工智能实验室推出的开源大模型系列（书生·浦语），在推理、数学、代码及多模态理解方面处于领先地位。"
+      },
+      "features": {
+        "en": [
+          "Top-tier open-source research baseline",
+          "Excellent math & reasoning benchmarks",
+          "Fully open weights for developers"
+        ],
+        "zh": [
+          "学术界领先的开源基座",
+          "卓越的数理与逻辑推理能力",
+          "完全开源权重，便于二次开发"
+        ]
+      }
+    },
+    {
+      "id": "sensenova",
+      "name": "SenseNova",
+      "provider": "SenseTime",
+      "region": "domestic",
+      "url": "https://platform.sensetime.com",
+      "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/sensenova.png",
+      "tags": [
+        "multimodal",
+        "reasoning",
+        "agent"
+      ],
+      "versions": [
+        "SenseNova V6.5 Pro",
+        "SenseNova V6.5 Turbo",
+        "SenseNova V6 Reasoner",
+        "SenseNova V6 Turbo",
+        "SenseNova V6 Pro"
+      ],
+      "description": {
+        "en": "SenseTime's enterprise-ready foundation model series, SenseNova, with rich multi-modal capabilities and deep vertical industry alignment.",
+        "zh": "商汤科技打造的“日日新”大模型体系，具备出色的多模态生成、深度逻辑推理与行业应用结合度。"
+      },
+      "features": {
+        "en": [
+          "High-quality image & text generation",
+          "Robust enterprise applications alignment",
+          "Advanced logical reasoning agent support"
+        ],
+        "zh": [
+          "高质量的图文多模态理解与生成",
+          "深度的企业级应用适配",
+          "先进的推理型智能体支持"
+        ]
+      }
+    },
+    {
+      "id": "ai21",
+      "name": "Jurassic / Jamba",
+      "provider": "AI21 Labs",
+      "region": "global",
+      "url": "https://www.ai21.com",
+      "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/ai21.png",
+      "tags": [
+        "long-context",
+        "multilingual",
+        "reasoning"
+      ],
+      "versions": [
+        "Jamba Mini",
+        "Jamba Large"
+      ],
+      "description": {
+        "en": "AI21 Labs' Jurassic and Jamba series, pioneering hybrid SSM-Transformer architectures for ultra-long context window efficiency.",
+        "zh": "AI21 Labs 推出的 Jurassic 和 Jamba 系列，开创了 SSM-Transformer 混合架构，提供极高性价比的超长上下文处理。"
+      },
+      "features": {
+        "en": [
+          "Innovative Jamba hybrid architecture",
+          "Ultra efficient long-context windows",
+          "High performance bilingual text processing"
+        ],
+        "zh": [
+          "首创 Jamba 混合架构 (SSM-Transformer)",
+          "极高计算效率的长文本窗口",
+          "出色的双语写作与信息提取"
+        ]
+      }
+    },
+    {
+      "id": "nvidia",
+      "name": "Nemotron",
+      "provider": "NVIDIA",
+      "region": "global",
+      "url": "https://build.nvidia.com",
+      "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/nvidia.png",
+      "tags": [
+        "coding",
+        "reasoning",
+        "agent"
+      ],
+      "versions": [
+        "Llama 3.1 Nemotron Nano 8B",
+        "Llama 3.1 Nemotron 51B Instruct",
+        "Llama 3.1 Nemotron 70B Instruct"
+      ],
+      "description": {
+        "en": "NVIDIA's optimized foundation models, including the Nemotron series, custom-tuned for maximum performance, helpfulness, and coding tasks.",
+        "zh": "英伟达推出的定制优化大模型系列（如 Nemotron），在对话帮助度、代码编写与推理性能上进行了深度微调。"
+      },
+      "features": {
+        "en": [
+          "Custom-tuned Nemotron series",
+          "State-of-the-art alignment for helpfulness",
+          "Optimized for GPU acceleration & edge deployment"
+        ],
+        "zh": [
+          "英伟达定制调优的 Nemotron 系列",
+          "顶尖的对话帮助度（Helpfulness）微调",
+          "完美适配 GPU 加速与边缘部署"
+        ]
+      }
+    },
+    {
+      "id": "jina",
+      "name": "Jina Search",
+      "provider": "Jina AI",
+      "region": "global",
+      "url": "https://jina.ai",
+      "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/jina.png",
+      "tags": [
+        "long-context",
+        "multilingual",
+        "open-source"
+      ],
+      "versions": [
+        "Jina DeepSearch v1"
+      ],
+      "description": {
+        "en": "Jina AI's search foundation models, pioneering in deep-search, dense retrieval embeddings, rerankers, and long-context understanding.",
+        "zh": "Jina AI 推出的搜索大模型系列，在深度搜索、高维向量嵌入（Embeddings）、重排（Rerank）及长文本解析中处于世界领先水平。"
+      },
+      "features": {
+        "en": [
+          "World-class deep-search & RAG foundation",
+          "Excellent multi-lingual dense vector models",
+          "Fully open weights and API services"
+        ],
+        "zh": [
+          "顶级的深度搜索与 RAG 技术基底",
+          "出色的多语言向量与重排模型",
+          "提供完全开源权重与轻量化 API"
+        ]
+      }
+    },
+    {
+      "id": "upstage",
+      "name": "Solar",
+      "provider": "Upstage",
+      "region": "global",
+      "url": "https://www.upstage.ai",
+      "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/upstage.png",
+      "tags": [
+        "coding",
+        "agent",
+        "multilingual"
+      ],
+      "versions": [
+        "Solar Pro",
+        "Solar Mini",
+        "Solar Mini (Ja)"
+      ],
+      "description": {
+        "en": "Upstage's Solar LLM series, leading in document AI, smart agents, and highly optimized small-footprint models (SLMs).",
+        "zh": "Upstage 打造的 Solar 大模型系列，专注于文档 AI、智能代理以及性能优越的轻量级大模型（SLM）。"
+      },
+      "features": {
+        "en": [
+          "Highly optimized Solar SLM architecture",
+          "Excellent document reading & parsing (Layout Analysis)",
+          "Top ranking performance in HuggingFace Open LLM Leaderboard"
+        ],
+        "zh": [
+          "高度优化的 Solar 轻量级架构",
+          "卓越的文档阅读与图表解析（版面分析）",
+          "在 HuggingFace 开源大模型榜单名列前茅"
+        ]
       }
     }
   ]
