@@ -22,6 +22,7 @@ export type SectionCopy = {
     home: string;
     blog: string;
     tools: string;
+    llms: string;
     socials: string;
     about: string;
   };
@@ -37,6 +38,7 @@ export type SectionCopy = {
     stats: string;
     blog: string;
     tools: string;
+    llms: string;
     socials: string;
     clear: string;
   };
@@ -71,6 +73,7 @@ export const copy: CopyMap = {
       home: "Home",
       blog: "Blog",
       tools: "Tools",
+      llms: "LLMs",
       socials: "Socials",
       about: "About",
     },
@@ -86,6 +89,7 @@ export const copy: CopyMap = {
       stats: "Display my coding statistics (Wakatime)",
       blog: "Read my technical blog",
       tools: "Browse my daily tools and software",
+      llms: "Explore the LLMs I use and recommend",
       socials: "View my social links and profiles",
       clear: "Clear the terminal screen",
     },
@@ -113,6 +117,7 @@ export const copy: CopyMap = {
       home: "首页",
       blog: "博客",
       tools: "工具箱",
+      llms: "大模型",
       socials: "社交",
       about: "关于",
     },
@@ -128,6 +133,7 @@ export const copy: CopyMap = {
       stats: "显示我的编程统计 (Wakatime)",
       blog: "阅读我的技术博客",
       tools: "浏览我的日常工具和软件",
+      llms: "探索我日常使用或推荐的大语言模型",
       socials: "查看我的社交链接和主页",
       clear: "清空终端屏幕",
     },

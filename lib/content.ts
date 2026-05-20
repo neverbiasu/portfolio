@@ -44,7 +44,7 @@ export const profile = {
     zh: "一个学生、AI 应用工程师、ComfyUI 开发者与前端工程师，专注打造 AI 原生体验。",
   } as Localized,
   openToCollab: true,
-  skills: ["Vue.js", "Next.js", "TypeScript", "Node.js", "Python", "PyTorch", "ComfyUI"],
+  skills: ["Vue.js", "Next.js", "TypeScript", "Node.js", "Python", "PyTorch", "ComfyUI", "LLMs"],
 };
 
 const staticProjects: Project[] = [

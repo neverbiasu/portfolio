@@ -1,0 +1,221 @@
+{
+  "regions": [
+    { "id": "global", "label": { "en": "Global", "zh": "海外模型" } },
+    { "id": "domestic", "label": { "en": "Domestic", "zh": "国内模型" } }
+  ],
+  "tags": [
+    { "id": "reasoning", "label": { "en": "Reasoning", "zh": "深度推理" }, "color": "mocha-mauve" },
+    { "id": "long-context", "label": { "en": "Long Context", "zh": "长上下文" }, "color": "mocha-blue" },
+    { "id": "coding", "label": { "en": "Coding", "zh": "代码智能" }, "color": "mocha-green" },
+    { "id": "multimodal", "label": { "en": "Multimodal", "zh": "多模态" }, "color": "mocha-teal" },
+    { "id": "open-source", "label": { "en": "Open Source", "zh": "开源权重" }, "color": "mocha-peach" },
+    { "id": "agent", "label": { "en": "Agentic", "zh": "智能代理" }, "color": "mocha-pink" }
+  ],
+  "llms": [
+    {
+      "id": "gemini",
+      "name": "Gemini",
+      "provider": "Google",
+      "region": "global",
+      "url": "https://gemini.google.com",
+      "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/gemini.png",
+      "tags": ["multimodal", "long-context", "reasoning"],
+      "description": {
+        "en": "Google's advanced multimodal model, offering large context windows (up to 2M tokens) and strong reasoning.",
+        "zh": "Google 的先进多模态大模型，提供极长上下文窗口（最高支持 200 万 token）与强大的推理能力。"
+      },
+      "features": {
+        "en": ["Up to 2M context window", "Native multimodality", "Fast audio & video input processing"],
+        "zh": ["最高支持 2M 上下文", "原生多模态理解", "快速处理音视频输入"]
+      }
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "provider": "Anthropic",
+      "region": "global",
+      "url": "https://claude.ai",
+      "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/claude.png",
+      "tags": ["coding", "reasoning"],
+      "description": {
+        "en": "Anthropic's flagship model series, renowned for human-like writing, code intelligence, and reliable logic.",
+        "zh": "Anthropic 的旗舰模型系列，以极为拟人化的表达、卓越的代码能力与可靠的逻辑推理著称。"
+      },
+      "features": {
+        "en": ["Superb code & software engineering", "Natural & nuanced writing style", "High safety & alignment standards"],
+        "zh": ["顶尖的代码与软件工程能力", "自然且有深度的人文写作风格", "高标准的安全性与对齐性"]
+      }
+    },
+    {
+      "id": "openai",
+      "name": "ChatGPT / GPT-4",
+      "provider": "OpenAI",
+      "region": "global",
+      "url": "https://chatgpt.com",
+      "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/openai.png",
+      "tags": ["reasoning", "multimodal", "agent"],
+      "description": {
+        "en": "OpenAI's industry-standard conversational AI, featuring powerful general intelligence and advanced reasoning capabilities.",
+        "zh": "OpenAI 行业标准的对话式 AI，具备极强的通用智能与高水准的进阶推理能力。"
+      },
+      "features": {
+        "en": ["Advanced o-series reasoning", "Rich GPTs plugin ecosystem", "Reliable web searching & data analysis"],
+        "zh": ["先进的 o 系列深度推理", "丰富的 GPTs 插件生态", "可靠的联网搜索与数据分析"]
+      }
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek-V3 / R1",
+      "provider": "DeepSeek",
+      "region": "domestic",
+      "url": "https://chat.deepseek.com",
+      "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/deepseek.png",
+      "tags": ["reasoning", "coding", "open-source"],
+      "description": {
+        "en": "Advanced open-source mixture-of-experts model, offering top-tier reasoning and coding at extreme cost-efficiency.",
+        "zh": "极高性价比的开源混合专家（MoE）模型，提供业内顶尖的深度逻辑推理与代码补全能力。"
+      },
+      "features": {
+        "en": ["Deep reasoning (R1 math/logic)", "Ultra low latency & high throughput", "Fully open weights (MIT License)"],
+        "zh": ["深度逻辑推理与思考 (R1)", "超低延迟与高吞吐率", "完全开源权重 (MIT 协议)"]
+      }
+    },
+    {
+      "id": "kimi",
+      "name": "Kimi Chat",
+      "provider": "Moonshot AI",
+      "region": "domestic",
+      "url": "https://kimi.moonshot.cn",
+      "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/kimi.png",
+      "tags": ["long-context", "agent"],
+      "description": {
+        "en": "Moonshot AI's long-context pioneer, specializing in parsing huge documents, books, and real-time web searches.",
+        "zh": "月之暗面推出的长上下文先驱，专注于解析大型复杂文档、学术文献以及联网实时搜索。"
+      },
+      "features": {
+        "en": ["Billion-character context parser", "Excellent document reading companion", "Smart Kimi+ specialized agents"],
+        "zh": ["支持百万字无损上下文", "极为优秀的长文阅读助手", "实用的 Kimi+ 专属智能体"]
+      }
+    },
+    {
+      "id": "qwen",
+      "name": "Tongyi Qwen",
+      "provider": "Alibaba",
+      "region": "domestic",
+      "url": "https://chat.qwenlm.ai",
+      "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/qwen.png",
+      "tags": ["coding", "multilingual", "open-source"],
+      "description": {
+        "en": "Alibaba's robust LLM series, with strong multilingual capabilities, mathematics, and code comprehension.",
+        "zh": "阿里巴巴推出的强大通义千问大模型系列，在双语/多语言、数学运算与代码理解方面表现卓越。"
+      },
+      "features": {
+        "en": ["Exceptional bilingual performance", "Top-tier open-source Qwen2.5 weights", "Reliable scientific calculation"],
+        "zh": ["出色的中英双语表现", "业界知名的开源 Qwen2.5 权重", "可靠的数理与科学计算能力"]
+      }
+    },
+    {
+      "id": "doubao",
+      "name": "Doubao",
+      "provider": "ByteDance",
+      "region": "domestic",
+      "url": "https://www.doubao.com",
+      "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/doubao.png",
+      "tags": ["agent", "fast"],
+      "description": {
+        "en": "ByteDance's highly efficient conversational agent, optimized for speed, daily assistance, and natural voice interaction.",
+        "zh": "字节跳动推出的一款高效对话助手，专为流畅的日常答疑、高响应速度及自然语音交互优化。"
+      },
+      "features": {
+        "en": ["Ultra fast inference speed", "Highly natural voice chat modes", "Comprehensive search integration"],
+        "zh": ["极快的模型响应速度", "十分逼真的语音对话模式", "多方位的联网信息聚合"]
+      }
+    },
+    {
+      "id": "yi",
+      "name": "Yi / ZeroOne",
+      "provider": "01.AI",
+      "region": "domestic",
+      "url": "https://yi.01.ai",
+      "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/yi.png",
+      "tags": ["multilingual", "open-source"],
+      "description": {
+        "en": "01.AI's high-performance bilingual model, excelling in multi-turn chat, reading comprehension, and translation.",
+        "zh": "零一万物推出的低延迟双语模型，在多轮对话、长文阅读理解与翻译任务中表现亮眼。"
+      },
+      "features": {
+        "en": ["Bilingual training from scratch", "Excellent multi-turn reasoning", "Highly optimized open weights"],
+        "zh": ["原生中英双语基座训练", "优秀的多轮会话推理", "深度优化的开源社区权重"]
+      }
+    },
+    {
+      "id": "grok",
+      "name": "Grok",
+      "provider": "xAI",
+      "region": "global",
+      "url": "https://grok.com",
+      "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/grok.png",
+      "tags": ["reasoning", "real-time"],
+      "description": {
+        "en": "xAI's witty conversational assistant, integrated with real-time world knowledge from the X platform.",
+        "zh": "xAI 打造的具幽默色彩的对话助手，深度集成来自 X 平台的实时世界知识。"
+      },
+      "features": {
+        "en": ["Real-time feeds from X platform", "Uncensored and witty responses", "Strong code generation and analysis"],
+        "zh": ["X 平台的实时资讯抓取", "风趣且个性的对话调性", "强劲的代码生成与分析能力"]
+      }
+    },
+    {
+      "id": "mistral",
+      "name": "Mistral AI",
+      "provider": "Mistral",
+      "region": "global",
+      "url": "https://mistral.ai",
+      "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/mistral.png",
+      "tags": ["open-source", "coding"],
+      "description": {
+        "en": "Europe's leading open-source model champion, focusing on customizable, lightweight, and powerful architectures.",
+        "zh": "来自欧洲的开源大模型先锋，专注于高可定制性、轻量化且性能强劲的架构设计。"
+      },
+      "features": {
+        "en": ["Highly efficient MoE design", "Excellent European multilingual support", "Developer-first API integration"],
+        "zh": ["高效的 MoE 架构设计", "出色的欧洲多语言能力", "面向开发者的敏捷 API 接入"]
+      }
+    },
+    {
+      "id": "spark",
+      "name": "iFlytek Spark",
+      "provider": "iFlytek",
+      "region": "domestic",
+      "url": "https://xinghuo.xfyun.cn",
+      "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/spark.png",
+      "tags": ["agent", "multimodal"],
+      "description": {
+        "en": "iFlytek's cognitive model, with outstanding voice integration, document generation, and business analysis.",
+        "zh": "科大讯飞的星火认知大模型，在中文语音识别合成集成、公文写作与多行业垂直场景中表现稳定。"
+      },
+      "features": {
+        "en": ["Industry-leading voice features", "Powerful business draft generator", "Rich desktop application support"],
+        "zh": ["业内领先的语音交互结合", "出色的公文与报告生成器", "丰富的桌面客户端软硬件协同"]
+      }
+    },
+    {
+      "id": "stepfun",
+      "name": "Stepfun",
+      "provider": "Stepfun",
+      "region": "domestic",
+      "url": "https://www.stepfun.com",
+      "logo": "https://unpkg.com/@lobehub/icons-static-png@latest/dark/stepfun.png",
+      "tags": ["long-context", "reasoning", "multimodal"],
+      "description": {
+        "en": "Stepfun's multi-million token context and step-by-step reasoning model series, aiming for AGI breakthroughs.",
+        "zh": "阶跃星辰推出的大模型，支持极长上下文并专注于复杂的长链条多步逻辑推理。"
+      },
+      "features": {
+        "en": ["Multi-million token context window", "Step-by-step reasoning logic", "Native multimodal parsing"],
+        "zh": ["数百万级的超长上下文解析", "清晰的分步逻辑链条推理", "原生的多模态解析能力"]
+      }
+    }
+  ]
+}
+

@@ -55,6 +55,12 @@ export function SiteHeader({ locale, onToggle }: Props) {
             {dictionary.nav.tools}
           </button>
           <button
+            onClick={() => window.open("/llms", "_blank")}
+            className="hover:text-mocha-text hover:bg-white/10 px-2 py-0.5 rounded-sm transition-all"
+          >
+            {dictionary.nav.llms}
+          </button>
+          <button
             onClick={() => window.open("/socials", "_blank")}
             className="hover:text-mocha-text hover:bg-white/10 px-2 py-0.5 rounded-sm transition-all"
           >

@@ -56,7 +56,7 @@ export function PortfolioPage() {
   const inputRef = useRef<HTMLInputElement>(null);
 
   // Available commands for Tab completion
-  const commandNames = useMemo(() => ['help', 'whoami', 'skills', 'projects', 'stats', 'blog', 'tools', 'socials', 'clear', 'faych'], []);
+  const commandNames = useMemo(() => ['help', 'whoami', 'skills', 'projects', 'stats', 'blog', 'tools', 'llms', 'socials', 'clear', 'faych'], []);
 
   // Tab completion hook
   const { handleKeyDown: handleTabKeyDown, suggestion } = useTabCompletion({
@@ -116,6 +116,10 @@ export function PortfolioPage() {
       tools: () => {
         window.open('/tools', '_blank');
         return <span className="text-mocha-green">Opening tools page in new tab...</span>;
+      },
+      llms: () => {
+        window.open('/llms', '_blank');
+        return <span className="text-mocha-green">Opening LLMs page in new tab...</span>;
       },
       socials: () => {
         window.open('/socials', '_blank');
