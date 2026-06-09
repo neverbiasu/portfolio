@@ -43,16 +43,16 @@
       "name": "awesome-gemini-prompts",
       "description": null,
       "html_url": "https://github.com/neverbiasu/awesome-gemini-prompts",
-      "stargazers_count": 112,
+      "stargazers_count": 111,
       "forks_count": 20,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-06-07T04:51:07Z",
+      "updated_at": "2026-06-08T18:40:16Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
       "open_issues_count": 4,
-      "size": 29326
+      "size": 29348
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -458,27 +458,12 @@
       "forks_count": 0,
       "language": null,
       "topics": [],
-      "updated_at": "2026-06-07T19:18:30Z",
+      "updated_at": "2026-06-08T21:48:06Z",
       "created_at": "2025-02-14T09:17:41Z",
       "homepage": null,
       "license": null,
       "open_issues_count": 0,
-      "size": 212
-    },
-    {
-      "name": "ModelScope-Top-LoRAs",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/ModelScope-Top-LoRAs",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "Python",
-      "topics": [],
-      "updated_at": "2026-06-07T06:16:54Z",
-      "created_at": "2025-11-05T00:52:35Z",
-      "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 145825
+      "size": 213
     },
     {
       "name": "calabiyau-data-vis",
@@ -488,12 +473,27 @@
       "forks_count": 0,
       "language": "Vue",
       "topics": [],
-      "updated_at": "2026-06-07T04:02:28Z",
+      "updated_at": "2026-06-08T08:56:36Z",
       "created_at": "2025-12-12T00:10:08Z",
       "homepage": "https://calabiyau-data-vis.vercel.app",
       "license": null,
       "open_issues_count": 0,
-      "size": 766
+      "size": 767
+    },
+    {
+      "name": "ModelScope-Top-LoRAs",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/ModelScope-Top-LoRAs",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Python",
+      "topics": [],
+      "updated_at": "2026-06-08T06:36:18Z",
+      "created_at": "2025-11-05T00:52:35Z",
+      "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 145843
     },
     {
       "name": "portfolio",
@@ -503,12 +503,12 @@
       "forks_count": 0,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-06-07T02:04:28Z",
+      "updated_at": "2026-06-08T02:08:58Z",
       "created_at": "2025-10-12T22:14:47Z",
       "homepage": "https://neverbiasu.vercel.app",
       "license": null,
       "open_issues_count": 0,
-      "size": 37795
+      "size": 37796
     },
     {
       "name": "TikHub-Skills",
@@ -932,5 +932,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-06-08T02:08:54.308Z"
+  "last_updated": "2026-06-09T01:46:48.642Z"
 }
