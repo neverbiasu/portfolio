@@ -47,12 +47,12 @@
       "forks_count": 21,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-07-06T04:22:23Z",
+      "updated_at": "2026-07-07T04:11:33Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
       "open_issues_count": 4,
-      "size": 26336
+      "size": 26371
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -142,12 +142,12 @@
         "comfyui-nodes",
         "comfyui-workflow"
       ],
-      "updated_at": "2026-07-06T03:49:56Z",
+      "updated_at": "2026-07-07T03:39:49Z",
       "created_at": "2025-04-25T15:41:44Z",
       "homepage": "",
       "license": "MIT",
       "open_issues_count": 2,
-      "size": 10555
+      "size": 10589
     },
     {
       "name": "ComfyUI-StyleShot",
@@ -458,12 +458,12 @@
       "forks_count": 0,
       "language": "Python",
       "topics": [],
-      "updated_at": "2026-07-07T00:13:09Z",
+      "updated_at": "2026-07-07T23:04:42Z",
       "created_at": "2026-07-07T00:08:48Z",
       "homepage": null,
       "license": null,
       "open_issues_count": 0,
-      "size": 130
+      "size": 135
     },
     {
       "name": "neverbiasu",
@@ -473,12 +473,42 @@
       "forks_count": 0,
       "language": null,
       "topics": [],
-      "updated_at": "2026-07-06T19:51:38Z",
+      "updated_at": "2026-07-07T19:53:52Z",
       "created_at": "2025-02-14T09:17:41Z",
       "homepage": null,
       "license": null,
       "open_issues_count": 0,
-      "size": 217
+      "size": 218
+    },
+    {
+      "name": "model-card",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/model-card",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "updated_at": "2026-07-07T15:55:23Z",
+      "created_at": "2026-07-07T15:54:00Z",
+      "homepage": null,
+      "license": null,
+      "open_issues_count": 0,
+      "size": 7844
+    },
+    {
+      "name": "ModelScope-Top-LoRAs",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/ModelScope-Top-LoRAs",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Python",
+      "topics": [],
+      "updated_at": "2026-07-07T06:01:28Z",
+      "created_at": "2025-11-05T00:52:35Z",
+      "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 159733
     },
     {
       "name": "calabiyau-data-vis",
@@ -488,12 +518,12 @@
       "forks_count": 0,
       "language": "Vue",
       "topics": [],
-      "updated_at": "2026-07-06T08:23:25Z",
+      "updated_at": "2026-07-07T03:27:12Z",
       "created_at": "2025-12-12T00:10:08Z",
       "homepage": "https://calabiyau-data-vis.vercel.app",
       "license": null,
       "open_issues_count": 0,
-      "size": 738
+      "size": 739
     },
     {
       "name": "portfolio",
@@ -503,12 +533,12 @@
       "forks_count": 0,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-07-06T01:44:19Z",
+      "updated_at": "2026-07-07T01:31:37Z",
       "created_at": "2025-10-12T22:14:47Z",
       "homepage": "https://neverbiasu.vercel.app",
       "license": null,
       "open_issues_count": 0,
-      "size": 37782
+      "size": 37784
     },
     {
       "name": "ccfddl-skills",
@@ -527,21 +557,6 @@
       "license": "MIT",
       "open_issues_count": 0,
       "size": 44
-    },
-    {
-      "name": "ModelScope-Top-LoRAs",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/ModelScope-Top-LoRAs",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "Python",
-      "topics": [],
-      "updated_at": "2026-07-01T02:12:05Z",
-      "created_at": "2025-11-05T00:52:35Z",
-      "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 153089
     },
     {
       "name": "SilverMeal",
@@ -980,5 +995,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-07-07T01:31:32.274Z"
+  "last_updated": "2026-07-08T01:16:26.921Z"
 }
