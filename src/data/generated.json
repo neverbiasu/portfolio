@@ -47,12 +47,12 @@
       "forks_count": 21,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-07-07T04:11:33Z",
+      "updated_at": "2026-07-08T03:36:03Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
       "open_issues_count": 4,
-      "size": 26371
+      "size": 31337
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -142,12 +142,12 @@
         "comfyui-nodes",
         "comfyui-workflow"
       ],
-      "updated_at": "2026-07-07T03:39:49Z",
+      "updated_at": "2026-07-08T02:54:36Z",
       "created_at": "2025-04-25T15:41:44Z",
       "homepage": "",
       "license": "MIT",
       "open_issues_count": 2,
-      "size": 10589
+      "size": 10590
     },
     {
       "name": "ComfyUI-StyleShot",
@@ -297,6 +297,21 @@
       "size": 1
     },
     {
+      "name": "ComfyUI-ModelScope",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/ComfyUI-ModelScope",
+      "stargazers_count": 3,
+      "forks_count": 1,
+      "language": "Python",
+      "topics": [],
+      "updated_at": "2026-07-08T14:08:38Z",
+      "created_at": "2025-09-05T16:19:57Z",
+      "homepage": null,
+      "license": null,
+      "open_issues_count": 1,
+      "size": 1223
+    },
+    {
       "name": "ComfyUI-Midware",
       "description": "A midware for ComfyUI",
       "html_url": "https://github.com/neverbiasu/ComfyUI-Midware",
@@ -313,21 +328,6 @@
       "license": "MIT",
       "open_issues_count": 0,
       "size": 51902
-    },
-    {
-      "name": "ComfyUI-ModelScope",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/ComfyUI-ModelScope",
-      "stargazers_count": 2,
-      "forks_count": 1,
-      "language": "Python",
-      "topics": [],
-      "updated_at": "2026-04-10T16:48:15Z",
-      "created_at": "2025-09-05T16:19:57Z",
-      "homepage": null,
-      "license": null,
-      "open_issues_count": 1,
-      "size": 1223
     },
     {
       "name": "purelkman",
@@ -451,6 +451,66 @@
       "size": 65742
     },
     {
+      "name": "awesome-uofg-msc-cs",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/awesome-uofg-msc-cs",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "HTML",
+      "topics": [],
+      "updated_at": "2026-07-08T23:03:57Z",
+      "created_at": "2025-09-19T19:14:08Z",
+      "homepage": "https://awesome-uofg-msc-cs.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 909933
+    },
+    {
+      "name": "neverbiasu",
+      "description": "README",
+      "html_url": "https://github.com/neverbiasu/neverbiasu",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": null,
+      "topics": [],
+      "updated_at": "2026-07-08T19:20:22Z",
+      "created_at": "2025-02-14T09:17:41Z",
+      "homepage": null,
+      "license": null,
+      "open_issues_count": 0,
+      "size": 219
+    },
+    {
+      "name": "ModelScope-Top-LoRAs",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/ModelScope-Top-LoRAs",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Python",
+      "topics": [],
+      "updated_at": "2026-07-08T05:15:18Z",
+      "created_at": "2025-11-05T00:52:35Z",
+      "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 160415
+    },
+    {
+      "name": "portfolio",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/portfolio",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2026-07-08T01:16:32Z",
+      "created_at": "2025-10-12T22:14:47Z",
+      "homepage": "https://neverbiasu.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 37785
+    },
+    {
       "name": "ComfyUI-FayCache",
       "description": null,
       "html_url": "https://github.com/neverbiasu/ComfyUI-FayCache",
@@ -464,21 +524,6 @@
       "license": null,
       "open_issues_count": 0,
       "size": 135
-    },
-    {
-      "name": "neverbiasu",
-      "description": "README",
-      "html_url": "https://github.com/neverbiasu/neverbiasu",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": null,
-      "topics": [],
-      "updated_at": "2026-07-07T19:53:52Z",
-      "created_at": "2025-02-14T09:17:41Z",
-      "homepage": null,
-      "license": null,
-      "open_issues_count": 0,
-      "size": 218
     },
     {
       "name": "model-card",
@@ -496,21 +541,6 @@
       "size": 7844
     },
     {
-      "name": "ModelScope-Top-LoRAs",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/ModelScope-Top-LoRAs",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "Python",
-      "topics": [],
-      "updated_at": "2026-07-07T06:01:28Z",
-      "created_at": "2025-11-05T00:52:35Z",
-      "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 159733
-    },
-    {
       "name": "calabiyau-data-vis",
       "description": null,
       "html_url": "https://github.com/neverbiasu/calabiyau-data-vis",
@@ -524,21 +554,6 @@
       "license": null,
       "open_issues_count": 0,
       "size": 739
-    },
-    {
-      "name": "portfolio",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/portfolio",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "updated_at": "2026-07-07T01:31:37Z",
-      "created_at": "2025-10-12T22:14:47Z",
-      "homepage": "https://neverbiasu.vercel.app",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 37784
     },
     {
       "name": "ccfddl-skills",
@@ -572,21 +587,6 @@
       "license": null,
       "open_issues_count": 0,
       "size": 54
-    },
-    {
-      "name": "awesome-uofg-msc-cs",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/awesome-uofg-msc-cs",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "HTML",
-      "topics": [],
-      "updated_at": "2026-06-21T14:16:16Z",
-      "created_at": "2025-09-19T19:14:08Z",
-      "homepage": "https://awesome-uofg-msc-cs.vercel.app",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 909918
     },
     {
       "name": "TikHub-Skills",
@@ -995,5 +995,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-07-08T01:16:26.921Z"
+  "last_updated": "2026-07-09T01:24:33.786Z"
 }
