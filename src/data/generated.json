@@ -47,12 +47,12 @@
       "forks_count": 21,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-07-31T03:42:52Z",
+      "updated_at": "2026-08-01T03:41:59Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
       "open_issues_count": 4,
-      "size": 39664
+      "size": 25153
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -451,6 +451,26 @@
       "size": 65742
     },
     {
+      "name": "awesome-research-skills",
+      "description": "A curated list about research skills.",
+      "html_url": "https://github.com/neverbiasu/awesome-research-skills",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": null,
+      "topics": [
+        "ai-for-research",
+        "awesome",
+        "awesome-list",
+        "skills"
+      ],
+      "updated_at": "2026-08-02T00:12:30Z",
+      "created_at": "2026-08-01T21:49:49Z",
+      "homepage": "",
+      "license": "CC0-1.0",
+      "open_issues_count": 0,
+      "size": 14
+    },
+    {
       "name": "neverbiasu",
       "description": "README",
       "html_url": "https://github.com/neverbiasu/neverbiasu",
@@ -458,12 +478,12 @@
       "forks_count": 0,
       "language": null,
       "topics": [],
-      "updated_at": "2026-07-31T19:19:38Z",
+      "updated_at": "2026-08-01T19:03:44Z",
       "created_at": "2025-02-14T09:17:41Z",
       "homepage": null,
       "license": null,
       "open_issues_count": 0,
-      "size": 237
+      "size": 238
     },
     {
       "name": "ModelScope-Top-LoRAs",
@@ -473,12 +493,12 @@
       "forks_count": 0,
       "language": "Python",
       "topics": [],
-      "updated_at": "2026-07-31T05:29:48Z",
+      "updated_at": "2026-08-01T05:21:28Z",
       "created_at": "2025-11-05T00:52:35Z",
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
       "license": null,
       "open_issues_count": 0,
-      "size": 180027
+      "size": 180045
     },
     {
       "name": "calabiyau-data-vis",
@@ -488,12 +508,12 @@
       "forks_count": 0,
       "language": "Vue",
       "topics": [],
-      "updated_at": "2026-07-31T02:51:01Z",
+      "updated_at": "2026-08-01T02:49:45Z",
       "created_at": "2025-12-12T00:10:08Z",
       "homepage": "https://calabiyau-data-vis.vercel.app",
       "license": null,
       "open_issues_count": 0,
-      "size": 753
+      "size": 754
     },
     {
       "name": "portfolio",
@@ -503,12 +523,12 @@
       "forks_count": 0,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-07-31T01:21:21Z",
+      "updated_at": "2026-08-01T01:22:32Z",
       "created_at": "2025-10-12T22:14:47Z",
       "homepage": "https://neverbiasu.vercel.app",
       "license": null,
       "open_issues_count": 0,
-      "size": 37816
+      "size": 37781
     },
     {
       "name": "ccfddl-skills",
@@ -995,5 +1015,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-08-01T01:22:27.139Z"
+  "last_updated": "2026-08-02T01:20:07.071Z"
 }
