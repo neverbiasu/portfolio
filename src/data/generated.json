@@ -47,12 +47,12 @@
       "forks_count": 21,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-08-04T03:29:30Z",
+      "updated_at": "2026-08-05T03:24:02Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
       "open_issues_count": 4,
-      "size": 30429
+      "size": 35653
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -142,12 +142,12 @@
         "comfyui-nodes",
         "comfyui-workflow"
       ],
-      "updated_at": "2026-08-04T02:45:08Z",
+      "updated_at": "2026-08-05T02:42:52Z",
       "created_at": "2025-04-25T15:41:44Z",
       "homepage": "",
       "license": "MIT",
       "open_issues_count": 2,
-      "size": 11408
+      "size": 11409
     },
     {
       "name": "ComfyUI-StyleShot",
@@ -451,6 +451,66 @@
       "size": 65742
     },
     {
+      "name": "Portrait-Style-Transfer-Survey",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/Portrait-Style-Transfer-Survey",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TeX",
+      "topics": [],
+      "updated_at": "2026-08-05T22:47:09Z",
+      "created_at": "2026-08-05T22:44:33Z",
+      "homepage": null,
+      "license": null,
+      "open_issues_count": 0,
+      "size": 3357
+    },
+    {
+      "name": "neverbiasu",
+      "description": "README",
+      "html_url": "https://github.com/neverbiasu/neverbiasu",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": null,
+      "topics": [],
+      "updated_at": "2026-08-05T06:25:07Z",
+      "created_at": "2025-02-14T09:17:41Z",
+      "homepage": null,
+      "license": null,
+      "open_issues_count": 0,
+      "size": 241
+    },
+    {
+      "name": "ModelScope-Top-LoRAs",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/ModelScope-Top-LoRAs",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Python",
+      "topics": [],
+      "updated_at": "2026-08-05T05:00:06Z",
+      "created_at": "2025-11-05T00:52:35Z",
+      "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 180612
+    },
+    {
+      "name": "portfolio",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/portfolio",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2026-08-05T01:13:25Z",
+      "created_at": "2025-10-12T22:14:47Z",
+      "homepage": "https://neverbiasu.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 37786
+    },
+    {
       "name": "awesome-research-skills",
       "description": "A curated list about research skills.",
       "html_url": "https://github.com/neverbiasu/awesome-research-skills",
@@ -471,36 +531,6 @@
       "size": 20
     },
     {
-      "name": "neverbiasu",
-      "description": "README",
-      "html_url": "https://github.com/neverbiasu/neverbiasu",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": null,
-      "topics": [],
-      "updated_at": "2026-08-04T17:47:47Z",
-      "created_at": "2025-02-14T09:17:41Z",
-      "homepage": null,
-      "license": null,
-      "open_issues_count": 0,
-      "size": 240
-    },
-    {
-      "name": "ModelScope-Top-LoRAs",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/ModelScope-Top-LoRAs",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "Python",
-      "topics": [],
-      "updated_at": "2026-08-04T04:58:05Z",
-      "created_at": "2025-11-05T00:52:35Z",
-      "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 179773
-    },
-    {
       "name": "calabiyau-data-vis",
       "description": null,
       "html_url": "https://github.com/neverbiasu/calabiyau-data-vis",
@@ -514,21 +544,6 @@
       "license": null,
       "open_issues_count": 0,
       "size": 756
-    },
-    {
-      "name": "portfolio",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/portfolio",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "updated_at": "2026-08-04T01:12:51Z",
-      "created_at": "2025-10-12T22:14:47Z",
-      "homepage": "https://neverbiasu.vercel.app",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 37785
     },
     {
       "name": "ccfddl-skills",
@@ -997,23 +1012,8 @@
       "license": "MIT",
       "open_issues_count": 0,
       "size": 33
-    },
-    {
-      "name": "jsar-widget",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/jsar-widget",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "updated_at": "2024-03-13T14:15:54Z",
-      "created_at": "2024-03-12T02:45:39Z",
-      "homepage": null,
-      "license": "Apache-2.0",
-      "open_issues_count": 0,
-      "size": 1222
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-08-05T01:13:11.971Z"
+  "last_updated": "2026-08-06T01:10:58.516Z"
 }
