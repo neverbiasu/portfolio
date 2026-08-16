@@ -47,12 +47,12 @@
       "forks_count": 21,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-08-14T02:35:06Z",
+      "updated_at": "2026-08-15T01:44:21Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
       "open_issues_count": 4,
-      "size": 56769
+      "size": 62021
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -108,7 +108,7 @@
       "description": "A curated collection of papers on portrait style transfer",
       "html_url": "https://github.com/neverbiasu/Awesome-Portraits-Style-Transfer",
       "stargazers_count": 28,
-      "forks_count": 3,
+      "forks_count": 4,
       "language": null,
       "topics": [
         "awesome",
@@ -126,7 +126,7 @@
       "created_at": "2024-01-31T15:47:36Z",
       "homepage": "",
       "license": "Apache-2.0",
-      "open_issues_count": 0,
+      "open_issues_count": 1,
       "size": 1582
     },
     {
@@ -436,12 +436,12 @@
       "forks_count": 0,
       "language": null,
       "topics": [],
-      "updated_at": "2026-08-14T04:05:01Z",
+      "updated_at": "2026-08-15T02:48:17Z",
       "created_at": "2025-02-14T09:17:41Z",
       "homepage": null,
       "license": null,
       "open_issues_count": 0,
-      "size": 248
+      "size": 249
     },
     {
       "name": "ModelScope-Top-LoRAs",
@@ -451,12 +451,12 @@
       "forks_count": 0,
       "language": "Python",
       "topics": [],
-      "updated_at": "2026-08-14T03:59:38Z",
+      "updated_at": "2026-08-15T02:44:54Z",
       "created_at": "2025-11-05T00:52:35Z",
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
       "license": null,
       "open_issues_count": 0,
-      "size": 183082
+      "size": 183101
     },
     {
       "name": "portfolio",
@@ -466,12 +466,12 @@
       "forks_count": 0,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-08-14T00:48:52Z",
+      "updated_at": "2026-08-15T00:27:15Z",
       "created_at": "2025-10-12T22:14:47Z",
       "homepage": "https://neverbiasu.vercel.app",
       "license": null,
       "open_issues_count": 0,
-      "size": 37799
+      "size": 37800
     },
     {
       "name": "calabiyau-data-vis",
@@ -999,5 +999,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-08-15T00:26:55.116Z"
+  "last_updated": "2026-08-16T00:27:36.880Z"
 }
