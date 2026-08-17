@@ -4,7 +4,7 @@
       "name": "ComfyUI-SAM2",
       "description": "A ComfyUI extension for Segment-Anything 2",
       "html_url": "https://github.com/neverbiasu/ComfyUI-SAM2",
-      "stargazers_count": 262,
+      "stargazers_count": 263,
       "forks_count": 49,
       "language": "Python",
       "topics": [
@@ -12,7 +12,7 @@
         "comfyui-nodes",
         "custom-nodes"
       ],
-      "updated_at": "2026-08-13T02:51:05Z",
+      "updated_at": "2026-08-16T08:06:57Z",
       "created_at": "2024-08-01T13:58:47Z",
       "homepage": "",
       "license": "Apache-2.0",
@@ -47,12 +47,12 @@
       "forks_count": 21,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-08-15T01:44:21Z",
+      "updated_at": "2026-08-16T01:51:47Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
       "open_issues_count": 4,
-      "size": 62021
+      "size": 62056
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -142,12 +142,12 @@
         "comfyui-nodes",
         "comfyui-workflow"
       ],
-      "updated_at": "2026-08-13T01:18:33Z",
+      "updated_at": "2026-08-16T01:26:23Z",
       "created_at": "2025-04-25T15:41:44Z",
       "homepage": "",
       "license": "MIT",
       "open_issues_count": 2,
-      "size": 12337
+      "size": 12339
     },
     {
       "name": "ComfyUI-StyleShot",
@@ -436,7 +436,7 @@
       "forks_count": 0,
       "language": null,
       "topics": [],
-      "updated_at": "2026-08-15T02:48:17Z",
+      "updated_at": "2026-08-16T02:56:02Z",
       "created_at": "2025-02-14T09:17:41Z",
       "homepage": null,
       "license": null,
@@ -451,27 +451,12 @@
       "forks_count": 0,
       "language": "Python",
       "topics": [],
-      "updated_at": "2026-08-15T02:44:54Z",
+      "updated_at": "2026-08-16T02:53:28Z",
       "created_at": "2025-11-05T00:52:35Z",
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
       "license": null,
       "open_issues_count": 0,
-      "size": 183101
-    },
-    {
-      "name": "portfolio",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/portfolio",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "updated_at": "2026-08-15T00:27:15Z",
-      "created_at": "2025-10-12T22:14:47Z",
-      "homepage": "https://neverbiasu.vercel.app",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 37800
+      "size": 184008
     },
     {
       "name": "calabiyau-data-vis",
@@ -481,12 +466,27 @@
       "forks_count": 0,
       "language": "Vue",
       "topics": [],
-      "updated_at": "2026-08-13T01:59:52Z",
+      "updated_at": "2026-08-16T01:18:57Z",
       "created_at": "2025-12-12T00:10:08Z",
       "homepage": "https://calabiyau-data-vis.vercel.app",
       "license": null,
       "open_issues_count": 0,
-      "size": 761
+      "size": 763
+    },
+    {
+      "name": "portfolio",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/portfolio",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2026-08-16T00:27:45Z",
+      "created_at": "2025-10-12T22:14:47Z",
+      "homepage": "https://neverbiasu.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 37801
     },
     {
       "name": "awesome-research-skills",
@@ -999,5 +999,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-08-16T00:27:36.880Z"
+  "last_updated": "2026-08-17T00:26:36.958Z"
 }
