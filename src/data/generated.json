@@ -43,16 +43,16 @@
       "name": "awesome-gemini-prompts",
       "description": null,
       "html_url": "https://github.com/neverbiasu/awesome-gemini-prompts",
-      "stargazers_count": 115,
+      "stargazers_count": 114,
       "forks_count": 21,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-08-16T01:51:47Z",
+      "updated_at": "2026-08-17T22:31:40Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
       "open_issues_count": 4,
-      "size": 62056
+      "size": 67308
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -68,6 +68,32 @@
       "license": null,
       "open_issues_count": 9,
       "size": 46030
+    },
+    {
+      "name": "Awesome-Portraits-Style-Transfer",
+      "description": "A curated collection of papers on portrait style transfer",
+      "html_url": "https://github.com/neverbiasu/Awesome-Portraits-Style-Transfer",
+      "stargazers_count": 29,
+      "forks_count": 4,
+      "language": null,
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "face-editing",
+        "face-stylization",
+        "stable-diffusion",
+        "style",
+        "style-transfer",
+        "stylegan",
+        "styletransfer",
+        "stylization"
+      ],
+      "updated_at": "2026-08-17T14:27:45Z",
+      "created_at": "2024-01-31T15:47:36Z",
+      "homepage": "",
+      "license": "Apache-2.0",
+      "open_issues_count": 1,
+      "size": 1582
     },
     {
       "name": "ComfyUI-Image-Captioner",
@@ -102,32 +128,6 @@
       "license": "Apache-2.0",
       "open_issues_count": 0,
       "size": 26180
-    },
-    {
-      "name": "Awesome-Portraits-Style-Transfer",
-      "description": "A curated collection of papers on portrait style transfer",
-      "html_url": "https://github.com/neverbiasu/Awesome-Portraits-Style-Transfer",
-      "stargazers_count": 28,
-      "forks_count": 4,
-      "language": null,
-      "topics": [
-        "awesome",
-        "awesome-list",
-        "face-editing",
-        "face-stylization",
-        "stable-diffusion",
-        "style",
-        "style-transfer",
-        "stylegan",
-        "styletransfer",
-        "stylization"
-      ],
-      "updated_at": "2026-07-26T01:27:25Z",
-      "created_at": "2024-01-31T15:47:36Z",
-      "homepage": "",
-      "license": "Apache-2.0",
-      "open_issues_count": 1,
-      "size": 1582
     },
     {
       "name": "Awesome-ComfyUI-Video",
@@ -429,6 +429,21 @@
       "size": 5
     },
     {
+      "name": "calabiyau-data-vis",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/calabiyau-data-vis",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Vue",
+      "topics": [],
+      "updated_at": "2026-08-17T04:44:10Z",
+      "created_at": "2025-12-12T00:10:08Z",
+      "homepage": "https://calabiyau-data-vis.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 767
+    },
+    {
       "name": "neverbiasu",
       "description": "README",
       "html_url": "https://github.com/neverbiasu/neverbiasu",
@@ -436,12 +451,12 @@
       "forks_count": 0,
       "language": null,
       "topics": [],
-      "updated_at": "2026-08-16T02:56:02Z",
+      "updated_at": "2026-08-17T02:56:07Z",
       "created_at": "2025-02-14T09:17:41Z",
       "homepage": null,
       "license": null,
       "open_issues_count": 0,
-      "size": 249
+      "size": 250
     },
     {
       "name": "ModelScope-Top-LoRAs",
@@ -451,27 +466,12 @@
       "forks_count": 0,
       "language": "Python",
       "topics": [],
-      "updated_at": "2026-08-16T02:53:28Z",
+      "updated_at": "2026-08-17T02:53:26Z",
       "created_at": "2025-11-05T00:52:35Z",
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
       "license": null,
       "open_issues_count": 0,
-      "size": 184008
-    },
-    {
-      "name": "calabiyau-data-vis",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/calabiyau-data-vis",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "Vue",
-      "topics": [],
-      "updated_at": "2026-08-16T01:18:57Z",
-      "created_at": "2025-12-12T00:10:08Z",
-      "homepage": "https://calabiyau-data-vis.vercel.app",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 763
+      "size": 184974
     },
     {
       "name": "portfolio",
@@ -481,12 +481,12 @@
       "forks_count": 0,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-08-16T00:27:45Z",
+      "updated_at": "2026-08-17T00:26:42Z",
       "created_at": "2025-10-12T22:14:47Z",
       "homepage": "https://neverbiasu.vercel.app",
       "license": null,
       "open_issues_count": 0,
-      "size": 37801
+      "size": 37803
     },
     {
       "name": "awesome-research-skills",
@@ -999,5 +999,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-08-17T00:26:36.958Z"
+  "last_updated": "2026-08-18T00:25:59.028Z"
 }
