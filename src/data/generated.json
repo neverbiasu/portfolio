@@ -44,15 +44,15 @@
       "description": null,
       "html_url": "https://github.com/neverbiasu/awesome-gemini-prompts",
       "stargazers_count": 115,
-      "forks_count": 21,
+      "forks_count": 20,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-08-19T05:42:01Z",
+      "updated_at": "2026-08-20T01:45:54Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
       "open_issues_count": 4,
-      "size": 72611
+      "size": 72661
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -88,12 +88,12 @@
         "styletransfer",
         "stylization"
       ],
-      "updated_at": "2026-08-17T14:27:45Z",
+      "updated_at": "2026-08-20T14:14:47Z",
       "created_at": "2024-01-31T15:47:36Z",
       "homepage": "",
       "license": "Apache-2.0",
-      "open_issues_count": 1,
-      "size": 1582
+      "open_issues_count": 0,
+      "size": 1594
     },
     {
       "name": "ComfyUI-Image-Captioner",
@@ -436,7 +436,7 @@
       "forks_count": 0,
       "language": null,
       "topics": [],
-      "updated_at": "2026-08-19T02:53:45Z",
+      "updated_at": "2026-08-20T02:54:25Z",
       "created_at": "2025-02-14T09:17:41Z",
       "homepage": null,
       "license": null,
@@ -451,12 +451,27 @@
       "forks_count": 0,
       "language": "Python",
       "topics": [],
-      "updated_at": "2026-08-19T02:51:09Z",
+      "updated_at": "2026-08-20T02:50:31Z",
       "created_at": "2025-11-05T00:52:35Z",
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
       "license": null,
       "open_issues_count": 0,
-      "size": 185012
+      "size": 185030
+    },
+    {
+      "name": "portfolio",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/portfolio",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2026-08-20T00:26:43Z",
+      "created_at": "2025-10-12T22:14:47Z",
+      "homepage": "https://neverbiasu.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 37807
     },
     {
       "name": "calabiyau-data-vis",
@@ -472,21 +487,6 @@
       "license": null,
       "open_issues_count": 0,
       "size": 768
-    },
-    {
-      "name": "portfolio",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/portfolio",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "updated_at": "2026-08-19T00:25:47Z",
-      "created_at": "2025-10-12T22:14:47Z",
-      "homepage": "https://neverbiasu.vercel.app",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 37805
     },
     {
       "name": "awesome-research-skills",
@@ -999,5 +999,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-08-20T00:26:30.515Z"
+  "last_updated": "2026-08-21T00:29:06.413Z"
 }
