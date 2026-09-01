@@ -47,12 +47,12 @@
       "forks_count": 20,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-08-30T05:12:10Z",
+      "updated_at": "2026-08-31T05:19:58Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
       "open_issues_count": 4,
-      "size": 27793
+      "size": 27824
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -429,6 +429,21 @@
       "size": 5
     },
     {
+      "name": "calabiyau-data-vis",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/calabiyau-data-vis",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Vue",
+      "topics": [],
+      "updated_at": "2026-08-31T10:43:26Z",
+      "created_at": "2025-12-12T00:10:08Z",
+      "homepage": "https://calabiyau-data-vis.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 774
+    },
+    {
       "name": "ModelScope-Top-LoRAs",
       "description": null,
       "html_url": "https://github.com/neverbiasu/ModelScope-Top-LoRAs",
@@ -436,12 +451,12 @@
       "forks_count": 0,
       "language": "Python",
       "topics": [],
-      "updated_at": "2026-08-30T07:43:46Z",
+      "updated_at": "2026-08-31T08:00:21Z",
       "created_at": "2025-11-05T00:52:35Z",
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
       "license": null,
       "open_issues_count": 0,
-      "size": 189465
+      "size": 189483
     },
     {
       "name": "neverbiasu",
@@ -451,12 +466,12 @@
       "forks_count": 0,
       "language": null,
       "topics": [],
-      "updated_at": "2026-08-30T03:30:41Z",
+      "updated_at": "2026-08-31T03:29:12Z",
       "created_at": "2025-02-14T09:17:41Z",
       "homepage": null,
       "license": null,
       "open_issues_count": 0,
-      "size": 242
+      "size": 243
     },
     {
       "name": "portfolio",
@@ -466,27 +481,12 @@
       "forks_count": 0,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-08-30T01:50:11Z",
+      "updated_at": "2026-08-31T01:45:05Z",
       "created_at": "2025-10-12T22:14:47Z",
       "homepage": "https://neverbiasu.vercel.app",
       "license": null,
       "open_issues_count": 0,
-      "size": 37820
-    },
-    {
-      "name": "calabiyau-data-vis",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/calabiyau-data-vis",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "Vue",
-      "topics": [],
-      "updated_at": "2026-08-28T09:58:48Z",
-      "created_at": "2025-12-12T00:10:08Z",
-      "homepage": "https://calabiyau-data-vis.vercel.app",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 773
+      "size": 37821
     },
     {
       "name": "awesome-research-skills",
@@ -511,7 +511,7 @@
       "created_at": "2026-08-01T21:49:49Z",
       "homepage": "",
       "license": "CC0-1.0",
-      "open_issues_count": 1,
+      "open_issues_count": 2,
       "size": 53
     },
     {
@@ -999,5 +999,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-08-31T01:44:58.337Z"
+  "last_updated": "2026-09-01T02:08:48.767Z"
 }
