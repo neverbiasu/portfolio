@@ -47,12 +47,12 @@
       "forks_count": 20,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-09-04T04:18:26Z",
+      "updated_at": "2026-09-05T04:14:13Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
       "open_issues_count": 4,
-      "size": 38686
+      "size": 38757
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -142,12 +142,12 @@
         "comfyui-nodes",
         "comfyui-workflow"
       ],
-      "updated_at": "2026-09-02T03:33:42Z",
+      "updated_at": "2026-09-05T03:34:05Z",
       "created_at": "2025-04-25T15:41:44Z",
       "homepage": "",
       "license": "MIT",
       "open_issues_count": 2,
-      "size": 12606
+      "size": 12661
     },
     {
       "name": "ComfyUI-StyleShot",
@@ -430,7 +430,7 @@
     },
     {
       "name": "awesome-research-skills",
-      "description": "138 Agent Skills (SKILL.md) for academic and scientific research — literature, study design, experiments, statistics, figures, writing, peer review. Every entry links to one exact directory, machine-checked: license, last commit, and capability flags scoped to that path.",
+      "description": "137 Agent Skills (SKILL.md) for academic and scientific research, curated one directory at a time — literature, study design, experiments, statistics, figures, writing, peer review. Each entry links to one exact path, with its own license, freshness, and capability flags.",
       "html_url": "https://github.com/neverbiasu/awesome-research-skills",
       "stargazers_count": 0,
       "forks_count": 0,
@@ -453,27 +453,12 @@
         "skill-md",
         "skills"
       ],
-      "updated_at": "2026-09-04T22:58:05Z",
+      "updated_at": "2026-09-05T16:55:18Z",
       "created_at": "2026-08-01T21:49:49Z",
       "homepage": "",
       "license": "CC0-1.0",
       "open_issues_count": 4,
-      "size": 148
-    },
-    {
-      "name": "neverbiasu",
-      "description": "README",
-      "html_url": "https://github.com/neverbiasu/neverbiasu",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": null,
-      "topics": [],
-      "updated_at": "2026-09-04T08:28:07Z",
-      "created_at": "2025-02-14T09:17:41Z",
-      "homepage": null,
-      "license": null,
-      "open_issues_count": 0,
-      "size": 246
+      "size": 228
     },
     {
       "name": "ModelScope-Top-LoRAs",
@@ -483,12 +468,42 @@
       "forks_count": 0,
       "language": "Python",
       "topics": [],
-      "updated_at": "2026-09-04T06:48:58Z",
+      "updated_at": "2026-09-05T06:34:18Z",
       "created_at": "2025-11-05T00:52:35Z",
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
       "license": null,
       "open_issues_count": 0,
-      "size": 189557
+      "size": 189575
+    },
+    {
+      "name": "neverbiasu",
+      "description": "README",
+      "html_url": "https://github.com/neverbiasu/neverbiasu",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": null,
+      "topics": [],
+      "updated_at": "2026-09-05T02:51:12Z",
+      "created_at": "2025-02-14T09:17:41Z",
+      "homepage": null,
+      "license": null,
+      "open_issues_count": 0,
+      "size": 246
+    },
+    {
+      "name": "portfolio",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/portfolio",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2026-09-05T01:30:46Z",
+      "created_at": "2025-10-12T22:14:47Z",
+      "homepage": "https://neverbiasu.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 37828
     },
     {
       "name": "calabiyau-data-vis",
@@ -504,21 +519,6 @@
       "license": null,
       "open_issues_count": 0,
       "size": 777
-    },
-    {
-      "name": "portfolio",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/portfolio",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "updated_at": "2026-09-04T01:30:13Z",
-      "created_at": "2025-10-12T22:14:47Z",
-      "homepage": "https://neverbiasu.vercel.app",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 37827
     },
     {
       "name": "Portrait-Style-Transfer-Survey",
@@ -1005,5 +1005,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-09-05T01:30:41.143Z"
+  "last_updated": "2026-09-06T01:24:54.781Z"
 }
