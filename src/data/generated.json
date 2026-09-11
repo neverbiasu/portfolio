@@ -4,7 +4,7 @@
       "name": "ComfyUI-SAM2",
       "description": "A ComfyUI extension for Segment-Anything 2",
       "html_url": "https://github.com/neverbiasu/ComfyUI-SAM2",
-      "stargazers_count": 263,
+      "stargazers_count": 264,
       "forks_count": 49,
       "language": "Python",
       "topics": [
@@ -12,7 +12,7 @@
         "comfyui-nodes",
         "custom-nodes"
       ],
-      "updated_at": "2026-09-01T09:35:39Z",
+      "updated_at": "2026-09-10T14:51:51Z",
       "created_at": "2024-08-01T13:58:47Z",
       "homepage": "",
       "license": "Apache-2.0",
@@ -47,12 +47,12 @@
       "forks_count": 20,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-09-09T04:27:30Z",
+      "updated_at": "2026-09-10T04:25:05Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
       "open_issues_count": 4,
-      "size": 49054
+      "size": 31272
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -408,12 +408,12 @@
         "skill-md",
         "skills"
       ],
-      "updated_at": "2026-09-10T00:37:21Z",
+      "updated_at": "2026-09-10T23:52:16Z",
       "created_at": "2026-08-01T21:49:49Z",
       "homepage": "",
       "license": "CC0-1.0",
       "open_issues_count": 0,
-      "size": 237
+      "size": 331
     },
     {
       "name": "lora-trainer",
@@ -468,12 +468,12 @@
       "forks_count": 0,
       "language": "Python",
       "topics": [],
-      "updated_at": "2026-09-09T21:33:37Z",
+      "updated_at": "2026-09-10T17:31:34Z",
       "created_at": "2025-04-24T06:13:57Z",
       "homepage": null,
       "license": "MIT",
       "open_issues_count": 0,
-      "size": 62
+      "size": 63
     },
     {
       "name": "neverbiasu",
@@ -483,7 +483,7 @@
       "forks_count": 0,
       "language": null,
       "topics": [],
-      "updated_at": "2026-09-09T08:37:19Z",
+      "updated_at": "2026-09-10T08:37:34Z",
       "created_at": "2025-02-14T09:17:41Z",
       "homepage": null,
       "license": null,
@@ -498,27 +498,12 @@
       "forks_count": 0,
       "language": "Python",
       "topics": [],
-      "updated_at": "2026-09-09T06:57:33Z",
+      "updated_at": "2026-09-10T06:53:19Z",
       "created_at": "2025-11-05T00:52:35Z",
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
       "license": null,
       "open_issues_count": 0,
-      "size": 193310
-    },
-    {
-      "name": "portfolio",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/portfolio",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "updated_at": "2026-09-09T01:40:40Z",
-      "created_at": "2025-10-12T22:14:47Z",
-      "homepage": "https://neverbiasu.vercel.app",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 37834
+      "size": 195652
     },
     {
       "name": "calabiyau-data-vis",
@@ -528,12 +513,27 @@
       "forks_count": 0,
       "language": "Vue",
       "topics": [],
-      "updated_at": "2026-09-07T09:05:23Z",
+      "updated_at": "2026-09-10T03:25:17Z",
       "created_at": "2025-12-12T00:10:08Z",
       "homepage": "https://calabiyau-data-vis.vercel.app",
       "license": null,
       "open_issues_count": 0,
-      "size": 778
+      "size": 780
+    },
+    {
+      "name": "portfolio",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/portfolio",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2026-09-10T01:35:25Z",
+      "created_at": "2025-10-12T22:14:47Z",
+      "homepage": "https://neverbiasu.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 37835
     },
     {
       "name": "Portrait-Style-Transfer-Survey",
@@ -990,5 +990,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-09-10T01:35:19.268Z"
+  "last_updated": "2026-09-11T01:34:33.373Z"
 }
