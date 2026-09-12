@@ -47,12 +47,12 @@
       "forks_count": 20,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-09-10T04:25:05Z",
+      "updated_at": "2026-09-11T04:24:41Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
       "open_issues_count": 4,
-      "size": 31272
+      "size": 31287
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -142,12 +142,12 @@
         "comfyui-nodes",
         "comfyui-workflow"
       ],
-      "updated_at": "2026-09-05T03:34:05Z",
+      "updated_at": "2026-09-11T03:40:46Z",
       "created_at": "2025-04-25T15:41:44Z",
       "homepage": "",
       "license": "MIT",
       "open_issues_count": 2,
-      "size": 12661
+      "size": 12721
     },
     {
       "name": "ComfyUI-StyleShot",
@@ -385,35 +385,25 @@
     },
     {
       "name": "awesome-research-skills",
-      "description": "146 Agent Skills (SKILL.md) for academic and scientific research, curated one directory at a time — literature, study design, experiments, statistics, figures, writing, peer review. Each entry links to one exact path, with its own license, freshness, and capability flags.",
+      "description": "146 Agent Skills for academic and scientific research, curated one directory at a time containing literature, study design, experiments, statistics, figures, writing, peer review.",
       "html_url": "https://github.com/neverbiasu/awesome-research-skills",
       "stargazers_count": 1,
       "forks_count": 0,
       "language": null,
       "topics": [
-        "academic-research",
         "agent-skills",
-        "ai-agents",
-        "ai-for-research",
-        "awesome",
+        "ai-for-science",
         "awesome-list",
         "claude-code",
         "codex",
-        "llm-agents",
-        "open-science",
-        "reproducible-research",
-        "research-tools",
-        "research-workflow",
-        "scientific-research",
-        "skill-md",
-        "skills"
+        "research-tools"
       ],
-      "updated_at": "2026-09-10T23:52:16Z",
+      "updated_at": "2026-09-11T21:20:51Z",
       "created_at": "2026-08-01T21:49:49Z",
       "homepage": "",
       "license": "CC0-1.0",
       "open_issues_count": 0,
-      "size": 331
+      "size": 351
     },
     {
       "name": "lora-trainer",
@@ -462,18 +452,18 @@
     },
     {
       "name": "image-evaluator",
-      "description": "An automatic image evaluation script",
+      "description": "A Python library for image evaluation.",
       "html_url": "https://github.com/neverbiasu/image-evaluator",
       "stargazers_count": 0,
       "forks_count": 0,
       "language": "Python",
       "topics": [],
-      "updated_at": "2026-09-10T17:31:34Z",
+      "updated_at": "2026-09-11T22:41:59Z",
       "created_at": "2025-04-24T06:13:57Z",
       "homepage": null,
       "license": "MIT",
       "open_issues_count": 0,
-      "size": 63
+      "size": 103
     },
     {
       "name": "neverbiasu",
@@ -483,12 +473,12 @@
       "forks_count": 0,
       "language": null,
       "topics": [],
-      "updated_at": "2026-09-10T08:37:34Z",
+      "updated_at": "2026-09-11T08:32:09Z",
       "created_at": "2025-02-14T09:17:41Z",
       "homepage": null,
       "license": null,
       "open_issues_count": 0,
-      "size": 249
+      "size": 250
     },
     {
       "name": "ModelScope-Top-LoRAs",
@@ -498,12 +488,27 @@
       "forks_count": 0,
       "language": "Python",
       "topics": [],
-      "updated_at": "2026-09-10T06:53:19Z",
+      "updated_at": "2026-09-11T06:52:49Z",
       "created_at": "2025-11-05T00:52:35Z",
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
       "license": null,
       "open_issues_count": 0,
-      "size": 195652
+      "size": 197634
+    },
+    {
+      "name": "portfolio",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/portfolio",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2026-09-11T01:34:39Z",
+      "created_at": "2025-10-12T22:14:47Z",
+      "homepage": "https://neverbiasu.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 37837
     },
     {
       "name": "calabiyau-data-vis",
@@ -519,21 +524,6 @@
       "license": null,
       "open_issues_count": 0,
       "size": 780
-    },
-    {
-      "name": "portfolio",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/portfolio",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "updated_at": "2026-09-10T01:35:25Z",
-      "created_at": "2025-10-12T22:14:47Z",
-      "homepage": "https://neverbiasu.vercel.app",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 37835
     },
     {
       "name": "Portrait-Style-Transfer-Survey",
@@ -990,5 +980,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-09-11T01:34:33.373Z"
+  "last_updated": "2026-09-12T01:40:45.580Z"
 }
