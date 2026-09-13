@@ -47,12 +47,12 @@
       "forks_count": 20,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-09-11T04:24:41Z",
+      "updated_at": "2026-09-12T04:22:41Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
       "open_issues_count": 4,
-      "size": 31287
+      "size": 33731
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -457,10 +457,17 @@
       "stargazers_count": 0,
       "forks_count": 0,
       "language": "Python",
-      "topics": [],
-      "updated_at": "2026-09-11T22:41:59Z",
+      "topics": [
+        "image-analysis",
+        "image-editing",
+        "image-evaluation",
+        "image-evaluation-metrics",
+        "image-generation",
+        "image-processing"
+      ],
+      "updated_at": "2026-09-12T23:58:42Z",
       "created_at": "2025-04-24T06:13:57Z",
-      "homepage": null,
+      "homepage": "https://image-evaluator.github.io/docs",
       "license": "MIT",
       "open_issues_count": 0,
       "size": 103
@@ -473,12 +480,12 @@
       "forks_count": 0,
       "language": null,
       "topics": [],
-      "updated_at": "2026-09-11T08:32:09Z",
+      "updated_at": "2026-09-12T08:20:35Z",
       "created_at": "2025-02-14T09:17:41Z",
       "homepage": null,
       "license": null,
       "open_issues_count": 0,
-      "size": 250
+      "size": 251
     },
     {
       "name": "ModelScope-Top-LoRAs",
@@ -488,12 +495,12 @@
       "forks_count": 0,
       "language": "Python",
       "topics": [],
-      "updated_at": "2026-09-11T06:52:49Z",
+      "updated_at": "2026-09-12T06:44:36Z",
       "created_at": "2025-11-05T00:52:35Z",
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
       "license": null,
       "open_issues_count": 0,
-      "size": 197634
+      "size": 197641
     },
     {
       "name": "portfolio",
@@ -503,12 +510,12 @@
       "forks_count": 0,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-09-11T01:34:39Z",
+      "updated_at": "2026-09-12T01:40:50Z",
       "created_at": "2025-10-12T22:14:47Z",
       "homepage": "https://neverbiasu.vercel.app",
       "license": null,
       "open_issues_count": 0,
-      "size": 37837
+      "size": 37838
     },
     {
       "name": "calabiyau-data-vis",
@@ -980,5 +987,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-09-12T01:40:45.580Z"
+  "last_updated": "2026-09-13T01:30:52.961Z"
 }
