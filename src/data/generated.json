@@ -4,7 +4,7 @@
       "name": "ComfyUI-SAM2",
       "description": "A ComfyUI extension for Segment-Anything 2",
       "html_url": "https://github.com/neverbiasu/ComfyUI-SAM2",
-      "stargazers_count": 265,
+      "stargazers_count": 264,
       "forks_count": 49,
       "language": "Python",
       "topics": [
@@ -12,7 +12,7 @@
         "comfyui-nodes",
         "custom-nodes"
       ],
-      "updated_at": "2026-10-17T03:45:06Z",
+      "updated_at": "2026-10-20T10:17:46Z",
       "created_at": "2024-08-01T13:58:47Z",
       "homepage": "",
       "license": "Apache-2.0",
@@ -47,12 +47,12 @@
       "forks_count": 21,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-10-19T04:25:59Z",
+      "updated_at": "2026-10-20T04:36:31Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
       "open_issues_count": 4,
-      "size": 51529
+      "size": 31562
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -142,12 +142,12 @@
         "comfyui-nodes",
         "comfyui-workflow"
       ],
-      "updated_at": "2026-10-19T03:48:55Z",
+      "updated_at": "2026-10-20T04:00:21Z",
       "created_at": "2025-04-25T15:41:44Z",
       "homepage": "",
       "license": "MIT",
       "open_issues_count": 3,
-      "size": 15827
+      "size": 15912
     },
     {
       "name": "ComfyUI-StyleShot",
@@ -233,25 +233,10 @@
       "size": 22
     },
     {
-      "name": "Awesome-Video-Downloader",
-      "description": "Embark on an effortless video downloading journey with Awesome-Video-Downloader. This useful tool facilitates seamless downloads of watermark-free videos from an array of online platforms and apps directly via in-app or web links. But that's not all! It also empowers users to fetch captivating thumbnails from various videos.",
-      "html_url": "https://github.com/neverbiasu/Awesome-Video-Downloader",
-      "stargazers_count": 5,
-      "forks_count": 0,
-      "language": "JavaScript",
-      "topics": [],
-      "updated_at": "2026-05-24T12:01:05Z",
-      "created_at": "2023-10-29T15:36:43Z",
-      "homepage": null,
-      "license": "MIT",
-      "open_issues_count": 1,
-      "size": 1009
-    },
-    {
       "name": "awesome-research-skills",
       "description": "Awesome list of Agent Skills (SKILL.md) for academic and scientific research: 142 skills curated one directory at a time, covering literature review, study design, experiments, statistics, figures, writing, and peer review. English, 中文, 日本語, 한국어.",
       "html_url": "https://github.com/neverbiasu/awesome-research-skills",
-      "stargazers_count": 4,
+      "stargazers_count": 5,
       "forks_count": 0,
       "language": null,
       "topics": [
@@ -271,12 +256,27 @@
         "research-tools",
         "skills"
       ],
-      "updated_at": "2026-10-19T09:05:20Z",
+      "updated_at": "2026-10-20T12:10:12Z",
       "created_at": "2026-08-01T21:49:49Z",
       "homepage": "",
       "license": "CC0-1.0",
       "open_issues_count": 1,
       "size": 562
+    },
+    {
+      "name": "Awesome-Video-Downloader",
+      "description": "Embark on an effortless video downloading journey with Awesome-Video-Downloader. This useful tool facilitates seamless downloads of watermark-free videos from an array of online platforms and apps directly via in-app or web links. But that's not all! It also empowers users to fetch captivating thumbnails from various videos.",
+      "html_url": "https://github.com/neverbiasu/Awesome-Video-Downloader",
+      "stargazers_count": 5,
+      "forks_count": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "updated_at": "2026-05-24T12:01:05Z",
+      "created_at": "2023-10-29T15:36:43Z",
+      "homepage": null,
+      "license": "MIT",
+      "open_issues_count": 1,
+      "size": 1009
     },
     {
       "name": "ComfyUI-ChatTTS",
@@ -445,6 +445,51 @@
       "size": 780
     },
     {
+      "name": "neverbiasu",
+      "description": "README",
+      "html_url": "https://github.com/neverbiasu/neverbiasu",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": null,
+      "topics": [],
+      "updated_at": "2026-10-20T07:07:16Z",
+      "created_at": "2025-02-14T09:17:41Z",
+      "homepage": null,
+      "license": null,
+      "open_issues_count": 0,
+      "size": 279
+    },
+    {
+      "name": "ModelScope-Top-LoRAs",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/ModelScope-Top-LoRAs",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "language": "Python",
+      "topics": [],
+      "updated_at": "2026-10-20T06:57:14Z",
+      "created_at": "2025-11-05T00:52:35Z",
+      "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 202907
+    },
+    {
+      "name": "portfolio",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/portfolio",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2026-10-20T02:13:31Z",
+      "created_at": "2025-10-12T22:14:47Z",
+      "homepage": "https://neverbiasu.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 37850
+    },
+    {
       "name": "calabiyau-data-vis",
       "description": null,
       "html_url": "https://github.com/neverbiasu/calabiyau-data-vis",
@@ -458,51 +503,6 @@
       "license": null,
       "open_issues_count": 0,
       "size": 773
-    },
-    {
-      "name": "ModelScope-Top-LoRAs",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/ModelScope-Top-LoRAs",
-      "stargazers_count": 0,
-      "forks_count": 1,
-      "language": "Python",
-      "topics": [],
-      "updated_at": "2026-10-19T07:10:18Z",
-      "created_at": "2025-11-05T00:52:35Z",
-      "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 202888
-    },
-    {
-      "name": "neverbiasu",
-      "description": "README",
-      "html_url": "https://github.com/neverbiasu/neverbiasu",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": null,
-      "topics": [],
-      "updated_at": "2026-10-19T03:09:12Z",
-      "created_at": "2025-02-14T09:17:41Z",
-      "homepage": null,
-      "license": null,
-      "open_issues_count": 0,
-      "size": 279
-    },
-    {
-      "name": "portfolio",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/portfolio",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "updated_at": "2026-10-19T01:55:27Z",
-      "created_at": "2025-10-12T22:14:47Z",
-      "homepage": "https://neverbiasu.vercel.app",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 37848
     },
     {
       "name": "image-evaluator",
@@ -906,5 +906,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-10-20T02:13:26.494Z"
+  "last_updated": "2026-10-21T02:07:20.866Z"
 }
