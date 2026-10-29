@@ -47,12 +47,12 @@
       "forks_count": 21,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-10-27T04:49:15Z",
+      "updated_at": "2026-10-28T05:23:21Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
       "open_issues_count": 4,
-      "size": 35927
+      "size": 36102
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -142,12 +142,12 @@
         "comfyui-nodes",
         "comfyui-workflow"
       ],
-      "updated_at": "2026-10-25T03:37:18Z",
+      "updated_at": "2026-10-28T04:42:13Z",
       "created_at": "2025-04-25T15:41:44Z",
       "homepage": "",
       "license": "MIT",
       "open_issues_count": 3,
-      "size": 16134
+      "size": 16197
     },
     {
       "name": "ComfyUI-StyleShot",
@@ -361,6 +361,26 @@
       "size": 51902
     },
     {
+      "name": "ccfddl-skills",
+      "description": "An agent skill for [CCF-Deadlines](https://github.com/ccfddl/ccf-deadlines)",
+      "html_url": "https://github.com/neverbiasu/ccfddl-skills",
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "language": "Python",
+      "topics": [
+        "ccf",
+        "ccf-ddl",
+        "conference",
+        "skills"
+      ],
+      "updated_at": "2026-10-28T11:00:09Z",
+      "created_at": "2026-07-04T02:54:13Z",
+      "homepage": "",
+      "license": "MIT",
+      "open_issues_count": 0,
+      "size": 1110
+    },
+    {
       "name": "civitai-dl",
       "description": "download models, images, and metadata from Civitai",
       "html_url": "https://github.com/neverbiasu/civitai-dl",
@@ -415,24 +435,26 @@
       "size": 548
     },
     {
-      "name": "ccfddl-skills",
-      "description": "An agent skill for [CCF-Deadlines](https://github.com/ccfddl/ccf-deadlines)",
-      "html_url": "https://github.com/neverbiasu/ccfddl-skills",
+      "name": "image-evaluator",
+      "description": "A Python library for image evaluation.",
+      "html_url": "https://github.com/neverbiasu/image-evaluator",
       "stargazers_count": 1,
       "forks_count": 0,
       "language": "Python",
       "topics": [
-        "ccf",
-        "ccf-ddl",
-        "conference",
-        "skills"
+        "image-analysis",
+        "image-editing",
+        "image-evaluation",
+        "image-evaluation-metrics",
+        "image-generation",
+        "image-processing"
       ],
-      "updated_at": "2026-10-27T15:20:06Z",
-      "created_at": "2026-07-04T02:54:13Z",
-      "homepage": "",
+      "updated_at": "2026-10-28T08:00:34Z",
+      "created_at": "2025-04-24T06:13:57Z",
+      "homepage": "https://image-evaluator.github.io/docs",
       "license": "MIT",
       "open_issues_count": 0,
-      "size": 1110
+      "size": 5808
     },
     {
       "name": "lora-trainer",
@@ -472,7 +494,7 @@
       "forks_count": 0,
       "language": null,
       "topics": [],
-      "updated_at": "2026-10-27T09:34:14Z",
+      "updated_at": "2026-10-28T07:53:26Z",
       "created_at": "2025-02-14T09:17:41Z",
       "homepage": null,
       "license": null,
@@ -487,27 +509,12 @@
       "forks_count": 1,
       "language": "Python",
       "topics": [],
-      "updated_at": "2026-10-27T07:08:43Z",
+      "updated_at": "2026-10-28T07:47:14Z",
       "created_at": "2025-11-05T00:52:35Z",
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
       "license": null,
       "open_issues_count": 0,
-      "size": 203033
-    },
-    {
-      "name": "portfolio",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/portfolio",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "updated_at": "2026-10-27T02:31:19Z",
-      "created_at": "2025-10-12T22:14:47Z",
-      "homepage": "https://neverbiasu.vercel.app",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 37859
+      "size": 203051
     },
     {
       "name": "calabiyau-data-vis",
@@ -517,34 +524,27 @@
       "forks_count": 0,
       "language": "Vue",
       "topics": [],
-      "updated_at": "2026-10-26T09:53:31Z",
+      "updated_at": "2026-10-28T04:23:04Z",
       "created_at": "2025-12-12T00:10:08Z",
       "homepage": "https://calabiyau-data-vis.vercel.app",
       "license": null,
       "open_issues_count": 0,
-      "size": 776
+      "size": 777
     },
     {
-      "name": "image-evaluator",
-      "description": "A Python library for image evaluation.",
-      "html_url": "https://github.com/neverbiasu/image-evaluator",
+      "name": "portfolio",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/portfolio",
       "stargazers_count": 0,
       "forks_count": 0,
-      "language": "Python",
-      "topics": [
-        "image-analysis",
-        "image-editing",
-        "image-evaluation",
-        "image-evaluation-metrics",
-        "image-generation",
-        "image-processing"
-      ],
-      "updated_at": "2026-10-14T01:13:40Z",
-      "created_at": "2025-04-24T06:13:57Z",
-      "homepage": "https://image-evaluator.github.io/docs",
-      "license": "MIT",
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2026-10-28T02:40:25Z",
+      "created_at": "2025-10-12T22:14:47Z",
+      "homepage": "https://neverbiasu.vercel.app",
+      "license": null,
       "open_issues_count": 0,
-      "size": 5808
+      "size": 37861
     },
     {
       "name": "project-kit",
@@ -893,5 +893,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-10-28T02:40:20.425Z"
+  "last_updated": "2026-10-29T02:59:37.703Z"
 }
