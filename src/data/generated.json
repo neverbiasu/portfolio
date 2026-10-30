@@ -47,12 +47,12 @@
       "forks_count": 21,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-10-28T05:23:21Z",
+      "updated_at": "2026-10-29T05:32:47Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
       "open_issues_count": 4,
-      "size": 36102
+      "size": 44173
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -142,12 +142,12 @@
         "comfyui-nodes",
         "comfyui-workflow"
       ],
-      "updated_at": "2026-10-28T04:42:13Z",
+      "updated_at": "2026-10-29T04:54:28Z",
       "created_at": "2025-04-25T15:41:44Z",
       "homepage": "",
       "license": "MIT",
       "open_issues_count": 3,
-      "size": 16197
+      "size": 16199
     },
     {
       "name": "ComfyUI-StyleShot",
@@ -494,12 +494,12 @@
       "forks_count": 0,
       "language": null,
       "topics": [],
-      "updated_at": "2026-10-28T07:53:26Z",
+      "updated_at": "2026-10-29T07:59:02Z",
       "created_at": "2025-02-14T09:17:41Z",
       "homepage": null,
       "license": null,
       "open_issues_count": 0,
-      "size": 285
+      "size": 286
     },
     {
       "name": "ModelScope-Top-LoRAs",
@@ -509,12 +509,27 @@
       "forks_count": 1,
       "language": "Python",
       "topics": [],
-      "updated_at": "2026-10-28T07:47:14Z",
+      "updated_at": "2026-10-29T07:53:54Z",
       "created_at": "2025-11-05T00:52:35Z",
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
       "license": null,
       "open_issues_count": 0,
-      "size": 203051
+      "size": 207311
+    },
+    {
+      "name": "portfolio",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/portfolio",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2026-10-29T02:59:42Z",
+      "created_at": "2025-10-12T22:14:47Z",
+      "homepage": "https://neverbiasu.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 37862
     },
     {
       "name": "calabiyau-data-vis",
@@ -530,21 +545,6 @@
       "license": null,
       "open_issues_count": 0,
       "size": 777
-    },
-    {
-      "name": "portfolio",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/portfolio",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "updated_at": "2026-10-28T02:40:25Z",
-      "created_at": "2025-10-12T22:14:47Z",
-      "homepage": "https://neverbiasu.vercel.app",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 37861
     },
     {
       "name": "project-kit",
@@ -893,5 +893,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-10-29T02:59:37.703Z"
+  "last_updated": "2026-10-30T03:03:46.561Z"
 }
