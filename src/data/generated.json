@@ -12,12 +12,12 @@
         "comfyui-nodes",
         "custom-nodes"
       ],
-      "updated_at": "2026-10-25T03:05:24Z",
+      "updated_at": "2026-11-01T00:20:04Z",
       "created_at": "2024-08-01T13:58:47Z",
       "homepage": "",
       "license": "Apache-2.0",
       "open_issues_count": 0,
-      "size": 1555
+      "size": 1556
     },
     {
       "name": "ComfyUI-BAGEL",
@@ -47,12 +47,12 @@
       "forks_count": 21,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-10-30T05:33:15Z",
+      "updated_at": "2026-10-31T05:19:21Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
       "open_issues_count": 4,
-      "size": 44503
+      "size": 44703
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -170,27 +170,12 @@
       "size": 422
     },
     {
-      "name": "ComfyUI-KittenTTS",
-      "description": "A ComfyUI extension for KittenTTS",
-      "html_url": "https://github.com/neverbiasu/ComfyUI-KittenTTS",
-      "stargazers_count": 9,
-      "forks_count": 3,
-      "language": "Python",
-      "topics": [],
-      "updated_at": "2026-02-21T03:19:19Z",
-      "created_at": "2025-08-09T18:40:21Z",
-      "homepage": null,
-      "license": "Apache-2.0",
-      "open_issues_count": 0,
-      "size": 540
-    },
-    {
       "name": "awesome-research-skills",
       "description": "Awesome list of Agent Skills (SKILL.md) for academic and scientific research: 142 skills curated one directory at a time, covering literature review, study design, experiments, statistics, figures, writing, and peer review. English, 中文, 日本語, 한국어.",
       "html_url": "https://github.com/neverbiasu/awesome-research-skills",
-      "stargazers_count": 8,
+      "stargazers_count": 10,
       "forks_count": 2,
-      "language": null,
+      "language": "Python",
       "topics": [
         "academic",
         "academic-project",
@@ -208,12 +193,27 @@
         "research-tools",
         "skills"
       ],
-      "updated_at": "2026-10-30T04:14:16Z",
+      "updated_at": "2026-10-31T23:22:27Z",
       "created_at": "2026-08-01T21:49:49Z",
       "homepage": "",
       "license": "CC0-1.0",
-      "open_issues_count": 3,
-      "size": 664
+      "open_issues_count": 1,
+      "size": 315
+    },
+    {
+      "name": "ComfyUI-KittenTTS",
+      "description": "A ComfyUI extension for KittenTTS",
+      "html_url": "https://github.com/neverbiasu/ComfyUI-KittenTTS",
+      "stargazers_count": 9,
+      "forks_count": 3,
+      "language": "Python",
+      "topics": [],
+      "updated_at": "2026-11-01T00:15:54Z",
+      "created_at": "2025-08-09T18:40:21Z",
+      "homepage": null,
+      "license": "Apache-2.0",
+      "open_issues_count": 0,
+      "size": 541
     },
     {
       "name": "ComfyUI-Dashscope",
@@ -232,12 +232,12 @@
         "llm",
         "vlm"
       ],
-      "updated_at": "2026-09-30T14:32:56Z",
+      "updated_at": "2026-11-01T00:20:58Z",
       "created_at": "2024-12-16T03:10:47Z",
       "homepage": "",
       "license": "MIT",
       "open_issues_count": 2,
-      "size": 892
+      "size": 899
     },
     {
       "name": "hf-mirror-hub",
@@ -335,12 +335,12 @@
       "forks_count": 1,
       "language": "Python",
       "topics": [],
-      "updated_at": "2026-07-08T14:08:38Z",
+      "updated_at": "2026-11-01T00:20:43Z",
       "created_at": "2025-09-05T16:19:57Z",
       "homepage": null,
       "license": null,
       "open_issues_count": 1,
-      "size": 1223
+      "size": 1235
     },
     {
       "name": "ComfyUI-Midware",
@@ -494,12 +494,12 @@
       "forks_count": 0,
       "language": null,
       "topics": [],
-      "updated_at": "2026-10-30T08:00:53Z",
+      "updated_at": "2026-10-31T07:57:59Z",
       "created_at": "2025-02-14T09:17:41Z",
       "homepage": null,
       "license": null,
       "open_issues_count": 0,
-      "size": 287
+      "size": 288
     },
     {
       "name": "ModelScope-Top-LoRAs",
@@ -509,27 +509,12 @@
       "forks_count": 1,
       "language": "Python",
       "topics": [],
-      "updated_at": "2026-10-30T07:56:37Z",
+      "updated_at": "2026-10-31T07:50:25Z",
       "created_at": "2025-11-05T00:52:35Z",
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
       "license": null,
       "open_issues_count": 0,
-      "size": 207329
-    },
-    {
-      "name": "portfolio",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/portfolio",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "updated_at": "2026-10-30T03:03:51Z",
-      "created_at": "2025-10-12T22:14:47Z",
-      "homepage": "https://neverbiasu.vercel.app",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 37863
+      "size": 208259
     },
     {
       "name": "calabiyau-data-vis",
@@ -539,12 +524,27 @@
       "forks_count": 0,
       "language": "Vue",
       "topics": [],
-      "updated_at": "2026-10-28T04:23:04Z",
+      "updated_at": "2026-10-31T04:26:17Z",
       "created_at": "2025-12-12T00:10:08Z",
       "homepage": "https://calabiyau-data-vis.vercel.app",
       "license": null,
       "open_issues_count": 0,
-      "size": 777
+      "size": 778
+    },
+    {
+      "name": "portfolio",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/portfolio",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2026-10-31T02:50:30Z",
+      "created_at": "2025-10-12T22:14:47Z",
+      "homepage": "https://neverbiasu.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 37865
     },
     {
       "name": "project-kit",
@@ -893,5 +893,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-10-31T02:50:25.705Z"
+  "last_updated": "2026-11-01T02:42:57.779Z"
 }
