@@ -47,12 +47,12 @@
       "forks_count": 21,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-11-01T05:48:22Z",
+      "updated_at": "2026-11-02T05:47:09Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
       "open_issues_count": 4,
-      "size": 44909
+      "size": 45162
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -197,7 +197,7 @@
       "created_at": "2026-08-01T21:49:49Z",
       "homepage": "",
       "license": "CC0-1.0",
-      "open_issues_count": 1,
+      "open_issues_count": 2,
       "size": 315
     },
     {
@@ -220,7 +220,7 @@
       "description": "A ComfyUI extension for DashScope(Qwen Series API)",
       "html_url": "https://github.com/neverbiasu/ComfyUI-Dashscope",
       "stargazers_count": 7,
-      "forks_count": 3,
+      "forks_count": 2,
       "language": "Python",
       "topics": [
         "aliyun",
@@ -487,6 +487,51 @@
       "size": 780
     },
     {
+      "name": "calabiyau-data-vis",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/calabiyau-data-vis",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Vue",
+      "topics": [],
+      "updated_at": "2026-11-02T12:05:29Z",
+      "created_at": "2025-12-12T00:10:08Z",
+      "homepage": "https://calabiyau-data-vis.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 780
+    },
+    {
+      "name": "ModelScope-Top-LoRAs",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/ModelScope-Top-LoRAs",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "language": "Python",
+      "topics": [],
+      "updated_at": "2026-11-02T08:42:08Z",
+      "created_at": "2025-11-05T00:52:35Z",
+      "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 208295
+    },
+    {
+      "name": "portfolio",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/portfolio",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2026-11-02T02:51:57Z",
+      "created_at": "2025-10-12T22:14:47Z",
+      "homepage": "https://neverbiasu.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 37868
+    },
+    {
       "name": "neverbiasu",
       "description": "README",
       "html_url": "https://github.com/neverbiasu/neverbiasu",
@@ -500,51 +545,6 @@
       "license": null,
       "open_issues_count": 0,
       "size": 288
-    },
-    {
-      "name": "ModelScope-Top-LoRAs",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/ModelScope-Top-LoRAs",
-      "stargazers_count": 0,
-      "forks_count": 1,
-      "language": "Python",
-      "topics": [],
-      "updated_at": "2026-11-01T09:30:40Z",
-      "created_at": "2025-11-05T00:52:35Z",
-      "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 208277
-    },
-    {
-      "name": "calabiyau-data-vis",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/calabiyau-data-vis",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "Vue",
-      "topics": [],
-      "updated_at": "2026-11-01T04:45:02Z",
-      "created_at": "2025-12-12T00:10:08Z",
-      "homepage": "https://calabiyau-data-vis.vercel.app",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 779
-    },
-    {
-      "name": "portfolio",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/portfolio",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "updated_at": "2026-11-01T02:43:02Z",
-      "created_at": "2025-10-12T22:14:47Z",
-      "homepage": "https://neverbiasu.vercel.app",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 37866
     },
     {
       "name": "project-kit",
@@ -575,21 +575,6 @@
       "license": null,
       "open_issues_count": 0,
       "size": 3357
-    },
-    {
-      "name": "awesome-uofg-msc-cs",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/awesome-uofg-msc-cs",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "MDX",
-      "topics": [],
-      "updated_at": "2026-07-10T15:44:19Z",
-      "created_at": "2025-09-19T19:14:08Z",
-      "homepage": "https://awesome-uofg-msc-cs.vercel.app",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 1833895
     },
     {
       "name": "ComfyUI-FayCache",
@@ -890,8 +875,23 @@
       "license": null,
       "open_issues_count": 0,
       "size": 7
+    },
+    {
+      "name": "ComfyUI_QuickStart",
+      "description": "Scripts to quick start ComfyUI with essential nodes and models.",
+      "html_url": "https://github.com/neverbiasu/ComfyUI_QuickStart",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Shell",
+      "topics": [],
+      "updated_at": "2025-02-10T19:30:32Z",
+      "created_at": "2025-01-07T14:21:04Z",
+      "homepage": null,
+      "license": null,
+      "open_issues_count": 0,
+      "size": 30
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-11-02T02:51:52.261Z"
+  "last_updated": "2026-11-03T04:08:00.833Z"
 }
