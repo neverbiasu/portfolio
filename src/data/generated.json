@@ -44,15 +44,15 @@
       "description": null,
       "html_url": "https://github.com/neverbiasu/awesome-gemini-prompts",
       "stargazers_count": 116,
-      "forks_count": 21,
+      "forks_count": 20,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-11-07T05:46:09Z",
+      "updated_at": "2026-11-08T05:49:08Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
       "open_issues_count": 4,
-      "size": 35234
+      "size": 44774
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -70,26 +70,11 @@
       "size": 46030
     },
     {
-      "name": "IELTSDuck",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/IELTSDuck",
-      "stargazers_count": 30,
-      "forks_count": 3,
-      "language": "Jupyter Notebook",
-      "topics": [],
-      "updated_at": "2026-08-29T15:27:48Z",
-      "created_at": "2024-03-25T13:25:55Z",
-      "homepage": null,
-      "license": "Apache-2.0",
-      "open_issues_count": 0,
-      "size": 26180
-    },
-    {
       "name": "Awesome-Portrait-Style-Transfer",
       "description": "A curated collection of papers on portrait style transfer",
       "html_url": "https://github.com/neverbiasu/Awesome-Portrait-Style-Transfer",
-      "stargazers_count": 29,
-      "forks_count": 4,
+      "stargazers_count": 30,
+      "forks_count": 5,
       "language": null,
       "topics": [
         "awesome",
@@ -103,12 +88,27 @@
         "styletransfer",
         "stylization"
       ],
-      "updated_at": "2026-08-30T00:05:31Z",
+      "updated_at": "2026-11-08T23:14:59Z",
       "created_at": "2024-01-31T15:47:36Z",
       "homepage": "",
       "license": "Apache-2.0",
       "open_issues_count": 0,
       "size": 1594
+    },
+    {
+      "name": "IELTSDuck",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/IELTSDuck",
+      "stargazers_count": 30,
+      "forks_count": 3,
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "updated_at": "2026-08-29T15:27:48Z",
+      "created_at": "2024-03-25T13:25:55Z",
+      "homepage": null,
+      "license": "Apache-2.0",
+      "open_issues_count": 0,
+      "size": 26180
     },
     {
       "name": "ComfyUI-Image-Captioner",
@@ -494,12 +494,27 @@
       "forks_count": 1,
       "language": "Python",
       "topics": [],
-      "updated_at": "2026-11-07T08:05:19Z",
+      "updated_at": "2026-11-08T08:25:03Z",
       "created_at": "2025-11-05T00:52:35Z",
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
       "license": null,
       "open_issues_count": 0,
-      "size": 208451
+      "size": 208469
+    },
+    {
+      "name": "portfolio",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/portfolio",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated_at": "2026-11-08T02:49:03Z",
+      "created_at": "2025-10-12T22:14:47Z",
+      "homepage": "https://neverbiasu.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 37876
     },
     {
       "name": "calabiyau-data-vis",
@@ -515,21 +530,6 @@
       "license": null,
       "open_issues_count": 0,
       "size": 782
-    },
-    {
-      "name": "portfolio",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/portfolio",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "updated_at": "2026-11-07T03:19:30Z",
-      "created_at": "2025-10-12T22:14:47Z",
-      "homepage": "https://neverbiasu.vercel.app",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 37874
     },
     {
       "name": "neverbiasu",
@@ -854,29 +854,8 @@
       "license": "MIT",
       "open_issues_count": 0,
       "size": 8118
-    },
-    {
-      "name": "ComfyUI-DeepSeek",
-      "description": "A ComfyUI extension for DeepSeek(API)",
-      "html_url": "https://github.com/neverbiasu/ComfyUI-DeepSeek",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "Python",
-      "topics": [
-        "comfyui",
-        "custom-nodes",
-        "deepseek",
-        "deepseek-r1",
-        "deepseek-v3"
-      ],
-      "updated_at": "2025-02-13T02:36:39Z",
-      "created_at": "2025-01-27T17:04:22Z",
-      "homepage": "",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 7
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-11-08T02:48:58.727Z"
+  "last_updated": "2026-11-09T03:06:56.803Z"
 }
