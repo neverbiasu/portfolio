@@ -47,12 +47,12 @@
       "forks_count": 20,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-11-09T05:59:49Z",
+      "updated_at": "2026-11-10T07:02:41Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
       "open_issues_count": 4,
-      "size": 44806
+      "size": 54589
     },
     {
       "name": "ComfyUI-OmniGen2",
@@ -142,12 +142,12 @@
         "comfyui-nodes",
         "comfyui-workflow"
       ],
-      "updated_at": "2026-11-07T07:49:47Z",
+      "updated_at": "2026-11-10T06:29:51Z",
       "created_at": "2025-04-25T15:41:44Z",
       "homepage": "",
       "license": "MIT",
       "open_issues_count": 3,
-      "size": 16402
+      "size": 16467
     },
     {
       "name": "ComfyUI-StyleShot",
@@ -173,7 +173,7 @@
       "name": "awesome-research-skills",
       "description": "Awesome list of Agent Skills (SKILL.md) for academic and scientific research: 151 skills curated one directory at a time, covering literature review, study design, experiments, statistics, figures, writing, and peer review. English, 中文, 日本語, 한국어.",
       "html_url": "https://github.com/neverbiasu/awesome-research-skills",
-      "stargazers_count": 13,
+      "stargazers_count": 14,
       "forks_count": 2,
       "language": "Python",
       "topics": [
@@ -193,7 +193,7 @@
         "research-tools",
         "skills"
       ],
-      "updated_at": "2026-11-06T09:53:55Z",
+      "updated_at": "2026-11-10T07:06:44Z",
       "created_at": "2026-08-01T21:49:49Z",
       "homepage": "",
       "license": "CC0-1.0",
@@ -487,21 +487,6 @@
       "size": 780
     },
     {
-      "name": "calabiyau-data-vis",
-      "description": null,
-      "html_url": "https://github.com/neverbiasu/calabiyau-data-vis",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "Vue",
-      "topics": [],
-      "updated_at": "2026-11-09T12:37:25Z",
-      "created_at": "2025-12-12T00:10:08Z",
-      "homepage": "https://calabiyau-data-vis.vercel.app",
-      "license": null,
-      "open_issues_count": 0,
-      "size": 783
-    },
-    {
       "name": "ModelScope-Top-LoRAs",
       "description": null,
       "html_url": "https://github.com/neverbiasu/ModelScope-Top-LoRAs",
@@ -509,12 +494,27 @@
       "forks_count": 1,
       "language": "Python",
       "topics": [],
-      "updated_at": "2026-11-09T08:55:30Z",
+      "updated_at": "2026-11-10T09:01:51Z",
       "created_at": "2025-11-05T00:52:35Z",
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
       "license": null,
       "open_issues_count": 0,
-      "size": 208488
+      "size": 208506
+    },
+    {
+      "name": "calabiyau-data-vis",
+      "description": null,
+      "html_url": "https://github.com/neverbiasu/calabiyau-data-vis",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Vue",
+      "topics": [],
+      "updated_at": "2026-11-10T06:13:39Z",
+      "created_at": "2025-12-12T00:10:08Z",
+      "homepage": "https://calabiyau-data-vis.vercel.app",
+      "license": null,
+      "open_issues_count": 0,
+      "size": 784
     },
     {
       "name": "portfolio",
@@ -524,12 +524,12 @@
       "forks_count": 0,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-11-09T03:07:01Z",
+      "updated_at": "2026-11-10T04:51:08Z",
       "created_at": "2025-10-12T22:14:47Z",
       "homepage": "https://neverbiasu.vercel.app",
       "license": null,
       "open_issues_count": 0,
-      "size": 37877
+      "size": 37878
     },
     {
       "name": "neverbiasu",
@@ -857,5 +857,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-11-10T04:51:02.687Z"
+  "last_updated": "2026-11-11T03:15:20.552Z"
 }
