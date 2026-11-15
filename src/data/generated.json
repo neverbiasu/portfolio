@@ -153,8 +153,8 @@
       "name": "awesome-research-skills",
       "description": "Awesome list of Agent Skills (SKILL.md) for academic and scientific research: 151 skills curated one directory at a time, covering literature review, study design, experiments, statistics, figures, writing, and peer review. English, 中文, 日本語, 한국어.",
       "html_url": "https://github.com/neverbiasu/awesome-research-skills",
-      "stargazers_count": 16,
-      "forks_count": 2,
+      "stargazers_count": 18,
+      "forks_count": 3,
       "language": "Python",
       "topics": [
         "academic",
@@ -173,11 +173,11 @@
         "research-tools",
         "skills"
       ],
-      "updated_at": "2026-11-13T07:20:47Z",
+      "updated_at": "2026-11-14T13:13:37Z",
       "created_at": "2026-08-01T21:49:49Z",
       "homepage": "",
       "license": "CC0-1.0",
-      "open_issues_count": 3,
+      "open_issues_count": 4,
       "size": 315
     },
     {
@@ -499,7 +499,7 @@
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
       "license": null,
       "open_issues_count": 0,
-      "size": 208561
+      "size": 208580
     },
     {
       "name": "portfolio",
@@ -514,7 +514,7 @@
       "homepage": "https://neverbiasu.vercel.app",
       "license": null,
       "open_issues_count": 0,
-      "size": 37882
+      "size": 37884
     },
     {
       "name": "calabiyau-data-vis",
@@ -857,5 +857,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-11-14T03:41:20.222Z"
+  "last_updated": "2026-11-15T03:16:16.409Z"
 }
