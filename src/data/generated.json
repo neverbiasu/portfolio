@@ -43,11 +43,11 @@
       "name": "awesome-gemini-prompts",
       "description": null,
       "html_url": "https://github.com/neverbiasu/awesome-gemini-prompts",
-      "stargazers_count": 116,
+      "stargazers_count": 117,
       "forks_count": 20,
       "language": "TypeScript",
       "topics": [],
-      "updated_at": "2026-11-12T07:59:13Z",
+      "updated_at": "2026-11-17T07:20:12Z",
       "created_at": "2025-11-25T16:49:51Z",
       "homepage": "https://awesomegeminiprompts.tech",
       "license": "NOASSERTION",
@@ -499,7 +499,7 @@
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
       "license": null,
       "open_issues_count": 0,
-      "size": 208268
+      "size": 208286
     },
     {
       "name": "portfolio",
@@ -514,7 +514,7 @@
       "homepage": "https://neverbiasu.vercel.app",
       "license": null,
       "open_issues_count": 0,
-      "size": 37886
+      "size": 37887
     },
     {
       "name": "calabiyau-data-vis",
@@ -857,5 +857,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-11-17T05:19:20.907Z"
+  "last_updated": "2026-11-18T04:47:13.619Z"
 }
