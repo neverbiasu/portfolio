@@ -177,8 +177,8 @@
       "created_at": "2026-08-01T21:49:49Z",
       "homepage": "",
       "license": "CC0-1.0",
-      "open_issues_count": 5,
-      "size": 315
+      "open_issues_count": 1,
+      "size": 359
     },
     {
       "name": "ComfyUI-StyleShot",
@@ -499,7 +499,7 @@
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
       "license": null,
       "open_issues_count": 0,
-      "size": 208286
+      "size": 208304
     },
     {
       "name": "portfolio",
@@ -514,7 +514,7 @@
       "homepage": "https://neverbiasu.vercel.app",
       "license": null,
       "open_issues_count": 0,
-      "size": 37887
+      "size": 37889
     },
     {
       "name": "calabiyau-data-vis",
@@ -857,5 +857,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-11-18T04:47:13.619Z"
+  "last_updated": "2026-11-19T04:38:05.239Z"
 }
