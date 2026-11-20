@@ -153,7 +153,7 @@
       "name": "awesome-research-skills",
       "description": "Awesome list of Agent Skills (SKILL.md) for academic and scientific research: 151 skills curated one directory at a time, covering literature review, study design, experiments, statistics, figures, writing, and peer review. English, 中文, 日本語, 한국어.",
       "html_url": "https://github.com/neverbiasu/awesome-research-skills",
-      "stargazers_count": 18,
+      "stargazers_count": 19,
       "forks_count": 4,
       "language": "Python",
       "topics": [
@@ -173,7 +173,7 @@
         "research-tools",
         "skills"
       ],
-      "updated_at": "2026-11-14T13:13:37Z",
+      "updated_at": "2026-11-19T22:35:12Z",
       "created_at": "2026-08-01T21:49:49Z",
       "homepage": "",
       "license": "CC0-1.0",
@@ -499,7 +499,7 @@
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
       "license": null,
       "open_issues_count": 0,
-      "size": 208304
+      "size": 210081
     },
     {
       "name": "portfolio",
@@ -514,7 +514,7 @@
       "homepage": "https://neverbiasu.vercel.app",
       "license": null,
       "open_issues_count": 0,
-      "size": 37889
+      "size": 37890
     },
     {
       "name": "calabiyau-data-vis",
@@ -529,7 +529,7 @@
       "homepage": "https://calabiyau-data-vis.vercel.app",
       "license": null,
       "open_issues_count": 0,
-      "size": 787
+      "size": 788
     },
     {
       "name": "neverbiasu",
@@ -857,5 +857,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-11-19T04:38:05.239Z"
+  "last_updated": "2026-11-20T04:28:44.808Z"
 }
