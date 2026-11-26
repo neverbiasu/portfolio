@@ -499,7 +499,7 @@
       "homepage": "https://modelscope.cn/studios/ModelE/Top-LoRAs",
       "license": null,
       "open_issues_count": 0,
-      "size": 210173
+      "size": 210192
     },
     {
       "name": "portfolio",
@@ -514,7 +514,7 @@
       "homepage": "https://neverbiasu.vercel.app",
       "license": null,
       "open_issues_count": 0,
-      "size": 37841
+      "size": 37843
     },
     {
       "name": "calabiyau-data-vis",
@@ -529,7 +529,7 @@
       "homepage": "https://calabiyau-data-vis.vercel.app",
       "license": null,
       "open_issues_count": 0,
-      "size": 790
+      "size": 791
     },
     {
       "name": "neverbiasu",
@@ -857,5 +857,5 @@
     }
   ],
   "wakatime": null,
-  "last_updated": "2026-11-25T05:45:12.634Z"
+  "last_updated": "2026-11-26T05:34:40.249Z"
 }
